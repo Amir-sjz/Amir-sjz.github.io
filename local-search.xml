@@ -155,6 +155,8 @@
     
     <categories>
       
+      <category>工具</category>
+      
       <category>命令行</category>
       
     </categories>
@@ -179,6 +181,8 @@
     
     
     <categories>
+      
+      <category>工具</category>
       
       <category>命令行</category>
       
@@ -230,6 +234,8 @@
     
     <categories>
       
+      <category>工具</category>
+      
       <category>命令行</category>
       
     </categories>
@@ -254,6 +260,8 @@
     
     
     <categories>
+      
+      <category>工具</category>
       
       <category>命令行</category>
       
@@ -679,9 +687,9 @@
     
     <categories>
       
-      <category>命令行</category>
+      <category>工具</category>
       
-      <category>npm</category>
+      <category>命令行</category>
       
     </categories>
     
@@ -867,6 +875,8 @@
     
     
     <categories>
+      
+      <category>跨端</category>
       
       <category>flutter</category>
       
@@ -2003,6 +2013,8 @@
     
     <categories>
       
+      <category>跨端</category>
+      
       <category>flutter</category>
       
     </categories>
@@ -2027,6 +2039,8 @@
     
     
     <categories>
+      
+      <category>跨端</category>
       
       <category>flutter</category>
       
@@ -2304,6 +2318,8 @@
     
     <categories>
       
+      <category>跨端</category>
+      
       <category>flutter</category>
       
     </categories>
@@ -2506,6 +2522,8 @@
     
     <categories>
       
+      <category>工具</category>
+      
       <category>命令行</category>
       
     </categories>
@@ -2530,6 +2548,8 @@
     
     
     <categories>
+      
+      <category>工具</category>
       
       <category>命令行</category>
       
@@ -2941,6 +2961,8 @@
     
     
     <categories>
+      
+      <category>工具</category>
       
       <category>Git</category>
       
