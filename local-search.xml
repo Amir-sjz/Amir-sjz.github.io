@@ -599,6 +599,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>底层</category>
       
     </categories>
@@ -719,6 +721,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>基础</category>
       
       <category>多线程</category>
       
@@ -1094,6 +1098,8 @@
       
       <category>iOS</category>
       
+      <category>基础</category>
+      
       <category>内存管理</category>
       
     </categories>
@@ -1120,6 +1126,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>基础</category>
       
       <category>多线程</category>
       
@@ -2463,6 +2471,8 @@
       
       <category>iOS</category>
       
+      <category>基础</category>
+      
       <category>多线程</category>
       
     </categories>
@@ -2956,6 +2966,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>基础</category>
       
       <category>内存管理</category>
       
