@@ -4,6 +4,104 @@
   
   
   <entry>
+    <title>FFmpeg</title>
+    <link href="/2023/03/07/FFmpeg/"/>
+    <url>/2023/03/07/FFmpeg/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>跨平台</category>
+      
+      <category>音视频</category>
+      
+      <category>FFmpeg</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>VR</title>
+    <link href="/2023/03/07/VR/"/>
+    <url>/2023/03/07/VR/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>跨平台</category>
+      
+      <category>音视频</category>
+      
+      <category>VR</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>AR</title>
+    <link href="/2023/03/07/AR/"/>
+    <url>/2023/03/07/AR/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>跨平台</category>
+      
+      <category>音视频</category>
+      
+      <category>AR</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>iOS系统框架</title>
+    <link href="/2023/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/"/>
+    <url>/2023/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>框架</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>iOS系统</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>VIPER</title>
     <link href="/2023/03/07/VIPER/"/>
     <url>/2023/03/07/VIPER/</url>
@@ -894,7 +992,11 @@
     
     <categories>
       
-      <category>直播</category>
+      <category>跨端</category>
+      
+      <category>音视频</category>
+      
+      <category>WebRTC</category>
       
     </categories>
     
@@ -1556,6 +1658,16 @@
     
     <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>底层</category>
+      
+    </categories>
     
     
   </entry>
