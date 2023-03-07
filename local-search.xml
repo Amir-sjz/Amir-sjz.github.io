@@ -384,6 +384,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>调试</category>
       
     </categories>
@@ -518,6 +520,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>安全</category>
       
     </categories>
@@ -545,6 +549,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>调试</category>
       
     </categories>
@@ -571,6 +577,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>调试</category>
       
@@ -627,6 +635,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>底层</category>
       
@@ -1015,6 +1025,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>底层</category>
       
     </categories>
@@ -1182,6 +1194,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>底层</category>
       
@@ -1452,6 +1466,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>调试</category>
       
     </categories>
@@ -1559,6 +1575,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>监控</category>
       
     </categories>
@@ -1586,6 +1604,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>监控</category>
       
     </categories>
@@ -1612,6 +1632,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>监控</category>
       
@@ -1641,6 +1663,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>监控</category>
       
@@ -1746,6 +1770,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>底层</category>
       
     </categories>
@@ -1772,6 +1798,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>底层</category>
       
@@ -1880,6 +1908,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>调试</category>
       
@@ -2741,6 +2771,8 @@
       
       <category>iOS</category>
       
+      <category>基础</category>
+      
       <category>打包</category>
       
     </categories>
@@ -2767,6 +2799,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>监控</category>
       
