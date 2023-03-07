@@ -4,6 +4,32 @@
   
   
   <entry>
+    <title>VIPER</title>
+    <link href="/2023/03/07/VIPER/"/>
+    <url>/2023/03/07/VIPER/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>MVP</title>
+    <link href="/2023/03/07/MVP/"/>
+    <url>/2023/03/07/MVP/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>二分查找</title>
     <link href="/2023/03/07/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
     <url>/2023/03/07/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</url>
@@ -765,9 +791,9 @@
       
       <category>iOS</category>
       
-      <category>架构</category>
+      <category>进阶</category>
       
-      <category>MVVM</category>
+      <category>架构</category>
       
     </categories>
     
