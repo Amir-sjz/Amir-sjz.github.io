@@ -317,6 +317,8 @@
       
       <category>iOS</category>
       
+      <category>优化</category>
+      
     </categories>
     
     
@@ -381,6 +383,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>调试</category>
       
     </categories>
     
@@ -1439,6 +1443,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>调试</category>
       
     </categories>
     
