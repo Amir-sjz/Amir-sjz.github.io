@@ -1233,7 +1233,9 @@
     
     <categories>
       
-      <category>跨端方案</category>
+      <category>跨端</category>
+      
+      <category>Hybrid</category>
       
     </categories>
     
@@ -1791,9 +1793,9 @@
     
     <categories>
       
-      <category>Swift</category>
+      <category>iOS</category>
       
-      <category>内存管理</category>
+      <category>Swift</category>
       
     </categories>
     
@@ -1950,6 +1952,8 @@
     <categories>
       
       <category>脚本</category>
+      
+      <category>Shell</category>
       
     </categories>
     
