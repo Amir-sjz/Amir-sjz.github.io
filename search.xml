@@ -136,6 +136,18 @@
       </tags>
   </entry>
   <entry>
+    <title>AutoreleasePool</title>
+    <url>/2023/03/06/AutoreleasePool/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>内存管理</category>
+      </categories>
+      <tags>
+        <tag>autoreleasepool</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>App编译优化</title>
     <url>/2023/03/06/App%E7%BC%96%E8%AF%91%E4%BC%98%E5%8C%96/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -146,18 +158,6 @@
       <tags>
         <tag>优化</tag>
         <tag>编译</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AutoreleasePool</title>
-    <url>/2023/03/06/AutoreleasePool/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>iOS</category>
-        <category>内存管理</category>
-      </categories>
-      <tags>
-        <tag>autoreleasepool</tag>
       </tags>
   </entry>
   <entry>
@@ -202,18 +202,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Codable</title>
-    <url>/2023/03/06/Codable/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>iOS</category>
-        <category>Swift</category>
-      </categories>
-      <tags>
-        <tag>codable</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Core Animation</title>
     <url>/2023/03/06/Core-Animation/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -226,15 +214,15 @@
       </tags>
   </entry>
   <entry>
-    <title>Core-Image</title>
-    <url>/2023/03/06/Core-Image/</url>
+    <title>Codable</title>
+    <url>/2023/03/06/Codable/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>iOS</category>
-        <category>底层</category>
+        <category>Swift</category>
       </categories>
       <tags>
-        <tag>core image</tag>
+        <tag>codable</tag>
       </tags>
   </entry>
   <entry>
@@ -247,6 +235,18 @@
       </categories>
       <tags>
         <tag>core date</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Core-Image</title>
+    <url>/2023/03/06/Core-Image/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>底层</category>
+      </categories>
+      <tags>
+        <tag>core image</tag>
       </tags>
   </entry>
   <entry>
@@ -275,17 +275,12 @@
     <title>Docker</title>
     <url>/2023/03/06/Docker/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-  </entry>
-  <entry>
-    <title>GCD</title>
-    <url>/2023/03/06/GCD/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
-        <category>iOS</category>
-        <category>多线程</category>
+        <category>Mac</category>
+        <category>软件</category>
       </categories>
       <tags>
-        <tag>GCD</tag>
+        <tag>docker</tag>
       </tags>
   </entry>
   <entry>
@@ -301,16 +296,15 @@
       </tags>
   </entry>
   <entry>
-    <title>H5优化</title>
-    <url>/2023/03/06/H5%E4%BC%98%E5%8C%96/</url>
+    <title>GCD</title>
+    <url>/2023/03/06/GCD/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>iOS</category>
-        <category>优化</category>
+        <category>多线程</category>
       </categories>
       <tags>
-        <tag>优化</tag>
-        <tag>h5</tag>
+        <tag>GCD</tag>
       </tags>
   </entry>
   <entry>
@@ -388,6 +382,19 @@
       </tags>
   </entry>
   <entry>
+    <title>H5优化</title>
+    <url>/2023/03/06/H5%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>优化</category>
+      </categories>
+      <tags>
+        <tag>优化</tag>
+        <tag>h5</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Homebrew</title>
     <url>/2023/03/06/Homebrew/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -447,11 +454,6 @@
       </tags>
   </entry>
   <entry>
-    <title>JVM</title>
-    <url>/2023/03/06/JVM/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-  </entry>
-  <entry>
     <title>KVO/KVC</title>
     <url>/2023/03/06/KVO-KVC/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -482,6 +484,11 @@
       </tags>
   </entry>
   <entry>
+    <title>JVM</title>
+    <url>/2023/03/06/JVM/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+  </entry>
+  <entry>
     <title>LLVM</title>
     <url>/2023/03/06/LLVM/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -491,19 +498,6 @@
       </categories>
       <tags>
         <tag>llvm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MVVM</title>
-    <url>/2023/03/06/MVVM/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>iOS</category>
-        <category>架构</category>
-        <category>MVVM</category>
-      </categories>
-      <tags>
-        <tag>mvvm</tag>
       </tags>
   </entry>
   <entry>
@@ -519,14 +513,16 @@
       </tags>
   </entry>
   <entry>
-    <title>Mac常用快捷键</title>
-    <url>/2023/03/06/Mac%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <title>MVVM</title>
+    <url>/2023/03/06/MVVM/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
-        <category>Mac</category>
+        <category>iOS</category>
+        <category>架构</category>
+        <category>MVVM</category>
       </categories>
       <tags>
-        <tag>快捷键</tag>
+        <tag>mvvm</tag>
       </tags>
   </entry>
   <entry>
@@ -566,15 +562,14 @@
       </tags>
   </entry>
   <entry>
-    <title>SDK封装</title>
-    <url>/2023/03/06/SDK%E5%B0%81%E8%A3%85/</url>
+    <title>Mac常用快捷键</title>
+    <url>/2023/03/06/Mac%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
-        <category>iOS</category>
-        <category>SDK</category>
+        <category>Mac</category>
       </categories>
       <tags>
-        <tag>封装</tag>
+        <tag>快捷键</tag>
       </tags>
   </entry>
   <entry>
@@ -641,6 +636,18 @@
       </tags>
   </entry>
   <entry>
+    <title>SDK封装</title>
+    <url>/2023/03/06/SDK%E5%B0%81%E8%A3%85/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>SDK</category>
+      </categories>
+      <tags>
+        <tag>封装</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Swift——协议式编程</title>
     <url>/2023/03/06/Swift%E2%80%94%E2%80%94%E5%8D%8F%E8%AE%AE%E5%BC%8F%E7%BC%96%E7%A8%8B/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -650,18 +657,6 @@
       </categories>
       <tags>
         <tag>协议式编程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Swift——链式编程</title>
-    <url>/2023/03/06/Swift%E2%80%94%E2%80%94%E9%93%BE%E5%BC%8F%E7%BC%96%E7%A8%8B/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>iOS</category>
-        <category>Swift</category>
-      </categories>
-      <tags>
-        <tag>链式编程</tag>
       </tags>
   </entry>
   <entry>
@@ -710,6 +705,18 @@
       </categories>
       <tags>
         <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Swift——链式编程</title>
+    <url>/2023/03/06/Swift%E2%80%94%E2%80%94%E9%93%BE%E5%BC%8F%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>Swift</category>
+      </categories>
+      <tags>
+        <tag>链式编程</tag>
       </tags>
   </entry>
   <entry>
@@ -838,15 +845,6 @@
       </tags>
   </entry>
   <entry>
-    <title>flutter与iOS原生交互</title>
-    <url>/2023/03/06/flutter%E4%B8%8EiOS%E5%8E%9F%E7%94%9F%E4%BA%A4%E4%BA%92/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>跨端</category>
-        <category>flutter</category>
-      </categories>
-  </entry>
-  <entry>
     <title>fvm</title>
     <url>/2023/03/06/fvm/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -856,18 +854,6 @@
       </categories>
       <tags>
         <tag>fvm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>gem</title>
-    <url>/2023/03/06/gem/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>工具</category>
-        <category>命令行</category>
-      </categories>
-      <tags>
-        <tag>gem</tag>
       </tags>
   </entry>
   <entry>
@@ -889,6 +875,15 @@
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
   </entry>
   <entry>
+    <title>flutter与iOS原生交互</title>
+    <url>/2023/03/06/flutter%E4%B8%8EiOS%E5%8E%9F%E7%94%9F%E4%BA%A4%E4%BA%92/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>跨端</category>
+        <category>flutter</category>
+      </categories>
+  </entry>
+  <entry>
     <title>iOS之objc</title>
     <url>/2023/03/06/iOS%E4%B9%8Bobjc/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -901,27 +896,15 @@
       </tags>
   </entry>
   <entry>
-    <title>iOS之runloop</title>
-    <url>/2023/03/06/iOS%E4%B9%8Brunloop/</url>
+    <title>gem</title>
+    <url>/2023/03/06/gem/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
-        <category>iOS</category>
-        <category>OC</category>
+        <category>工具</category>
+        <category>命令行</category>
       </categories>
       <tags>
-        <tag>runloop</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iOS之runtime</title>
-    <url>/2023/03/06/iOS%E4%B9%8Bruntime/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>iOS</category>
-        <category>OC</category>
-      </categories>
-      <tags>
-        <tag>runtime</tag>
+        <tag>gem</tag>
       </tags>
   </entry>
   <entry>
@@ -949,13 +932,28 @@
       </tags>
   </entry>
   <entry>
-    <title>iOS之视图管理</title>
-    <url>/2023/03/06/iOS%E4%B9%8B%E8%A7%86%E5%9B%BE%E7%AE%A1%E7%90%86/</url>
+    <title>iOS之runloop</title>
+    <url>/2023/03/06/iOS%E4%B9%8Brunloop/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>iOS</category>
-        <category>视图管理</category>
+        <category>OC</category>
       </categories>
+      <tags>
+        <tag>runloop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>iOS之runtime</title>
+    <url>/2023/03/06/iOS%E4%B9%8Bruntime/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>OC</category>
+      </categories>
+      <tags>
+        <tag>runtime</tag>
+      </tags>
   </entry>
   <entry>
     <title>iOS常用三方库</title>
@@ -1035,15 +1033,24 @@
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
   </entry>
   <entry>
-    <title>wget</title>
-    <url>/2023/03/06/wget/</url>
+    <title>iOS之视图管理</title>
+    <url>/2023/03/06/iOS%E4%B9%8B%E8%A7%86%E5%9B%BE%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
-        <category>工具</category>
-        <category>命令行</category>
+        <category>iOS</category>
+        <category>视图管理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>二分查找</title>
+    <url>/2023/03/07/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>算法</category>
+        <category>搜索</category>
       </categories>
       <tags>
-        <tag>wget</tag>
+        <tag>二分查找</tag>
       </tags>
   </entry>
   <entry>
@@ -1056,18 +1063,6 @@
       </categories>
       <tags>
         <tag>UI</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>二分查找</title>
-    <url>/2023/03/07/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>算法</category>
-        <category>搜索</category>
-      </categories>
-      <tags>
-        <tag>二分查找</tag>
       </tags>
   </entry>
   <entry>
@@ -1099,15 +1094,15 @@
       </categories>
   </entry>
   <entry>
-    <title>关联对象</title>
-    <url>/2023/03/06/%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1/</url>
+    <title>wget</title>
+    <url>/2023/03/06/wget/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
-        <category>iOS</category>
-        <category>OC</category>
+        <category>工具</category>
+        <category>命令行</category>
       </categories>
       <tags>
-        <tag>关联对象</tag>
+        <tag>wget</tag>
       </tags>
   </entry>
   <entry>
@@ -1120,6 +1115,18 @@
       </categories>
   </entry>
   <entry>
+    <title>关联对象</title>
+    <url>/2023/03/06/%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>OC</category>
+      </categories>
+      <tags>
+        <tag>关联对象</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>单元测试</title>
     <url>/2023/03/06/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -1128,6 +1135,18 @@
       </categories>
       <tags>
         <tag>调试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>密码学</title>
+    <url>/2023/03/06/%E5%AF%86%E7%A0%81%E5%AD%A6/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>网络</category>
+        <category>加密</category>
+      </categories>
+      <tags>
+        <tag>密码学</tag>
       </tags>
   </entry>
   <entry>
@@ -1156,18 +1175,6 @@
       </tags>
   </entry>
   <entry>
-    <title>密码学</title>
-    <url>/2023/03/06/%E5%AF%86%E7%A0%81%E5%AD%A6/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>网络</category>
-        <category>加密</category>
-      </categories>
-      <tags>
-        <tag>密码学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>对象的本质</title>
     <url>/2023/03/06/%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%9C%AC%E8%B4%A8/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -1178,6 +1185,15 @@
       <tags>
         <tag>对象</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>崩溃监控</title>
+    <url>/2023/03/06/%E5%B4%A9%E6%BA%83%E7%9B%91%E6%8E%A7/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>监控</category>
+      </categories>
   </entry>
   <entry>
     <title>属性</title>
@@ -1206,13 +1222,16 @@
       </tags>
   </entry>
   <entry>
-    <title>崩溃监控</title>
-    <url>/2023/03/06/%E5%B4%A9%E6%BA%83%E7%9B%91%E6%8E%A7/</url>
+    <title>排序</title>
+    <url>/2023/03/07/%E6%8E%92%E5%BA%8F/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
-        <category>iOS</category>
-        <category>监控</category>
+        <category>算法</category>
+        <category>排序</category>
       </categories>
+      <tags>
+        <tag>排序</tag>
+      </tags>
   </entry>
   <entry>
     <title>应用层</title>
@@ -1235,18 +1254,6 @@
       </categories>
       <tags>
         <tag>性能监控</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>排序</title>
-    <url>/2023/03/07/%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>算法</category>
-        <category>排序</category>
-      </categories>
-      <tags>
-        <tag>排序</tag>
       </tags>
   </entry>
   <entry>
@@ -1317,18 +1324,6 @@
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
   </entry>
   <entry>
-    <title>组件化</title>
-    <url>/2023/03/06/%E7%BB%84%E4%BB%B6%E5%8C%96/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>iOS</category>
-        <category>架构</category>
-      </categories>
-      <tags>
-        <tag>组件化</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>终端使用</title>
     <url>/2023/03/06/%E7%BB%88%E7%AB%AF%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -1338,6 +1333,18 @@
       </categories>
       <tags>
         <tag>终端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>组件化</title>
+    <url>/2023/03/06/%E7%BB%84%E4%BB%B6%E5%8C%96/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>架构</category>
+      </categories>
+      <tags>
+        <tag>组件化</tag>
       </tags>
   </entry>
   <entry>
@@ -1364,18 +1371,6 @@
       </tags>
   </entry>
   <entry>
-    <title>耗电优化</title>
-    <url>/2023/03/06/%E8%80%97%E7%94%B5%E4%BC%98%E5%8C%96/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>iOS</category>
-        <category>优化</category>
-      </categories>
-      <tags>
-        <tag>耗电优化</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>虚拟内存</title>
     <url>/2023/03/06/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -1385,6 +1380,18 @@
       </categories>
       <tags>
         <tag>虚拟内存</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>耗电优化</title>
+    <url>/2023/03/06/%E8%80%97%E7%94%B5%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>iOS</category>
+        <category>优化</category>
+      </categories>
+      <tags>
+        <tag>耗电优化</tag>
       </tags>
   </entry>
   <entry>
@@ -1443,6 +1450,17 @@
       </tags>
   </entry>
   <entry>
+    <title>设计模式——命令模式</title>
+    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>基础知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>设计模式——原则模式</title>
     <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E5%8E%9F%E5%88%99%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -1465,30 +1483,8 @@
       </tags>
   </entry>
   <entry>
-    <title>设计模式——命令模式</title>
-    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>设计模式</category>
-      </categories>
-      <tags>
-        <tag>基础知识</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>设计模式——备忘录模式</title>
     <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E5%A4%87%E5%BF%98%E5%BD%95%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>设计模式</category>
-      </categories>
-      <tags>
-        <tag>基础知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>设计模式——外模模式</title>
-    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E5%A4%96%E6%A8%A1%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>设计模式</category>
@@ -1509,8 +1505,8 @@
       </tags>
   </entry>
   <entry>
-    <title>设计模式——建造者模式</title>
-    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
+    <title>设计模式——抽象工厂模式</title>
+    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>设计模式</category>
@@ -1520,8 +1516,8 @@
       </tags>
   </entry>
   <entry>
-    <title>设计模式——抽象工厂模式</title>
-    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
+    <title>设计模式——外模模式</title>
+    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E5%A4%96%E6%A8%A1%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>设计模式</category>
@@ -1564,8 +1560,8 @@
       </tags>
   </entry>
   <entry>
-    <title>设计模式——策略模式</title>
-    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/</url>
+    <title>设计模式——建造者模式</title>
+    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>设计模式</category>
@@ -1608,8 +1604,8 @@
       </tags>
   </entry>
   <entry>
-    <title>设计模式——装饰模式</title>
-    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8F/</url>
+    <title>设计模式——观察者模式</title>
+    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>设计模式</category>
@@ -1619,8 +1615,8 @@
       </tags>
   </entry>
   <entry>
-    <title>设计模式——观察者模式</title>
-    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
+    <title>设计模式——装饰模式</title>
+    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>设计模式</category>
@@ -1641,8 +1637,8 @@
       </tags>
   </entry>
   <entry>
-    <title>设计模式——迪米特法则</title>
-    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E8%BF%AA%E7%B1%B3%E7%89%B9%E6%B3%95%E5%88%99/</url>
+    <title>设计模式——迭代器模式</title>
+    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>设计模式</category>
@@ -1652,8 +1648,8 @@
       </tags>
   </entry>
   <entry>
-    <title>设计模式——迭代器模式</title>
-    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
+    <title>设计模式——策略模式</title>
+    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>设计模式</category>
@@ -1686,17 +1682,6 @@
       </tags>
   </entry>
   <entry>
-    <title>调试</title>
-    <url>/2023/03/06/%E8%B0%83%E8%AF%95/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-      <tags>
-        <tag>调试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>进程间通信</title>
     <url>/2023/03/06/%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
@@ -1706,6 +1691,29 @@
       </categories>
       <tags>
         <tag>进程间通信</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>链表</title>
+    <url>/2023/03/07/%E9%93%BE%E8%A1%A8/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>数据结构</category>
+        <category>链表</category>
+      </categories>
+      <tags>
+        <tag>链表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>调试</title>
+    <url>/2023/03/06/%E8%B0%83%E8%AF%95/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>调试</tag>
       </tags>
   </entry>
   <entry>
@@ -1722,24 +1730,23 @@
       </tags>
   </entry>
   <entry>
-    <title>链表</title>
-    <url>/2023/03/07/%E9%93%BE%E8%A1%A8/</url>
-    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-      <categories>
-        <category>数据结构</category>
-        <category>链表</category>
-      </categories>
-      <tags>
-        <tag>链表</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>锁</title>
     <url>/2023/03/06/%E9%94%81/</url>
     <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
       <categories>
         <category>iOS</category>
         <category>多线程</category>
+      </categories>
+      <tags>
+        <tag>基础知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>设计模式——迪米特法则</title>
+    <url>/2023/03/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94%E2%80%94%E8%BF%AA%E7%B1%B3%E7%89%B9%E6%B3%95%E5%88%99/</url>
+    <content><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      <categories>
+        <category>设计模式</category>
       </categories>
       <tags>
         <tag>基础知识</tag>
