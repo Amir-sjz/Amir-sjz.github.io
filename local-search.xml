@@ -307,35 +307,6 @@
   
   
   <entry>
-    <title>iOS系统框架</title>
-    <link href="/2023/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/"/>
-    <url>/2023/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>iOS系统基于Unix系统(Darwin)，后来Apple公司为了满足移动设备的需求,加入了自己研发的应用层、媒体层、服务层。由此形成了一个独立的iOS系统。<br>Darwin本身就是一个完整的UNIX&#x2F;BSD系统，具有UNIX体系惯有的高度可靠性和健壮性。<br>Darwin项目的创始公司是苹果公司，但Darwin完全是基于开源项目FreeBSD 5.0和Mach 3.0构建。</p></blockquote><h2 id="iOS系统架构"><a href="#iOS系统架构" class="headerlink" title="iOS系统架构"></a>iOS系统架构</h2><ul><li>Application</li><li>Cocoa Touch Layer 触摸层</li><li>Media Layer 媒体层 </li><li>Core Services Layer 核心服务层</li><li>Core OS Layer 核心系统操作层</li><li>The Kernel and Device Drivers Layer 内核和驱动层</li></ul><p>Application和Cocoa Touch共同组成Cocoa层。</p><p><img src="/2023/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/16782014578987.jpg"></p><h2 id="Cocoa"><a href="#Cocoa" class="headerlink" title="Cocoa"></a>Cocoa</h2><h3 id="Cocoa框架"><a href="#Cocoa框架" class="headerlink" title="Cocoa框架"></a>Cocoa框架</h3><h3 id="Cocoa框架的类继承体系"><a href="#Cocoa框架的类继承体系" class="headerlink" title="Cocoa框架的类继承体系"></a>Cocoa框架的类继承体系</h3><h4 id="Foundation框架类继承体系"><a href="#Foundation框架类继承体系" class="headerlink" title="Foundation框架类继承体系"></a>Foundation框架类继承体系</h4><p><img src="/2023/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/16782032448539.jpg"><br><img src="/2023/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/16782032448539.jpg"><br><img src="/2023/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/16782033667147.jpg"></p><h4 id="UIKit框架类继承体系"><a href="#UIKit框架类继承体系" class="headerlink" title="UIKit框架类继承体系"></a>UIKit框架类继承体系</h4><p><img src="/2023/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/16782032280086.jpg"></p><h3 id="Cocoa对象"><a href="#Cocoa对象" class="headerlink" title="Cocoa对象"></a>Cocoa对象</h3><h4 id="OC"><a href="#OC" class="headerlink" title="OC"></a>OC</h4><ul><li>面向对象</li><li>动态性</li></ul><h4 id="isa"><a href="#isa" class="headerlink" title="isa"></a>isa</h4><ul><li>指向类型对象的指针</li><li>对象指向类对象</li><li>类对象指向元类</li><li>根元类指向自己</li><li>根元类super指向NSObject</li></ul><h4 id="根类NSObject"><a href="#根类NSObject" class="headerlink" title="根类NSObject"></a>根类NSObject</h4><ul><li>协议</li><li>主要方法</li><li>+1 &amp;&amp; -1</li><li>查询对象的运行时信息</li><li>编解码</li><li>消息转发</li><li>消息派发</li><li>延迟派发消息</li></ul><h4 id="Cocoa对象生命周期"><a href="#Cocoa对象生命周期" class="headerlink" title="Cocoa对象生命周期"></a>Cocoa对象生命周期</h4><ul><li>创建、释放</li><li>保持</li><li>拷贝</li><li>自动释放池</li></ul><h3 id="常用框架"><a href="#常用框架" class="headerlink" title="常用框架"></a>常用框架</h3><h4 id="AirDrop"><a href="#AirDrop" class="headerlink" title="AirDrop"></a>AirDrop</h4><h4 id="TextKit"><a href="#TextKit" class="headerlink" title="TextKit"></a>TextKit</h4><h4 id="UIKit"><a href="#UIKit" class="headerlink" title="UIKit"></a>UIKit</h4><h2 id="MediaLayer-媒体层"><a href="#MediaLayer-媒体层" class="headerlink" title="MediaLayer 媒体层"></a>MediaLayer 媒体层</h2><p>关键技术</p><ul><li>图形技术</li><li>声音技术</li><li>视频技术</li><li>AirPlay技术</li></ul><p>包含的框架和服务</p><h2 id="CoreServices-Layer-核心服务层"><a href="#CoreServices-Layer-核心服务层" class="headerlink" title="CoreServices Layer 核心服务层"></a>CoreServices Layer 核心服务层</h2><p>包含的高级功能</p><ul><li>Peer-to-Peer Services</li><li>iCloud Storage</li><li>ARC</li><li>Block</li><li>Data Protection</li><li>File-Sharing Support</li><li>GCD</li><li>IAP</li><li>SQLite</li><li>XML Support</li></ul><h2 id="Core-OS-Layer-核心OS层"><a href="#Core-OS-Layer-核心OS层" class="headerlink" title="Core OS Layer 核心OS层"></a>Core OS Layer 核心OS层</h2><p>包含的框架</p><ul><li>Accelerate 加速框架</li><li>Core Bluetooth Framework 核心蓝牙框架</li><li>Exteranl Accessory Framework 外部附件框架</li><li>Generic Security Services Framework 通用安全服务框架</li><li>Security Framework 安全框架</li><li>System<ul><li>多任务</li><li>网络</li><li>文件系统存取</li><li>标准I&#x2F;O</li><li>Bonjour和DNS服务</li><li>位置信息</li><li>内存分配</li><li>数学计算</li></ul></li><li>64-Bit Support</li></ul><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://juejin.cn/post/6971609729336344589#heading-18">002-知识体系| iOS系统整体框架及类继承框架图-综述</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-    
-    
-    <categories>
-      
-      <category>iOS</category>
-      
-      <category>进阶</category>
-      
-      <category>框架</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>iOS系统</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>VIPER</title>
     <link href="/2023/03/07/VIPER/"/>
     <url>/2023/03/07/VIPER/</url>
@@ -2565,35 +2536,6 @@
   
   
   <entry>
-    <title>Shell基础命令</title>
-    <link href="/2023/03/06/Shell%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/"/>
-    <url>/2023/03/06/Shell%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</url>
-    
-    <content type="html"><![CDATA[<blockquote class="pullquote mindmap mindmap-md"><ul><li><a href="https://hunterx.xyz/hexo-simple-mindmap-plugin-intro.html">Hexo 的思维导图插件</a><ul><li>前言</li><li>使用方法<ul><li>一</li><li>二</li><li>三</li></ul></li><li>太长不看</li><li>参考资料</li></ul></li></ul></blockquote><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-    
-    
-    <categories>
-      
-      <category>脚本</category>
-      
-      <category>Shell</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>shell</tag>
-      
-      <tag>工具</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Category</title>
     <link href="/2023/03/06/Category/"/>
     <url>/2023/03/06/Category/</url>
@@ -3415,9 +3357,9 @@
     
     <tags>
       
-      <tag>优化</tag>
-      
       <tag>卡顿</tag>
+      
+      <tag>优化</tag>
       
     </tags>
     
@@ -4208,9 +4150,67 @@
     
     <tags>
       
+      <tag>优化</tag>
+      
       <tag>体积</tag>
       
-      <tag>优化</tag>
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>iOS系统框架</title>
+    <link href="/2021/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/"/>
+    <url>/2021/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>iOS系统基于Unix系统(Darwin)，后来Apple公司为了满足移动设备的需求,加入了自己研发的应用层、媒体层、服务层。由此形成了一个独立的iOS系统。<br>Darwin本身就是一个完整的UNIX&#x2F;BSD系统，具有UNIX体系惯有的高度可靠性和健壮性。<br>Darwin项目的创始公司是苹果公司，但Darwin完全是基于开源项目FreeBSD 5.0和Mach 3.0构建。</p></blockquote><h2 id="iOS系统架构"><a href="#iOS系统架构" class="headerlink" title="iOS系统架构"></a>iOS系统架构</h2><ul><li>Application</li><li>Cocoa Touch Layer 触摸层</li><li>Media Layer 媒体层 </li><li>Core Services Layer 核心服务层</li><li>Core OS Layer 核心系统操作层</li><li>The Kernel and Device Drivers Layer 内核和驱动层</li></ul><p>Application和Cocoa Touch共同组成Cocoa层。</p><p><img src="/2021/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/16782014578987.jpg"></p><h2 id="Cocoa"><a href="#Cocoa" class="headerlink" title="Cocoa"></a>Cocoa</h2><h3 id="Cocoa框架"><a href="#Cocoa框架" class="headerlink" title="Cocoa框架"></a>Cocoa框架</h3><h3 id="Cocoa框架的类继承体系"><a href="#Cocoa框架的类继承体系" class="headerlink" title="Cocoa框架的类继承体系"></a>Cocoa框架的类继承体系</h3><h4 id="Foundation框架类继承体系"><a href="#Foundation框架类继承体系" class="headerlink" title="Foundation框架类继承体系"></a>Foundation框架类继承体系</h4><p><img src="/2021/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/16782032448539.jpg"><br><img src="/2021/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/16782032448539.jpg"><br><img src="/2021/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/16782033667147.jpg"></p><h4 id="UIKit框架类继承体系"><a href="#UIKit框架类继承体系" class="headerlink" title="UIKit框架类继承体系"></a>UIKit框架类继承体系</h4><p><img src="/2021/03/07/iOS%E7%B3%BB%E7%BB%9F%E6%A1%86%E6%9E%B6/16782032280086.jpg"></p><h3 id="Cocoa对象"><a href="#Cocoa对象" class="headerlink" title="Cocoa对象"></a>Cocoa对象</h3><h4 id="OC"><a href="#OC" class="headerlink" title="OC"></a>OC</h4><ul><li>面向对象</li><li>动态性</li></ul><h4 id="isa"><a href="#isa" class="headerlink" title="isa"></a>isa</h4><ul><li>指向类型对象的指针</li><li>对象指向类对象</li><li>类对象指向元类</li><li>根元类指向自己</li><li>根元类super指向NSObject</li></ul><h4 id="根类NSObject"><a href="#根类NSObject" class="headerlink" title="根类NSObject"></a>根类NSObject</h4><ul><li>协议</li><li>主要方法</li><li>+1 &amp;&amp; -1</li><li>查询对象的运行时信息</li><li>编解码</li><li>消息转发</li><li>消息派发</li><li>延迟派发消息</li></ul><h4 id="Cocoa对象生命周期"><a href="#Cocoa对象生命周期" class="headerlink" title="Cocoa对象生命周期"></a>Cocoa对象生命周期</h4><ul><li>创建、释放</li><li>保持</li><li>拷贝</li><li>自动释放池</li></ul><h3 id="常用框架"><a href="#常用框架" class="headerlink" title="常用框架"></a>常用框架</h3><h4 id="AirDrop"><a href="#AirDrop" class="headerlink" title="AirDrop"></a>AirDrop</h4><h4 id="TextKit"><a href="#TextKit" class="headerlink" title="TextKit"></a>TextKit</h4><h4 id="UIKit"><a href="#UIKit" class="headerlink" title="UIKit"></a>UIKit</h4><h2 id="MediaLayer-媒体层"><a href="#MediaLayer-媒体层" class="headerlink" title="MediaLayer 媒体层"></a>MediaLayer 媒体层</h2><p>关键技术</p><ul><li>图形技术</li><li>声音技术</li><li>视频技术</li><li>AirPlay技术</li></ul><p>包含的框架和服务</p><h2 id="CoreServices-Layer-核心服务层"><a href="#CoreServices-Layer-核心服务层" class="headerlink" title="CoreServices Layer 核心服务层"></a>CoreServices Layer 核心服务层</h2><p>包含的高级功能</p><ul><li>Peer-to-Peer Services</li><li>iCloud Storage</li><li>ARC</li><li>Block</li><li>Data Protection</li><li>File-Sharing Support</li><li>GCD</li><li>IAP</li><li>SQLite</li><li>XML Support</li></ul><h2 id="Core-OS-Layer-核心OS层"><a href="#Core-OS-Layer-核心OS层" class="headerlink" title="Core OS Layer 核心OS层"></a>Core OS Layer 核心OS层</h2><p>包含的框架</p><ul><li>Accelerate 加速框架</li><li>Core Bluetooth Framework 核心蓝牙框架</li><li>Exteranl Accessory Framework 外部附件框架</li><li>Generic Security Services Framework 通用安全服务框架</li><li>Security Framework 安全框架</li><li>System<ul><li>多任务</li><li>网络</li><li>文件系统存取</li><li>标准I&#x2F;O</li><li>Bonjour和DNS服务</li><li>位置信息</li><li>内存分配</li><li>数学计算</li></ul></li><li>64-Bit Support</li></ul><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://juejin.cn/post/6971609729336344589#heading-18">002-知识体系| iOS系统整体框架及类继承框架图-综述</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>框架</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>iOS系统</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Shell基础命令</title>
+    <link href="/2021/03/06/Shell%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/"/>
+    <url>/2021/03/06/Shell%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</url>
+    
+    <content type="html"><![CDATA[<p>记录一下shell常用命令。<br>hexo上展示不太优美，自己本地画xmind了。</p><blockquote class="pullquote mindmap mindmap-md"><ul><li>Shell命令<ul><li>基础<ul><li>目录<ul><li>mkdir<ul><li>创建一个目录<ul><li>mkdir dirname</li></ul></li></ul></li><li>rmdir<ul><li>删除一个目录<ul><li>rmdir dirname</li></ul></li></ul></li><li>mvdir<ul><li>移动或重命名一个目录<ul><li>mvdir dir1 dir2</li></ul></li></ul></li><li>cd<ul><li>改变当前目录<ul><li>cd dir name</li></ul></li></ul></li><li>pwd<ul><li>显示当前目录的路径名<ul><li>pwd</li></ul></li></ul></li><li>ls<ul><li>显示当前目录的内容<ul><li>ls -la</li></ul></li><li>显示当前及以下级所有目录<ul><li>ls -Ra</li></ul></li></ul></li><li>dircmp<ul><li>比较两个目录<ul><li>dircmp dir1 dir2</li></ul></li></ul></li><li>chflags<ul><li>隐藏文件夹<ul><li>chflags hidden dir1</li></ul></li><li>显示文件夹<ul><li>chflags nohidden dir1</li></ul></li></ul></li></ul></li><li>文件<ul><li>cat</li><li>pg</li><li>more</li><li>od</li><li>cp</li><li>rm</li><li>mv</li><li>ln</li><li>find</li><li>file</li><li>open</li><li>touch</li><li>less</li></ul></li><li>选择操作<ul><li>head</li><li>tail</li><li>cut</li><li>colrm</li><li>paste</li><li>diff</li><li>sed</li><li>grep</li><li>awk</li><li>sort</li><li>uniq</li><li>comm</li><li>wc</li><li>nl</li></ul></li><li>进程<ul><li>ps</li><li>kill</li><li>nice</li><li>renice</li></ul></li><li>网络<ul><li>ifconfig</li><li>hostname</li><li>newworksetup</li></ul></li><li>通信<ul><li>telnet</li><li>rlogin</li><li>rsh</li><li>ftp</li><li>ping</li><li>mail</li><li>write</li><li>mesg</li><li>ssh</li></ul></li><li>时间<ul><li>date</li><li>cal</li><li>time</li></ul></li><li>安全操作&#x2F;权限<ul><li>passwd</li><li>chmod</li><li>umask</li><li>chown</li><li>chgrp</li><li>xlock</li><li>sudo</li></ul></li><li>编程操作<ul><li>make</li><li>touch</li><li>dbx</li><li>xde</li><li>echo</li><li>export</li><li>exit</li></ul></li><li>开关机<ul><li>sudo halt</li><li>sudo shutdown -h now</li><li>sudo reboot</li><li>-s<ul><li>睡眠</li></ul></li><li>-h<ul><li>关机</li></ul></li><li>-r<ul><li>重启</li></ul></li></ul></li><li>其他命令<ul><li>uname</li><li>clear</li><li>env</li><li>who</li><li>whoaml</li><li>tty</li><li>stty</li><li>du</li><li>df</li><li>w</li></ul></li></ul></li></ul></li></ul></blockquote><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>脚本</category>
+      
+      <category>Shell</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>shell</tag>
+      
+      <tag>工具</tag>
       
     </tags>
     
@@ -4220,8 +4220,8 @@
   
   <entry>
     <title>Hexo</title>
-    <link href="/2023/03/06/Hexo/"/>
-    <url>/2023/03/06/Hexo/</url>
+    <link href="/2021/03/06/Hexo/"/>
+    <url>/2021/03/06/Hexo/</url>
     
     <content type="html"><![CDATA[<blockquote><p>Github + Hexo搭建个人博客</p></blockquote><p>[TOC]</p><h2 id="基础物料"><a href="#基础物料" class="headerlink" title="基础物料"></a>基础物料</h2><ul><li>Github账号</li><li>Git</li><li>NodeJS<ul><li>node</li><li>npm</li></ul></li></ul><h2 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h2><blockquote><p>要使用Github，那电脑肯定要安装git，也必须要有Github账号</p></blockquote><h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>创建一个<code>username.github.io</code></p><p><strong>注意：用户名必须与自己的用户名相同</strong></p><p>主页地址为：https:&#x2F;&#x2F;<username>.github.io</p><h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><h3 id="Hexo是什么"><a href="#Hexo是什么" class="headerlink" title="Hexo是什么"></a>Hexo是什么</h3><h3 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h3><p>安装hexo<br><code>npm install -g hexo-cli</code></p><p>查看版本<br><code>hexo -v</code></p><p>创建一个项目hexo-blog并初始化</p><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm">hexo init hexo-<span class="hljs-keyword">blog</span><br><span class="hljs-keyword"></span>cd hexo-<span class="hljs-keyword">blog</span><br><span class="hljs-keyword"></span>npm <span class="hljs-keyword">install</span><br></code></pre></td></tr></table></figure><p>本地启动</p><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs axapta">hexo g<br>hexo <span class="hljs-keyword">server</span><br></code></pre></td></tr></table></figure><p>浏览器访问 <code>http://localhost:4000</code></p><h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><p><a href="https://hexo.io/themes/">主题官网</a></p><p>配置_config.yml文件</p><p><code>theme: next #fluid</code></p><h4 id="NexT"><a href="#NexT" class="headerlink" title="NexT"></a>NexT</h4><p>next主题内部设置修改next文件内的_config.yml文件</p><ul><li>menu</li><li>外观</li><li>头像</li><li>动态北京</li><li>social</li></ul><p>初始化对应的menu文件夹</p><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs haxe">hexo <span class="hljs-keyword">new</span> <span class="hljs-type">page</span> <span class="hljs-string">&quot;tags&quot;</span><br></code></pre></td></tr></table></figure><p>编辑 blog&#x2F;source&#x2F;tags 中index.md文件，添加type:tags,其他menu也同理创建</p><h4 id="Fluid"><a href="#Fluid" class="headerlink" title="Fluid"></a>Fluid</h4><p>打开主题目录 themes\fluid下的 _config.yml 文件，修改如下配置</p><p>启用评论插件</p><figure class="highlight coq"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs coq"># 评论插件<br> # Comment plugin<br> comments:<br>   enable: true<br>   # 指定的插件，需要同时设置对应插件的必要参数<br>   # The specified plugin needs to <span class="hljs-built_in">set</span> the necessary parameters <span class="hljs-built_in">at</span> the same <span class="hljs-built_in">time</span><br>   # <span class="hljs-keyword">Options</span>: utterances | <span class="hljs-type">disqus</span> | <span class="hljs-type">gitalk</span> | <span class="hljs-type">valine</span> | <span class="hljs-type">waline</span> | <span class="hljs-type">changyan</span> | <span class="hljs-type">livere</span> | <span class="hljs-type">remark42</span> | <span class="hljs-type">twikoo</span> | <span class="hljs-type">cusdis</span> | <span class="hljs-type">giscus</span><br>   type: valine<br></code></pre></td></tr></table></figure><p>配置 LeanCloud 的 appId 和 appkey</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs dts"><span class="hljs-meta"># Valine</span><br><span class="hljs-meta"># 基于 LeanCloud</span><br><span class="hljs-meta"># Based on LeanCloud</span><br><span class="hljs-meta"># See: https:<span class="hljs-comment">//valine.js.org/</span></span><br><span class="hljs-symbol">valine:</span><br><span class="hljs-symbol">  appId:</span> <span class="hljs-number">1</span>tnxxxxxxxxxxxxxxxxxzGzoHsz<br><span class="hljs-symbol">  appKey:</span> XR7xxxxxxxxxxxxxxxxxxxIkNoT<br></code></pre></td></tr></table></figure><h3 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs awk">hexo n 文章名 <span class="hljs-regexp">//</span>创建新文章<br>hexo g <span class="hljs-regexp">//</span>部署静态网站<br>hexo s <span class="hljs-regexp">//</span>启动本地服务<br>hexo clean &amp;&amp; hexo g  <span class="hljs-regexp">//</span>清理并部署静态网站<br></code></pre></td></tr></table></figure><h3 id="支持显示脑图"><a href="#支持显示脑图" class="headerlink" title="支持显示脑图"></a>支持显示脑图</h3><p>安装插件<br><code>npm install hexo-simple-mindmap</code></p><p>写法：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs markdown">&#123;% pullquote mindmap mindmap-md %&#125;<br><span class="hljs-bullet">-</span> [<span class="hljs-string">Hexo 的思维导图插件</span>](<span class="hljs-link">https://hunterx.xyz/hexo-simple-mindmap-plugin-intro.html</span>)<br><span class="hljs-bullet">  -</span> 前言<br><span class="hljs-bullet">  -</span> 使用方法<br><span class="hljs-bullet">    -</span> 一<br><span class="hljs-bullet">    -</span> 二<br><span class="hljs-bullet">    -</span> 三<br><span class="hljs-bullet">  -</span> 太长不看<br><span class="hljs-bullet">  -</span> 参考资料<br>&#123;% endpullquote %&#125;<br></code></pre></td></tr></table></figure><h3 id="使用Leancloud"><a href="#使用Leancloud" class="headerlink" title="使用Leancloud"></a>使用Leancloud</h3><p>注册<a href="https://www.leancloud.cn/">Leancloud</a><br>添加阅读统计、评论等相关内容</p><h3 id="关联Github"><a href="#关联Github" class="headerlink" title="关联Github"></a>关联Github</h3><p>安装hexo-deployer-git</p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">npm install hexo-deployer-git <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure><p>修改根目录下的 _config.yml，配置 GitHub 相关信息</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">deploy:</span><br><span class="hljs-symbol">  type:</span> git<br><span class="hljs-symbol">  repo:</span> https:<span class="hljs-comment">//github.com/yaorongke/yaorongke.github.io.git</span><br><span class="hljs-symbol">  branch:</span> main<br><span class="hljs-symbol">  token:</span> ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxSbsY(自己生成的)<br></code></pre></td></tr></table></figure><p>其中 token 为 GitHub 的 Personal access tokens，<br>通过 Setting -&gt; Developer settings -&gt; Personal access tokens -&gt; Generate new token 获得</p><p>部署到Github<br><code>hexo g -d</code></p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/yaorongke/article/details/119089190">GitHub Pages + Hexo搭建个人博客网站，史上最全教程</a><br><a href="https://lunachy.com/2021/04/13/Hexo+NexT%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/#valine-comments">Hexo+NexT搭建个人博客</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
@@ -4244,24 +4244,11 @@
   
   
   <entry>
-    <title>Hello World</title>
-    <link href="/2023/03/06/hello-world/"/>
-    <url>/2023/03/06/hello-world/</url>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>测试文章</title>
-    <link href="/2021/06/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
-    <url>/2021/06/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
+    <link href="/2021/03/06/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
+    <url>/2021/03/06/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
     
-    <content type="html"><![CDATA[<p>这是一篇测试文章</p><img src="/2021/06/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/test.png" class="" title="图片引用方法一"><p><img src="/2021/06/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/test.png" alt="图片引用方法二"></p><p><img src="/images/test.png" alt="图片引用方法三"></p><p>其中方法二 直接写 test.png 不展示</p><p>需要 “&#x2F;文章名&#x2F;test.png”,这种写法才展示，但是每次都拷贝一遍文章名，也十分不方便</p><p>安装插件：</p><p><code>npm install hexo-renderer-marked</code></p><p>在<code>cinfig.yaml</code>中修改</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">marked:</span><br>  <span class="hljs-attr">prependRoot:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">postAsset:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<p>这是一篇测试文章</p><img src="/2021/03/06/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/test.png" class="" title="图片引用方法一"><p><img src="/2021/03/06/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/test.png" alt="图片引用方法二"></p><p><img src="/images/test.png" alt="图片引用方法三"></p><p>其中方法二 直接写 test.png 不展示</p><p>需要 “&#x2F;文章名&#x2F;test.png”,这种写法才展示，但是每次都拷贝一遍文章名，也十分不方便</p><p>安装插件：</p><p><code>npm install hexo-renderer-marked</code></p><p>在<code>cinfig.yaml</code>中修改</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">marked:</span><br>  <span class="hljs-attr">prependRoot:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">postAsset:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -4280,6 +4267,19 @@
       <tag>图片</tag>
       
     </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2021/02/18/hello-world/"/>
+    <url>/2021/02/18/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
     
   </entry>
   
