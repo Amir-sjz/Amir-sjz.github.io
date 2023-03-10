@@ -4,6 +4,301 @@
   
   
   <entry>
+    <title>Audio Unit</title>
+    <link href="/2023/03/10/Audio-Unit/"/>
+    <url>/2023/03/10/Audio-Unit/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>框架</category>
+      
+      <category>Media Layer</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Assets Library</title>
+    <link href="/2023/03/10/Assets-Library/"/>
+    <url>/2023/03/10/Assets-Library/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>框架</category>
+      
+      <category>Media Layer</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Audio Toolbox</title>
+    <link href="/2023/03/10/Audio-Toolbox/"/>
+    <url>/2023/03/10/Audio-Toolbox/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>框架</category>
+      
+      <category>Media Layer</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>CoreVideo</title>
+    <link href="/2023/03/10/CoreVideo/"/>
+    <url>/2023/03/10/CoreVideo/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>框架</category>
+      
+      <category>Media Layer</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>SpriteKit</title>
+    <link href="/2023/03/10/SpriteKit/"/>
+    <url>/2023/03/10/SpriteKit/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>框架</category>
+      
+      <category>Media Layer</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>AVFoundation</title>
+    <link href="/2023/03/10/AVFoundation/"/>
+    <url>/2023/03/10/AVFoundation/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>框架</category>
+      
+      <category>Media Layer</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Core Image</title>
+    <link href="/2023/03/10/Core-Image-1/"/>
+    <url>/2023/03/10/Core-Image-1/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Metal</title>
+    <link href="/2023/03/10/Metal/"/>
+    <url>/2023/03/10/Metal/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>框架</category>
+      
+      <category>Media Layer</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>OpenGLES</title>
+    <link href="/2023/03/10/OpenGLES/"/>
+    <url>/2023/03/10/OpenGLES/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>框架</category>
+      
+      <category>Media Layer</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Core Graphics</title>
+    <link href="/2023/03/10/Core-Graphics/"/>
+    <url>/2023/03/10/Core-Graphics/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>框架</category>
+      
+      <category>Media Layer</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Core OS</title>
+    <link href="/2023/03/10/Core-OS/"/>
+    <url>/2023/03/10/Core-OS/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>Accelerate</category>
+      
+      <category>CoreBluetooth</category>
+      
+      <category>External Accessory</category>
+      
+      <category>LocalAuth entication</category>
+      
+      <category>Security</category>
+      
+      <category>System</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Core Services</title>
+    <link href="/2023/03/10/Core-Services/"/>
+    <url>/2023/03/10/Core-Services/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Core-Services汇总"><a href="#Core-Services汇总" class="headerlink" title="Core Services汇总"></a>Core Services汇总</h2><ul><li>Accounts</li><li>CoreData</li><li>CoreTelephony</li><li>JaveScript Core</li><li>PushKit</li><li>UIAutomation</li><li>Address Book</li><li>Core Foundation</li><li>Event Kit</li><li>MobileCoreServices</li><li>QuickLook</li><li>WebKit</li><li>AdSupport</li><li>Core Location</li><li>Foundation</li><li>Multipeer Connectivity</li><li>Social</li><li>CFNetwork</li><li>Core Media</li><li>HealthKit</li><li>Newsstand Kit</li><li>StoreKit</li><li>CloundKit</li><li>Core Motion</li><li>HomeKit</li><li>PassKit</li><li>SystemConfiguration</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>框架</category>
+      
+      <category>Core Services</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Media Layer归总</title>
+    <link href="/2023/03/10/Media-Layer/"/>
+    <url>/2023/03/10/Media-Layer/</url>
+    
+    <content type="html"><![CDATA[<h2 id="媒体层"><a href="#媒体层" class="headerlink" title="媒体层"></a>媒体层</h2><ul><li>Assets Library</li><li>Core Audio</li><li>CoreText</li><li>ImageIO</li><li>OpenAL</li><li>SceneKit</li><li>Audio Toolbox</li><li>Core Graphics</li><li>CoreVideo</li><li>MediaAccessibility</li><li>OpenGL ES</li><li>SpriteKit</li><li>Audio Unit</li><li>Core Image</li><li>Game Controller</li><li>Media Player</li><li>Photos</li><li>AVFoundation</li><li>Core MIDI</li><li>GLKit</li><li>Metal</li><li>QuartzCore</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>框架</category>
+      
+      <category>Media Layer</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Apifox</title>
     <link href="/2023/03/10/Apifox/"/>
     <url>/2023/03/10/Apifox/</url>
@@ -1246,16 +1541,16 @@
     <link href="/2023/03/06/Core-Animation/"/>
     <url>/2023/03/06/Core-Animation/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h2 id="QuartzCore"><a href="#QuartzCore" class="headerlink" title="QuartzCore"></a>QuartzCore</h2><p>前缀为<code>CA</code></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
       
       <category>iOS</category>
       
-      <category>进阶</category>
+      <category>框架</category>
       
-      <category>底层</category>
+      <category>Media Layer</category>
       
     </categories>
     
@@ -1263,6 +1558,8 @@
     <tags>
       
       <tag>core animation</tag>
+      
+      <tag>QuartzCore</tag>
       
     </tags>
     
