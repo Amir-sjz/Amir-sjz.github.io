@@ -240,9 +240,9 @@
       
       <category>iOS</category>
       
-      <category>框架</category>
-      
       <category>进阶</category>
+      
+      <category>框架</category>
       
       <category>Core OS</category>
       
@@ -535,9 +535,9 @@
       
       <tag>llvm</tag>
       
-      <tag>clang</tag>
-      
       <tag>dyld</tag>
+      
+      <tag>clang</tag>
       
       <tag>ir</tag>
       
