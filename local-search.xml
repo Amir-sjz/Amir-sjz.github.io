@@ -154,19 +154,6 @@
   
   
   <entry>
-    <title>Core Image</title>
-    <link href="/2023/03/10/Core-Image-1/"/>
-    <url>/2023/03/10/Core-Image-1/</url>
-    
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Metal</title>
     <link href="/2023/03/10/Metal/"/>
     <url>/2023/03/10/Metal/</url>
@@ -246,7 +233,7 @@
     <link href="/2023/03/10/Core-OS/"/>
     <url>/2023/03/10/Core-OS/</url>
     
-    <content type="html"><![CDATA[<ul><li>Accelerate</li><li>CoreBluetooth</li><li>External Accessory</li><li>LocalAuth entication</li><li>Security</li><li>System</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h2 id="Core-OS汇总"><a href="#Core-OS汇总" class="headerlink" title="Core OS汇总"></a>Core OS汇总</h2><ul><li>Accelerate</li><li>CoreBluetooth</li><li>External Accessory</li><li>LocalAuth entication</li><li>Security</li><li>System</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -570,19 +557,6 @@
     <title>Yoga</title>
     <link href="/2023/03/07/Yoga/"/>
     <url>/2023/03/07/Yoga/</url>
-    
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>SnapKit</title>
-    <link href="/2023/03/07/SnapKit-1/"/>
-    <url>/2023/03/07/SnapKit-1/</url>
     
     <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
@@ -2137,7 +2111,9 @@
       
       <category>进阶</category>
       
-      <category>底层</category>
+      <category>框架</category>
+      
+      <category>Media Layer</category>
       
     </categories>
     
