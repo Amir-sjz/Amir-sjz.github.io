@@ -4,6 +4,134 @@
   
   
   <entry>
+    <title>BDD</title>
+    <link href="/2023/03/11/BDD/"/>
+    <url>/2023/03/11/BDD/</url>
+    
+    <content type="html"><![CDATA[<h2 id="BDD：行为驱动开发"><a href="#BDD：行为驱动开发" class="headerlink" title="BDD：行为驱动开发"></a>BDD：行为驱动开发</h2><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>架构</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>TDD</title>
+    <link href="/2023/03/11/TDD/"/>
+    <url>/2023/03/11/TDD/</url>
+    
+    <content type="html"><![CDATA[<h2 id="TDD-测试驱动开发"><a href="#TDD-测试驱动开发" class="headerlink" title="TDD: 测试驱动开发"></a>TDD: 测试驱动开发</h2><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>架构</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>DDD</title>
+    <link href="/2023/03/11/DDD/"/>
+    <url>/2023/03/11/DDD/</url>
+    
+    <content type="html"><![CDATA[<h2 id="DDD：领域驱动设计"><a href="#DDD：领域驱动设计" class="headerlink" title="DDD：领域驱动设计"></a>DDD：领域驱动设计</h2><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>架构</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>POP</title>
+    <link href="/2023/03/10/POP/"/>
+    <url>/2023/03/10/POP/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>架构</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Pop动画</title>
+    <link href="/2023/03/10/Pop%E5%8A%A8%E7%94%BB/"/>
+    <url>/2023/03/10/Pop%E5%8A%A8%E7%94%BB/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>OOP</title>
+    <link href="/2023/03/10/OOP/"/>
+    <url>/2023/03/10/OOP/</url>
+    
+    <content type="html"><![CDATA[<h2 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h2><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>架构</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Audio Unit</title>
     <link href="/2023/03/10/Audio-Unit/"/>
     <url>/2023/03/10/Audio-Unit/</url>
@@ -675,8 +803,18 @@
     <link href="/2023/03/07/TDD-BDD/"/>
     <url>/2023/03/07/TDD-BDD/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h2 id="TDD-x2F-BDD"><a href="#TDD-x2F-BDD" class="headerlink" title="TDD&#x2F;BDD"></a>TDD&#x2F;BDD</h2><p>TDD：Test Driven Development</p><p>BDD：Behavior-Driven Development</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>调试</category>
+      
+    </categories>
     
     
   </entry>
@@ -739,19 +877,6 @@
     <title>JSONModel</title>
     <link href="/2023/03/07/JSONModel/"/>
     <url>/2023/03/07/JSONModel/</url>
-    
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Pop</title>
-    <link href="/2023/03/07/Pop/"/>
-    <url>/2023/03/07/Pop/</url>
     
     <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
@@ -1513,7 +1638,9 @@
       
       <category>进阶</category>
       
-      <category>底层</category>
+      <category>框架</category>
+      
+      <category>Core Serverices</category>
       
     </categories>
     
@@ -2404,7 +2531,7 @@
     <link href="/2023/03/06/AOP/"/>
     <url>/2023/03/06/AOP/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h2 id="AOP"><a href="#AOP" class="headerlink" title="AOP"></a>AOP</h2><p>AOP:Aspect Oriented Programming 面向切面编程</p><p>主要功能：</p><ul><li>日志记录</li><li>性能统计</li><li>安全控制</li><li>事务处理</li><li>异常处理</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -2413,7 +2540,7 @@
       
       <category>进阶</category>
       
-      <category>底层</category>
+      <category>架构</category>
       
     </categories>
     
@@ -2691,7 +2818,7 @@
     <link href="/2023/03/06/WebCore/"/>
     <url>/2023/03/06/WebCore/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h2 id="Webcore"><a href="#Webcore" class="headerlink" title="Webcore"></a>Webcore</h2><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -2700,7 +2827,9 @@
       
       <category>进阶</category>
       
-      <category>底层</category>
+      <category>框架</category>
+      
+      <category>Core Services</category>
       
     </categories>
     
@@ -2729,7 +2858,9 @@
       
       <category>进阶</category>
       
-      <category>底层</category>
+      <category>框架</category>
+      
+      <category>Core Services</category>
       
     </categories>
     
