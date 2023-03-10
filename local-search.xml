@@ -15,6 +15,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>框架</category>
       
       <category>Media Layer</category>
@@ -37,6 +39,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>框架</category>
       
@@ -61,6 +65,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>框架</category>
       
       <category>Media Layer</category>
@@ -83,6 +89,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>框架</category>
       
@@ -107,6 +115,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>框架</category>
       
       <category>Media Layer</category>
@@ -129,6 +139,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>框架</category>
       
@@ -166,6 +178,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>框架</category>
       
       <category>Media Layer</category>
@@ -188,6 +202,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>框架</category>
       
@@ -212,6 +228,8 @@
       
       <category>iOS</category>
       
+      <category>进阶</category>
+      
       <category>框架</category>
       
       <category>Media Layer</category>
@@ -228,22 +246,18 @@
     <link href="/2023/03/10/Core-OS/"/>
     <url>/2023/03/10/Core-OS/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<ul><li>Accelerate</li><li>CoreBluetooth</li><li>External Accessory</li><li>LocalAuth entication</li><li>Security</li><li>System</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
       
-      <category>Accelerate</category>
+      <category>iOS</category>
       
-      <category>CoreBluetooth</category>
+      <category>框架</category>
       
-      <category>External Accessory</category>
+      <category>进阶</category>
       
-      <category>LocalAuth entication</category>
-      
-      <category>Security</category>
-      
-      <category>System</category>
+      <category>Core OS</category>
       
     </categories>
     
@@ -263,6 +277,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>框架</category>
       
@@ -286,6 +302,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>框架</category>
       
@@ -1547,6 +1565,8 @@
     <categories>
       
       <category>iOS</category>
+      
+      <category>进阶</category>
       
       <category>框架</category>
       
@@ -4666,9 +4686,9 @@
     
     <tags>
       
-      <tag>内存</tag>
-      
       <tag>优化</tag>
+      
+      <tag>内存</tag>
       
     </tags>
     
@@ -4697,9 +4717,9 @@
     
     <tags>
       
-      <tag>优化</tag>
-      
       <tag>体积</tag>
+      
+      <tag>优化</tag>
       
     </tags>
     
