@@ -16,13 +16,15 @@
   <meta name="author" content="Amir">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
+    <meta name="description" content="[TOC] 分析崩溃日志 符号化 看懂，清楚日志表达的是什么 解析，从文档中定位问题，获取解决问题的有价值的信息  dYSM文件分析崩溃日志的前提是我们需要有dYSM文件，这个文件是我们用archive打包时生成的.xcarchive后缀的文件包。 通过dYSM文件可以分析日志crash log 提取有用信息 崩溃原因 应用名，崩溃时调用的方法，文件的地址以及方法所在的行的位置 dSYM UUID">
+<meta property="og:type" content="article">
 <meta property="og:title" content="崩溃监控">
 <meta property="og:url" content="http://example.com/2023/03/06/%E5%B4%A9%E6%BA%83%E7%9B%91%E6%8E%A7/index.html">
 <meta property="og:site_name" content="I&#39;m Amir">
+<meta property="og:description" content="[TOC] 分析崩溃日志 符号化 看懂，清楚日志表达的是什么 解析，从文档中定位问题，获取解决问题的有价值的信息  dYSM文件分析崩溃日志的前提是我们需要有dYSM文件，这个文件是我们用archive打包时生成的.xcarchive后缀的文件包。 通过dYSM文件可以分析日志crash log 提取有用信息 崩溃原因 应用名，崩溃时调用的方法，文件的地址以及方法所在的行的位置 dSYM UUID">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-06T13:13:14.000Z">
-<meta property="article:modified_time" content="2023-03-07T06:28:00.680Z">
+<meta property="article:modified_time" content="2023-03-17T23:51:54.569Z">
 <meta property="article:author" content="Amir">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -234,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          2.5k 字
         
       </span>
     
@@ -245,7 +247,7 @@
         
         
         
-          1 分钟
+          21 分钟
         
       </span>
     
@@ -296,7 +298,125 @@
             
               <div class="markdown-body">
                 
-                <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+                <p>[TOC]</p>
+<h2 id="分析崩溃日志"><a href="#分析崩溃日志" class="headerlink" title="分析崩溃日志"></a>分析崩溃日志</h2><ul>
+<li>符号化</li>
+<li>看懂，清楚日志表达的是什么</li>
+<li>解析，从文档中定位问题，获取解决问题的有价值的信息</li>
+</ul>
+<h3 id="dYSM文件"><a href="#dYSM文件" class="headerlink" title="dYSM文件"></a>dYSM文件</h3><p>分析崩溃日志的前提是我们需要有dYSM文件，这个文件是我们用archive打包时生成的.xcarchive后缀的文件包。</p>
+<p>通过dYSM文件可以分析日志crash log</p>
+<h4 id="提取有用信息"><a href="#提取有用信息" class="headerlink" title="提取有用信息"></a>提取有用信息</h4><ul>
+<li>崩溃原因</li>
+<li>应用名，崩溃时调用的方法，文件的地址以及方法所在的行的位置</li>
+<li>dSYM UUID</li>
+<li>cpu type</li>
+</ul>
+<h4 id="分析方法："><a href="#分析方法：" class="headerlink" title="分析方法："></a>分析方法：</h4><ul>
+<li>cd到dYSM目录</li>
+<li>验证日志中uuid与本地dYSM是否匹配</li>
+<li>查找错误信息</li>
+</ul>
+<h3 id="提取崩溃日志中有用的信息"><a href="#提取崩溃日志中有用的信息" class="headerlink" title="提取崩溃日志中有用的信息"></a>提取崩溃日志中有用的信息</h3><h2 id="崩溃符号化"><a href="#崩溃符号化" class="headerlink" title="崩溃符号化"></a>崩溃符号化</h2><h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><ul>
+<li>iOS 15 CrashSymbolicator</li>
+</ul>
+<h2 id="崩溃日志，崩溃类型、原因及解决方案"><a href="#崩溃日志，崩溃类型、原因及解决方案" class="headerlink" title="崩溃日志，崩溃类型、原因及解决方案"></a>崩溃日志，崩溃类型、原因及解决方案</h2><blockquote>
+<p>设置-&gt;隐私-&gt;分析-&gt;分析与数据</p>
+</blockquote>
+<h3 id="信号可捕获的崩溃"><a href="#信号可捕获的崩溃" class="headerlink" title="信号可捕获的崩溃"></a>信号可捕获的崩溃</h3><ul>
+<li>unrecognized selector造成的崩溃（没有找到对应的方法选择器）</li>
+<li>KVO问题</li>
+<li>NSNotification线程问题</li>
+<li>数组越界</li>
+<li>野指针</li>
+</ul>
+<p>崩溃发生的原因</p>
+<ul>
+<li>unrecognized selector造成的崩溃（没有找到对应的方法选择器）</li>
+<li>KVO造成的崩溃：KVO的被观察者在dealloc时仍然注册着KVO导致的崩溃，重复添加观察者或重复移除观察者*</li>
+<li>NSNotification造成的崩溃：当一个对象添加了Notification之后，在dealloc的时候，仍然持有Notification</li>
+<li>NSTime造成的崩溃：需要在合适的时机invalidate定时器，否则就会犹豫定时器的timer强引用target导致target不被释放，造成内存泄露？</li>
+<li>容器类型越界造成的崩溃：数组越界、Dictionary插入nil</li>
+<li>多线程问题<ul>
+<li>在子线程刷新UI</li>
+</ul>
+</li>
+<li>野指针造成的崩溃：访问了野指针，对象已经被释放</li>
+<li>野指针</li>
+<li>应用内存占用过高崩溃</li>
+<li>跟第三方合作时产生的崩溃：三方只提供了基于.a静态库的SDK文件，三方更新后发生了崩溃</li>
+</ul>
+<h3 id="崩溃无日志的情况"><a href="#崩溃无日志的情况" class="headerlink" title="崩溃无日志的情况"></a>崩溃无日志的情况</h3><ul>
+<li>没有打开共享</li>
+<li>当同一个APP崩溃了25次以上，这个时候你可以把你的iPhone设备脸上电脑，打开控制台应用，崩溃的时候会有崩回次数超限的提示</li>
+<li>APP发布证书过期之后，会发生启动崩溃并且无日志的情况。</li>
+<li>后台包活超过30秒；通常iOS程序会执行后台任务，30s内后台任务仍然不结束，APP可能就会被杀死。</li>
+</ul>
+<h3 id="有点蛛丝马迹的"><a href="#有点蛛丝马迹的" class="headerlink" title="有点蛛丝马迹的"></a>有点蛛丝马迹的</h3><ul>
+<li>OOM崩溃，当程序使用的内存超过阈值的时候，此时Apple的Jestems机制就会发生作用(前台和后台的阈值有所不同，但是都会触发)；通常情况下你可以在系统设置-&gt;隐私-&gt;分析-&gt;分析与数据里面找到JetsamEvent格式的日志</li>
+<li>各种系统资源限制引发的崩溃<ul>
+<li>线程在短时间内切换过多引发的崩溃</li>
+<li>cpu长时间超负荷运转引发的崩溃</li>
+<li>IO一定时间内写过多引发的崩溃</li>
+<li>Fence-hang:一种iOS14系统之后苹果增加的崩溃</li>
+</ul>
+</li>
+</ul>
+<h3 id="市面上部分SDK无法捕获的崩溃"><a href="#市面上部分SDK无法捕获的崩溃" class="headerlink" title="市面上部分SDK无法捕获的崩溃"></a>市面上部分SDK无法捕获的崩溃</h3><ul>
+<li>SIGKILL崩溃<ul>
+<li>0x8badf00d：看门狗（watch dog）崩溃</li>
+<li>0xc00010ff：设备过热</li>
+<li>0xdead10cc：死锁</li>
+<li>0xbaadca11：The operating system terminated the app for failing to report a CallKit call in response to a PushKit notification.</li>
+<li>0xbad22222：Voip功能调用太频繁</li>
+<li>0xc51bad01：watchOS CPU资源占用过多</li>
+<li>0xc51bad02：watchOS terminated the app because it failed to complete a background task within the allocated time. Decrease the amount of work that the app performs while running in the background to resolve this crash.</li>
+<li>0xc51bad03：watchOS terminated the app because it failed to complete a background task within the allocated time, but the system was sufficiently busy overall that the app may not have received much CPU time to perform the background task. Although you may be able to avoid the issue by reducing the amount of work your app performs in background tasks, 0xc51bad03 doesn’t indicate that the app did anything wrong. More likely, the app wasn’t able to complete its work because of overall system load.</li>
+</ul>
+</li>
+<li>SIGQUIT：一般是因为其他进程的优先级高于当前进程引起的。通常不认为是崩溃</li>
+<li>EXC_GUARD:对一些保护性文件的不合法操作引发的崩溃<ul>
+<li>CLOSE.</li>
+<li>DUP.</li>
+<li>NOCLOEXEC.</li>
+<li>SOCKET_IPC.</li>
+<li>FILEPORT.</li>
+<li>WRITE.</li>
+</ul>
+</li>
+<li>栈溢出：stack overflow<ul>
+<li>在栈上申请太大内存:当我们定义的数据所需要占用的内存超过了栈的大小时，就会发生栈溢出。</li>
+<li>递归调用函数多次:一个函数调用自身就叫做递归。当递归层次过高时，程序就会发生栈溢出。</li>
+</ul>
+</li>
+</ul>
+<h2 id="Crash监控"><a href="#Crash监控" class="headerlink" title="Crash监控"></a>Crash监控</h2><h3 id="监控的方案"><a href="#监控的方案" class="headerlink" title="监控的方案"></a>监控的方案</h3><ul>
+<li>用户提供崩溃日志</li>
+<li>第三方库<ul>
+<li>PLCrashReporter</li>
+<li>kscrash</li>
+<li>Bugly</li>
+<li>友盟</li>
+<li>Metrickit</li>
+<li>talkingdata</li>
+<li>killBug</li>
+</ul>
+</li>
+</ul>
+<h3 id="监控crash原理"><a href="#监控crash原理" class="headerlink" title="监控crash原理"></a>监控crash原理</h3><ol>
+<li>OC类异常。<ol>
+<li>NSException异常是OC代码导致的crash。</li>
+</ol>
+</li>
+<li>Signal信号捕获。<ul>
+<li>Singal信号是由iOS底层mach信号异常转换后以signal信号抛出的异常。</li>
+<li>既然是兼容posix标准的异常，我们同样可以通过sigaction函数注册对应的信号</li>
+</ul>
+</li>
+</ol>
+<h2 id="预防崩溃处理"><a href="#预防崩溃处理" class="headerlink" title="预防崩溃处理"></a>预防崩溃处理</h2><h3 id="hook方案"><a href="#hook方案" class="headerlink" title="hook方案"></a>hook方案</h3><h3 id="安全接口"><a href="#安全接口" class="headerlink" title="安全接口"></a>安全接口</h3><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6900051608118231048">iOS崩溃无日志情形总结</a><br><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903457581694989">IOS 分析崩溃日志</a></p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/1Vq0T4v7UJN8c1ZCWQ5b5g">了解和分析iOS Crash</a></p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
               </div>
             

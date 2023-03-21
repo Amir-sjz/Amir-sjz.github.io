@@ -16,16 +16,25 @@
   <meta name="author" content="Amir">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
+    <meta name="description" content="LLDBhelp查看指令帮助  help image list help br help breakpoint set  打印p 和 po 的区别在于使用 po 只会输出对应的值，而 p 则会返回值的类型以及命令结果的引用名。  po:输出值 p：值类型+引用名+内存地址+输出值  另外  p:默认打印十进制 p&#x2F;x:转16进制 p&#x2F;o:转8进制 p&#x2F;t:转二进制 p">
+<meta property="og:type" content="article">
 <meta property="og:title" content="LLDB">
 <meta property="og:url" content="http://example.com/2023/03/06/LLDB/index.html">
 <meta property="og:site_name" content="I&#39;m Amir">
+<meta property="og:description" content="LLDBhelp查看指令帮助  help image list help br help breakpoint set  打印p 和 po 的区别在于使用 po 只会输出对应的值，而 p 则会返回值的类型以及命令结果的引用名。  po:输出值 p：值类型+引用名+内存地址+输出值  另外  p:默认打印十进制 p&#x2F;x:转16进制 p&#x2F;o:转8进制 p&#x2F;t:转二进制 p">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/assets/16793061184903.jpg">
+<meta property="og:image" content="http://example.com/assets/16793063020367.jpg">
+<meta property="og:image" content="http://example.com/assets/16793063059466.jpg">
+<meta property="og:image" content="http://example.com/assets/16793064026740.jpg">
+<meta property="og:image" content="http://example.com/assets/16793064610109.jpg">
+<meta property="og:image" content="http://example.com/assets/16793065838440.jpg">
 <meta property="article:published_time" content="2023-03-06T13:41:07.000Z">
-<meta property="article:modified_time" content="2023-03-07T06:29:50.108Z">
+<meta property="article:modified_time" content="2023-03-20T10:06:43.993Z">
 <meta property="article:author" content="Amir">
 <meta property="article:tag" content="lldb">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/assets/16793061184903.jpg">
   
   
   
@@ -235,7 +244,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          777 字
         
       </span>
     
@@ -246,7 +255,7 @@
         
         
         
-          1 分钟
+          7 分钟
         
       </span>
     
@@ -297,7 +306,62 @@
             
               <div class="markdown-body">
                 
-                <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+                <h1 id="LLDB"><a href="#LLDB" class="headerlink" title="LLDB"></a>LLDB</h1><h2 id="help"><a href="#help" class="headerlink" title="help"></a>help</h2><p>查看指令帮助</p>
+<ul>
+<li>help image list</li>
+<li>help br</li>
+<li>help breakpoint set</li>
+</ul>
+<h2 id="打印"><a href="#打印" class="headerlink" title="打印"></a>打印</h2><p>p 和 po 的区别在于使用 po 只会输出对应的值，而 p 则会返回值的类型以及命令结果的引用名。</p>
+<ul>
+<li>po:输出值</li>
+<li>p：值类型+引用名+内存地址+输出值</li>
+</ul>
+<p>另外</p>
+<ul>
+<li>p:默认打印十进制</li>
+<li>p&#x2F;x:转16进制</li>
+<li>p&#x2F;o:转8进制</li>
+<li>p&#x2F;t:转二进制</li>
+<li>p&#x2F;d:字符转十进制数字</li>
+<li>p&#x2F;c:十进制数字转字符</li>
+</ul>
+<h2 id="expression修改参数值"><a href="#expression修改参数值" class="headerlink" title="expression修改参数值"></a>expression修改参数值</h2><p><img src="/assets/16793061184903.jpg" srcset="/img/loading.gif" lazyload><br>experssion xxx<br>p xxx</p>
+<h2 id="call方法调用"><a href="#call方法调用" class="headerlink" title="call方法调用"></a>call方法调用</h2><p>call方法，输出此方法的返回值</p>
+<h2 id="x打印"><a href="#x打印" class="headerlink" title="x打印"></a>x打印</h2><ul>
+<li>x obj : 表示以16进制打印obj地址，（iOS是小端模式，数据的高字节保存在内存的高地址中）</li>
+<li>x&#x2F;4gx obj:表示输出4个16进制的8字节地址空间</li>
+</ul>
+<p><img src="/assets/16793063020367.jpg" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/assets/16793063059466.jpg" srcset="/img/loading.gif" lazyload></p>
+<h2 id="image打印"><a href="#image打印" class="headerlink" title="image打印"></a>image打印</h2><ul>
+<li>image list: 查看项目中使用了哪些库</li>
+<li>image loopup –address+地址：该命令用来查找可执行文件或共享库的原始地址，当程序崩溃时，可以用这条命令查看崩溃的具体位置</li>
+</ul>
+<p><img src="/assets/16793064026740.jpg" srcset="/img/loading.gif" lazyload></p>
+<h2 id="查看线程和帧状态"><a href="#查看线程和帧状态" class="headerlink" title="查看线程和帧状态"></a>查看线程和帧状态</h2><ul>
+<li>thread list: 列出当前所有线程</li>
+<li>thread backtrace: 打印堆栈信息，简称 bt<br><img src="/assets/16793064610109.jpg" srcset="/img/loading.gif" lazyload><ul>
+<li>bt 5:添加输出条数限制</li>
+</ul>
+</li>
+<li>bt all：打印所有线程的堆栈信息</li>
+<li>thread return</li>
+<li>frame variable</li>
+</ul>
+<h2 id="内存操作"><a href="#内存操作" class="headerlink" title="内存操作"></a>内存操作</h2><ul>
+<li>memory read oxxxxxxx &#x2F;&#x2F; 读取内存值</li>
+<li>memory write oxxxxxxx &#x2F;&#x2F; 修改内存值</li>
+</ul>
+<h2 id="断点"><a href="#断点" class="headerlink" title="断点"></a>断点</h2><h2 id="查看寄存器地址"><a href="#查看寄存器地址" class="headerlink" title="查看寄存器地址"></a>查看寄存器地址</h2><ul>
+<li>register read：查看寄存器地址信息</li>
+<li>register read&#x2F;x:查看具体寄存器地址</li>
+</ul>
+<h2 id="methods命令可以打印当前对象的属性和方法"><a href="#methods命令可以打印当前对象的属性和方法" class="headerlink" title="methods命令可以打印当前对象的属性和方法"></a>methods命令可以打印当前对象的属性和方法</h2><p><img src="/assets/16793065838440.jpg" srcset="/img/loading.gif" lazyload></p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6869621360415637518#heading-8">iOS之LLDB常用命令</a><br><a target="_blank" rel="noopener" href="https://lldb.llvm.org/use/map.html">LLDB</a></p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7026524455598260261">debugserver+lldb 动态调试 iOS App</a></p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7150299501289275399#heading-5">Objective-C调试技巧——iOS开发者的Debug指南</a></p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
               </div>
             

@@ -4,9 +4,343 @@
   
   
   <entry>
-    <title>MVC</title>
-    <link href="/2023/03/11/MVC/"/>
-    <url>/2023/03/11/MVC/</url>
+    <title>AFNetworking</title>
+    <link href="/2023/03/21/AFNetworking/"/>
+    <url>/2023/03/21/AFNetworking/</url>
+    
+    <content type="html"><![CDATA[<p><a href="https://juejin.cn/post/6844903881139290119#heading-1">AFNetworking3.0后为什么不再需要常驻线程？</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>类的加载</title>
+    <link href="/2023/03/20/%E7%B1%BB%E7%9A%84%E5%8A%A0%E8%BD%BD/"/>
+    <url>/2023/03/20/%E7%B1%BB%E7%9A%84%E5%8A%A0%E8%BD%BD/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>OC</category>
+      
+      <category>底层原理</category>
+      
+      <category>加载</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>App启动过程</title>
+    <link href="/2023/03/20/App%E5%90%AF%E5%8A%A8%E8%BF%87%E7%A8%8B/"/>
+    <url>/2023/03/20/App%E5%90%AF%E5%8A%A8%E8%BF%87%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>OC</category>
+      
+      <category>底层原理</category>
+      
+      <category>加载</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>内存对齐</title>
+    <link href="/2023/03/20/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90/"/>
+    <url>/2023/03/20/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>OC</category>
+      
+      <category>底层原理</category>
+      
+      <category>对象</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>objc_msgSend</title>
+    <link href="/2023/03/20/objc-msgSend/"/>
+    <url>/2023/03/20/objc-msgSend/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>OC</category>
+      
+      <category>底层原理</category>
+      
+      <category>消息发送</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>类的结构</title>
+    <link href="/2023/03/20/%E7%B1%BB%E7%9A%84%E7%BB%93%E6%9E%84/"/>
+    <url>/2023/03/20/%E7%B1%BB%E7%9A%84%E7%BB%93%E6%9E%84/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>OC</category>
+      
+      <category>底层原理</category>
+      
+      <category>结构</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Swift底层</title>
+    <link href="/2023/03/20/Swift%E5%BA%95%E5%B1%82/"/>
+    <url>/2023/03/20/Swift%E5%BA%95%E5%B1%82/</url>
+    
+    <content type="html"><![CDATA[<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://juejin.cn/post/6914837339353120775">Swift底层探索系列</a><br><a href="https://juejin.cn/post/6921342398823923719">Swift底层探索之类、对象、属性</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>Swift</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>依赖注入和依赖注入容器</title>
+    <link href="/2023/03/20/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E5%92%8C%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E5%AE%B9%E5%99%A8/"/>
+    <url>/2023/03/20/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E5%92%8C%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%E5%AE%B9%E5%99%A8/</url>
+    
+    <content type="html"><![CDATA[<h1 id="依赖注入和依赖注入容器"><a href="#依赖注入和依赖注入容器" class="headerlink" title="依赖注入和依赖注入容器"></a>依赖注入和依赖注入容器</h1><p><a href="https://juejin.cn/post/7193220280993447992">依赖注入和依赖注入容器</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>架构</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>编译流程</title>
+    <link href="/2023/03/20/%E7%BC%96%E8%AF%91%E6%B5%81%E7%A8%8B/"/>
+    <url>/2023/03/20/%E7%BC%96%E8%AF%91%E6%B5%81%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[<h1 id="编译流程"><a href="#编译流程" class="headerlink" title="编译流程"></a>编译流程</h1><h2 id="LLVM"><a href="#LLVM" class="headerlink" title="LLVM"></a>LLVM</h2><ul><li>C++编写</li><li>用于优化任意程序语言编写的</li><li>进程包括<ul><li>编译时间</li><li>链接时间</li><li>运行时间</li><li>空闲时间</li></ul></li><li>对开发者开放</li><li>兼容脚本语言</li></ul><h3 id="LLVM架构"><a href="#LLVM架构" class="headerlink" title="LLVM架构"></a>LLVM架构</h3><p>传统编译器设计：</p><p>源码 -&gt; 前端 -&gt; 优化器 -&gt; 后端 -&gt; 机器码</p><ul><li>前端Fronted：（解析源代码）<ul><li>词法分析</li><li>语法分析</li><li>语义分析</li><li>检查源代码是否存在错误</li><li>构建抽象语法树 AST</li><li>生成中间代码IR</li><li>等同于LLVM的编译+优化，优化器接受IR，输出IR</li></ul></li><li>优化器Optimizer<ul><li>负责各种优化，改善代码的运行时间，例如消除冗余计算</li></ul></li><li>后端Backend（代码生成器 Code Generator）<ul><li>将代码映射到目标指令集 </li><li>生成机器代码</li><li>对机器代码相关代码优化</li></ul></li></ul><p>iOS的编译架构</p><p><img src="/assets/16792747795626.jpg"></p><p>LLVM的设计理念</p><ul><li>使用通用代码表示形式IR</li><li>LLVM可以为任何编程语言独立编写前端</li></ul><h3 id="Clang"><a href="#Clang" class="headerlink" title="Clang"></a>Clang</h3><ul><li>是LLVM项目的一个子项目</li><li>基于LLVM架构图的轻量级编译器</li><li>为了替代 GCC，提供了更快的编译速度</li><li>负责C、C++、OC语言的编译器</li><li>属于整个LLVM架构中的编译器前端</li></ul><h2 id="编译过程概述"><a href="#编译过程概述" class="headerlink" title="编译过程概述"></a>编译过程概述</h2><p>Xcode集成了编译链接过程（cmd+B）</p><p><img src="/assets/16792763884012.jpg"></p><ol><li>源文件<ol><li>载入.h,.m,.cpp等文件</li></ol></li><li>预处理<ol><li>处理“#”开头的预编译指令</li><li>伸出所有的#define，展开宏定义</li><li>处理条件预编译命令，例如#if</li><li>处理“#include”预编译指令，将被包含的文件插入到预编译指令的位置</li><li>删除所有的注释；展开头文件</li><li>添加行号和文件名标识，以便于编译时使用</li><li>保留所有的#pragma编译器指令，因为编译器需要使用它们</li><li>产生.i文件</li></ol></li><li>编译<ol><li>词法分析、语法分析、语义分析</li><li>优化</li><li>.i转换为汇编语言，产生.s文件</li></ol></li><li>汇编<ol><li>汇编转换机器码，产生.o文件</li><li>每个汇编几乎都对应一条机器指令，得到的就是二进制文件</li></ol></li><li>链接<ol><li>对.o文件中引用其他库的地方进行引用，生成最后可执行文件MachO文件</li><li>dyld进行动态链接和静态链接</li></ol></li></ol><h2 id="编译流程-1"><a href="#编译流程-1" class="headerlink" title="编译流程"></a>编译流程</h2><p>编译流程</p><p>命令</p><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">clang -ccc-print-phases main.m<br></code></pre></td></tr></table></figure><p>结果：<br><img src="/assets/16792773072205.jpg"></p><p>说明：</p><ol><li>查找文件</li><li>预处理</li><li>编译，生成中间代码</li><li>进入后代，生成汇编代码</li><li>汇编后生成目标文件</li><li>链接成镜像文件，将多个镜像文件进行链接整个Mach-O(此处是静态的，动态库是绑定)</li><li>转换成不同架构的镜像文件</li></ol><h3 id="预处理"><a href="#预处理" class="headerlink" title="预处理"></a>预处理</h3><p>命令</p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs"><br></code></pre></td></tr></table></figure><h3 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h3><h4 id="词法分析"><a href="#词法分析" class="headerlink" title="词法分析"></a>词法分析</h4><h4 id="语法分析"><a href="#语法分析" class="headerlink" title="语法分析"></a>语法分析</h4><h4 id="得到中间代码IR"><a href="#得到中间代码IR" class="headerlink" title="得到中间代码IR"></a>得到中间代码IR</h4><h3 id="生成汇编代码"><a href="#生成汇编代码" class="headerlink" title="生成汇编代码"></a>生成汇编代码</h3><p>命令</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">clang -S -fobjc-arc <span class="hljs-selector-tag">main</span><span class="hljs-selector-class">.ll</span> -o <span class="hljs-selector-tag">main</span>.s<br></code></pre></td></tr></table></figure><p>说明：<br>生成汇编代码也可以进行优化clang -Os -S -fobjc-arc main.m -o main.s</p><h3 id="汇编-（生成目标文件）"><a href="#汇编-（生成目标文件）" class="headerlink" title="汇编 （生成目标文件）"></a>汇编 （生成目标文件）</h3><p>命令：</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">clang -fmodules -c <span class="hljs-selector-tag">main</span><span class="hljs-selector-class">.s</span> -o <span class="hljs-selector-tag">main</span>.o<br></code></pre></td></tr></table></figure><p>说明：</p><ul><li>对汇编文件进行汇编操作就得到了目标文件(.o文件）</li><li>汇编器将汇编代码转换为机器代码，最后输出目标文件（object file）</li></ul><h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>命令：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">clang <span class="hljs-selector-tag">main</span><span class="hljs-selector-class">.o</span> -o <span class="hljs-selector-tag">main</span><br></code></pre></td></tr></table></figure><p>说明：</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="/assets/16792737989012.jpg"></p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://juejin.cn/post/7086634883954507807">编译流程认识</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>编译</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>OC内存分配</title>
+    <link href="/2023/03/19/oc%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D/"/>
+    <url>/2023/03/19/oc%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D/</url>
+    
+    <content type="html"><![CDATA[<h1 id="OC内存分配"><a href="#OC内存分配" class="headerlink" title="OC内存分配"></a>OC内存分配</h1><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs awk">- [ ] /**<br><br> 内存地址由低到高排序:<br> <br>  <span class="hljs-regexp">//</span> =============================<br>  <span class="hljs-regexp">//</span> 保留区<br>  <span class="hljs-regexp">//</span> =============================<br>  <span class="hljs-regexp">//</span> =============================<br>  <span class="hljs-regexp">//</span> 代码段<br>  * 编译后的代码<br>  <span class="hljs-regexp">//</span> =============================<br> &amp;str = <span class="hljs-number">0</span>x102036020 <span class="hljs-regexp">//</span>字符串常量<br>  <span class="hljs-regexp">//</span> =============================<br>  <span class="hljs-regexp">//</span> 数据段<br> &amp;a = <span class="hljs-number">0</span>x1020384a0 <span class="hljs-regexp">//</span>已初始化全局变量<br> &amp;b = <span class="hljs-number">0</span>x1020384a4 <span class="hljs-regexp">//</span>已初始化静态变量<br> &amp;d = <span class="hljs-number">0</span>x102038628 <span class="hljs-regexp">//</span>未初始化静态变量<br> &amp;c = <span class="hljs-number">0</span>x10203862c <span class="hljs-regexp">//</span>未初始化全局变量<br> <span class="hljs-regexp">//</span> =============================<br> <span class="hljs-regexp">//</span> 堆区 通过alloc，malloc，calloc等动态分配的空间，<br> <span class="hljs-regexp">//</span> 分配的内存空间地址越来越大<br> &amp;obj = <span class="hljs-number">0</span>x600000576010 <span class="hljs-regexp">//</span>堆区 alloc init 出来的对象<br> <span class="hljs-regexp">//</span> ============================= <br> <span class="hljs-regexp">//</span> 栈区<br> <span class="hljs-regexp">//</span> 函数调用开销，比如局部变量<br> <span class="hljs-regexp">//</span> 分配的内存空间地址越来越小<br> &amp;g = <span class="hljs-number">0</span>x7ffeedbc9124 <span class="hljs-regexp">//</span>栈区 局部变量 函数调用开销<br> &amp;f = <span class="hljs-number">0</span>x7ffeedbc9128<br> &amp;e = <span class="hljs-number">0</span>x7ffeedbc912c <span class="hljs-regexp">//</span>先分配的 e ,地址最大<br>  <span class="hljs-regexp">//</span> =============================<br> */<br></code></pre></td></tr></table></figure><p><img src="/assets/16792143042097.jpg"></p><p>另外</p><h2 id="类对象，元类对象"><a href="#类对象，元类对象" class="headerlink" title="类对象，元类对象"></a>类对象，元类对象</h2><p>在数据段</p><h2 id="Tagged-Pointer"><a href="#Tagged-Pointer" class="headerlink" title="Tagged Pointer"></a>Tagged Pointer</h2><p><a href="https://www.jianshu.com/p/b3f2d5fec7b3">https://www.jianshu.com/p/b3f2d5fec7b3</a></p><p><a href="https://juejin.cn/post/6844904100614799374">内存管理系列—从C语言看OC的内存布局</a><br><a href="https://www.jianshu.com/p/6aa4bb084e3c">Objective-C类和对象的内存分布</a></p><p><a href="http://cn.voidcc.com/question/p-nasogfav-yb.html">为什么Objective-C中的id类型省略了星号？</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>OC</category>
+      
+      <category>内存管理相关</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Core Text</title>
+    <link href="/2023/03/19/Core-Text/"/>
+    <url>/2023/03/19/Core-Text/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Core-Text"><a href="#Core-Text" class="headerlink" title="Core Text"></a>Core Text</h1><p>创建文本布局、优化字体处理并访问字体规格和字形数据。</p><h2 id="Opaque-Types"><a href="#Opaque-Types" class="headerlink" title="Opaque Types"></a>Opaque Types</h2><ul><li>CTFont</li><li>CTFontCollection</li><li>CGFontDescriptoro</li><li>CTFrame</li><li>CTFramesetter</li><li>CTGlyphInfo</li><li>CTLine</li><li>CTParagraphStyle</li><li>CTRun</li><li>CTRunDelegate</li><li>CTTextTab</li><li>CTTypesetter</li></ul><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://developer.apple.com/documentation/coretext#">Core Text</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>框架</category>
+      
+      <category>Core Services</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Quartz 2D</title>
+    <link href="/2023/03/19/Quartz-2D/"/>
+    <url>/2023/03/19/Quartz-2D/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Quartz-2D"><a href="#Quartz-2D" class="headerlink" title="Quartz 2D"></a>Quartz 2D</h1><p>Core Graphics，也称为 Quartz 2D，是一种先进的二维绘图引擎，可用于 iOS、tvOS 和 macOS 应用程序开发。 Quartz 2D 提供低级、轻量级的 2D 渲染，无论显示或打印设备如何，都具有无与伦比的输出保真度。 Quartz 2D 与分辨率和设备无关。</p><p>Quartz 2D API 易于使用，并提供对强大功能的访问，例如透明图层、基于路径的绘图、离屏渲染、高级色彩管理、抗锯齿渲染以及 PDF 文档创建、显示和解析。</p><p><a href="https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007533-SW1">Quartz 2D Programming Guide</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>框架</category>
+      
+      <category>Media Layer</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>QuartzCore</title>
+    <link href="/2023/03/18/QuartzCore/"/>
+    <url>/2023/03/18/QuartzCore/</url>
+    
+    <content type="html"><![CDATA[<h1 id="QuartzCore"><a href="#QuartzCore" class="headerlink" title="QuartzCore"></a>QuartzCore</h1><p>允许用户使用幻灯片和 Core Image 过滤器浏览、编辑和保存图像。</p><h2 id="Viewing-and-Transforming-Images"><a href="#Viewing-and-Transforming-Images" class="headerlink" title="Viewing and Transforming Images"></a>Viewing and Transforming Images</h2><ul><li>ImageKit</li></ul><h2 id="Displaying-PDFs"><a href="#Displaying-PDFs" class="headerlink" title="Displaying PDFs"></a>Displaying PDFs</h2><ul><li>PDFKit</li></ul><h2 id="Quartz-Composer"><a href="#Quartz-Composer" class="headerlink" title="Quartz Composer"></a>Quartz Composer</h2><ul><li>Quartz Composer</li></ul><h2 id="Using-Quick-Look"><a href="#Using-Quick-Look" class="headerlink" title="Using Quick Look"></a>Using Quick Look</h2><ul><li>Quick Look</li></ul><h2 id="Conversion-Filters"><a href="#Conversion-Filters" class="headerlink" title="Conversion Filters"></a>Conversion Filters</h2><ul><li>Quartz Filter</li></ul><h2 id="Constants"><a href="#Constants" class="headerlink" title="Constants"></a>Constants</h2><ul><li>Quartz Constants</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>框架</category>
+      
+      <category>Media Layer</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>UIKit</title>
+    <link href="/2023/03/18/UIKit/"/>
+    <url>/2023/03/18/UIKit/</url>
+    
+    <content type="html"><![CDATA[<h1 id="UIKit"><a href="#UIKit" class="headerlink" title="UIKit"></a>UIKit</h1><h2 id="Essentials-要点"><a href="#Essentials-要点" class="headerlink" title="Essentials 要点"></a>Essentials 要点</h2><ul><li>About App Development with UIKit (了解 UIKit 和 Xcode 为您的 iOS 和 tvOS 应用程序提供的基本支持。)</li><li>Protecting the User’s Privacy (保护个人数据，并尊重用户对数据使用方式的偏好。)</li></ul><h2 id="App-Structure-应用结构"><a href="#App-Structure-应用结构" class="headerlink" title="App Structure 应用结构"></a>App Structure 应用结构</h2><ul><li>App and Environment 应用程序和环境（管理生命周期事件和应用程序的 UI 场景，并获取有关特征和应用程序运行环境的信息。）<ul><li>Life Cycle 生命周期</li><li>Device Environment 设备环境</li><li>Adaptivity 适应性</li><li>Guided Access 引导访问</li><li>Architecture 建筑学</li></ul></li><li>Documents, Data, and Pasteboard 文档、数据和粘贴板（组织您的应用数据并在粘贴板上共享该数据。）<ul><li>Documents 文档</li><li>Data Management 数据管理</li><li>Pasteboard 粘贴板</li></ul></li><li>Resource Management (管理用于实现应用程序界面的图像、字符串、故事板和 nib 文件。)<ul><li>Storyboards</li><li>Assets</li><li>Nib Files</li></ul></li><li>App Extensions（将应用程序的基本功能扩展到系统的其他部分。）<ul><li>Extension Support 拓展支持</li><li>Document Provider 文档提供者</li><li>Custom Keyboard 自定义键盘</li></ul></li><li>Interprocess Communication 进程间通信（向用户显示基于活动的服务。）<ul><li>User Activities 用户活动</li><li>Services 服务</li></ul></li><li>Mac Catalyst （创建一个用户可以在 Mac 设备上运行的 iPad 应用程序版本。）<ul><li>Essentials 概要<ul><li>Creating a Mac Version of Your iPad App</li></ul></li><li>App Support 应用程序支持</li><li>User Interface 用户界面</li><li>User Interactions 用户交互</li><li>User Preferences 用户偏好</li><li>Tooltips 工具提示</li></ul></li></ul><h2 id="User-Interactions-用户交互"><a href="#User-Interactions-用户交互" class="headerlink" title="User Interactions 用户交互"></a>User Interactions 用户交互</h2><p>响应器和手势识别器可帮助您处理触摸和其他事件。 拖放、聚焦、查看和弹出以及辅助功能处理其他用户交互。</p><ul><li>Touches, Presses, and Gestures （将应用程序的事件处理逻辑封装在手势识别器中，以便您可以在整个应用程序中重复使用该代码。）<ul><li>First Steps</li><li>Touches 触摸</li><li>Button Presses 按压</li><li>Standard Gestures 标准手势</li><li>Custom Gestures 自动以手势</li><li>3D Touch Interactions 3D触摸手势</li></ul></li><li>Drag and Drop （通过将交互 API 与您的视图结合使用，将拖放功能引入您的应用程序。）<ul><li>First Steps</li><li>Drap-and-Drop Interactions 拖放交互</li><li>Spring-Loaded Interactions 弹簧加载交互</li><li>Drag Sources 拖动源</li><li>Drop Destinations 放置目的地</li><li>Item Providers 项目提供着</li><li>Pasteboard Support 粘贴板支持</li><li>Custom Drag Item Previews 自定义拖动项目预览</li></ul></li><li>Pointer Interactions (支持自定义控件和视图中的指针交互。)<ul><li>Essentials 概要</li><li>Interaction Animations 交互动画</li><li>Pointer Style 指针样式</li><li>Pointer Region 指针区域</li><li>Lock State 锁定状态</li><li>Band Selection 波段选择</li></ul></li><li>Pencil Interactions (处理 Apple Pencil 上的双击用户交互。)<ul><li>First Steps</li><li>Interactions 互动</li></ul></li><li>Focus-Based Navigation （使用遥控器、游戏控制器或键盘在 UIKit 应用程序的界面中导航。）<ul><li>Focus Interactions 焦点互动</li><li>Focus Guides 焦点指南</li><li>Debugging Support 调试支持</li><li>Animations 动画</li><li>Focus Effects 焦点效果</li></ul></li><li>Menus and Shortcuts （使用菜单系统、上下文菜单、主屏幕快速操作和键盘快捷键简化与应用程序的交互。）<ul><li>Inline Edit Menus 内联编辑菜单</li><li>Contextual Menus 上下文菜单</li><li>Menu Elements and Keyboard Shortcuts 菜单元素和键盘快捷键</li><li>Home Screen Quick Actions 主屏幕快速操作</li></ul></li><li>Accessibility For UIKit （让所有使用 iOS 和 tvOS 的人都可以访问您的 UIKit 应用程序。）</li></ul><h2 id="User-Interface-用户界面"><a href="#User-Interface-用户界面" class="headerlink" title="User Interface 用户界面"></a>User Interface 用户界面</h2><p>视图帮助您在屏幕上显示内容并促进用户交互； 视图控制器帮助您管理视图和界面结构。</p><ul><li>Views and Controls （在屏幕上展示您的内容并定义允许与该内容进行的交互。）<ul><li>View Foundamentals <ul><li>UIView</li><li>UIKit Catalog: Creating and Customizing Views and Controls</li><li>Conllection Views</li><li>Layouts</li><li>Table Views</li></ul></li><li>Container Views 容器视图</li><li>Content Views </li><li>Controls 控制控件</li><li>Text Views 文本视图</li><li>Search Field 搜索框</li><li>Visual Effects 视觉效果</li><li>Bars 栏</li><li>Content Viewer 内容查看器</li><li>Related Types 相关类型</li><li>Private Click Measurement(PCM) 私有点击量</li></ul></li><li>View Controllers （使用视图控制器管理您的界面，并促进围绕您的应用程序内容的导航。）<ul><li>Essentails 概要</li><li>Content View Controller 内容视图控制器</li><li>Container View Controller 容器视图控制器</li><li>Proosentation Management 提案管理</li><li>Search Interface 搜索界面</li><li>Images and Video 图片和视频</li><li>Documents  and Directories 文件和目录</li><li>iCloud Sharing iCloud共享</li><li>Activities Interface 活动界面</li><li>Font Picker 字体选择器</li><li>Color Picker 选色器</li><li>Word Lookup 字查询</li><li>Printer Picker 打印机选择器</li><li>Interface Orientation 界面方向</li><li>Interface Restoration 界面还原</li></ul></li><li>View Layout （使用堆栈视图自动布置界面视图。 当您需要精确放置视图时，请使用自动布局。）<ul><li>First Steps<ul><li>UIStackView (用于在列或行中布置视图集合的流线型界面。)</li></ul></li><li>Constrains</li><li>Layout Guides</li><li>Anchors</li></ul></li><li>Appearance Customization （为您的应用程序添加深色模式支持，自定义栏的外观，并使用外观代理来修改您的 UI。）<ul><li>Dark Mode 深色模式</li><li>Navigation Bar Appearance 导航栏外观</li><li>Toolbar Appearance 工具栏外观</li><li>Tab Bar Appearance 标签栏外观</li><li>Shared Appearance 共享外观</li><li>Appearance Proxies 外观代理</li></ul></li><li>Animation and Haptics （使用基于视图的动画和触觉向用户提供反馈。）<ul><li>Property-Based Animation 基于属性的动画</li><li>View Controller Transitions 控制器转换</li><li>Content Animations 内容动画</li><li>Haptic Feedback 触觉反馈</li></ul></li><li>Windows and Screens （为您的视图层次结构和其他内容提供一个容器。）<ul><li>Windows</li><li>Popovers </li><li>Alerts</li><li>Screens</li></ul></li></ul><h2 id="Graphics-Drawing-and-Printing-图形、绘图和打印"><a href="#Graphics-Drawing-and-Printing-图形、绘图和打印" class="headerlink" title="Graphics, Drawing, and Printing 图形、绘图和打印"></a>Graphics, Drawing, and Printing 图形、绘图和打印</h2><p>UIKit 提供的类和协议可帮助您配置绘图环境和呈现内容。</p><ul><li>Images and PDF （创建和管理图像，包括那些使用位图和 PDF 格式的图像。）<ul><li>Representations 交互</li><li>Image Creation 图像创作</li><li>Photo Album 相片集</li><li>PDF Creation PDF创建</li><li>PDF ScreenShots PDF截图</li></ul></li><li>Drawing （使用颜色、渲染器、绘制路径、字符串和阴影配置应用程序的绘图环境。）<ul><li>Color</li><li>Drawing Contexts 绘制上下文</li><li>Paths 路径</li><li>Strings UITextAttributeFont</li><li>Shadows 阴影</li><li>Drawing Context Primitives 绘制上下文原语</li><li>Primitive Type Conversions 原始类型转换</li></ul></li><li>Printing （显示系统打印面板并管理打印过程。）<ul><li>Print Panels</li><li>Renderer</li><li>Job Info</li><li>Formatters</li><li>Printer Service Discovery</li><li>Keyboard Shortcut</li></ul></li></ul><h2 id="Text-文本"><a href="#Text-文本" class="headerlink" title="Text 文本"></a>Text 文本</h2><p>除了简化应用程序中显示文本的文本视图之外，UIKit 还提供支持系统键盘的自定义文本管理和呈现。</p><ul><li>Text Display and Fonts （显示文本、管理字体和检查拼写。）<ul><li>Text Views</li><li>Text Formatting</li><li>Fonts</li><li>Font Picker</li><li>Spell Checking</li><li>Text Manipulations</li><li>Metrics</li></ul></li><li>TextKit （管理文本存储并在您的应用程序视图中执行基于文本的内容的自定义布局。）<ul><li>Data</li><li>Data Management</li><li>Layout</li><li>Text</li><li>Formatted Content</li><li>Attachments</li></ul></li><li>Keyboards and Input （配置系统键盘，创建您自己的键盘来处理输入，或检测物理键盘上的按键。）<ul><li>Text Input</li><li>Text Tokenizer</li><li>Text Interactions</li><li>Keyboard Layout</li><li>Custom Keyboards</li><li>Physical Keyboards</li></ul></li><li>Handwriting Recognition （配置接受文本的文本字段和自定义视图以处理来自 Apple Pencil 的输入。）</li></ul><h2 id="Deprecated-弃用"><a href="#Deprecated-弃用" class="headerlink" title="Deprecated 弃用"></a>Deprecated 弃用</h2><h2 id="Classess-课程"><a href="#Classess-课程" class="headerlink" title="Classess 课程"></a>Classess 课程</h2><p>UICellAccessoryDetail</p><h2 id="Reference-参考"><a href="#Reference-参考" class="headerlink" title="Reference 参考"></a>Reference 参考</h2><ul><li>UIKit COnstants</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>框架</category>
+      
+      <category>Cocoa Touch</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>CFNetwork</title>
+    <link href="/2023/03/18/CFNetwork/"/>
+    <url>/2023/03/18/CFNetwork/</url>
     
     <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
@@ -17,7 +351,501 @@
       
       <category>进阶</category>
       
-      <category>软件构件模式</category>
+      <category>框架</category>
+      
+      <category>Core Services</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Dispatch</title>
+    <link href="/2023/03/18/Dispatch/"/>
+    <url>/2023/03/18/Dispatch/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Dispatch"><a href="#Dispatch" class="headerlink" title="Dispatch"></a>Dispatch</h1><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://opensource.apple.com/source/libdispatch/">libdispatch源码</a></p><p><a href="https://github.com/apple-oss-distributions/libdispatch/tags">apple-oss-distributions&#x2F;libdispatch</a></p><p><a href="https://developer.apple.com/documentation/dispatch">Dispatch</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>框架</category>
+      
+      <category>Core Services</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>CoreFoundation</title>
+    <link href="/2023/03/18/CoreFoundation/"/>
+    <url>/2023/03/18/CoreFoundation/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Core-Foundation"><a href="#Core-Foundation" class="headerlink" title="Core Foundation"></a>Core Foundation</h1><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>框架</category>
+      
+      <category>Core Services</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Foundation</title>
+    <link href="/2023/03/18/Foundation/"/>
+    <url>/2023/03/18/Foundation/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Foundation"><a href="#Foundation" class="headerlink" title="Foundation"></a>Foundation</h1><h2 id="Fundamentals-基础知识"><a href="#Fundamentals-基础知识" class="headerlink" title="Fundamentals 基础知识"></a>Fundamentals 基础知识</h2><ul><li>Numbers, Data, and Basic Values(使用 Cocoa 中使用的原始值和其他基本类型。)<ul><li>Numbers<ul><li>NSInteger</li><li>NSUInteger</li><li>NSDecimal</li><li>NSDecimalNumber</li><li>NSNumberFormatter</li></ul></li><li>Binary Data<ul><li>NSData</li><li>NSMutableData</li></ul></li><li>URLs<ul><li>NSURL</li><li>NSURLComponents</li><li>NSURLQueryItem</li></ul></li><li>Unique Identifiers<ul><li>NSUUID</li></ul></li><li>Geometry<ul><li>CGFloat</li><li>NSPoint</li><li>NSSize</li><li>NSRect</li><li>NSAffineTransform</li><li>NSEdeInsets</li></ul></li><li>Ranges<ul><li>NSRange</li></ul></li></ul></li><li>String and Text<ul><li>创建和处理 Unicode 字符串，使用正则表达式查找模式，并对文本执行自然语言分析。</li><li>Strings</li><li>Strings with Metadata</li><li>Characters</li><li>Pattern Matching</li><li>Spelling and Grammer</li><li>Localization</li><li>Deprecated</li></ul></li><li>Collections<ul><li>使用数组、字典、集合和专门的集合来存储和迭代对象或值组。</li><li>Basic Collections</li><li>Indexes</li><li>Specialized Sets</li><li>Purgeable Collections</li><li>Pointer Collections</li><li>Iteration</li><li>Special Semantic Values</li></ul></li><li>Dates and Times<ul><li>比较日期和时间，并执行日历和时区计算。</li><li>Date Representations 日期表示</li><li>Calendrical Calculations 日历计算</li><li>NSCalendar 日历</li><li>NSTimeZone 时区</li><li>Date Formatting 日期格式</li><li>Internationalization 国际化</li><li>Deprecated</li></ul></li><li>Units and Measurement 单位和测量<ul><li>使用物理尺寸标记数字数量，以允许相关单位之间的区域设置感知格式和转换。</li><li>Essentials 必需品</li><li>Conversion 转换</li><li>Phyysical Dimension 物理尺寸</li><li>Mass,Weight,and Force 质量、重量和力</li><li>Time and Motion 时间和运动</li><li>Energy,Heat,and Light 能量、热能和光能</li><li>Electricity 电</li><li>Concetration and Dispersion 集中与分散</li><li>Fuel Efficiency 燃油效率</li><li>Data Storage 数据存储</li></ul></li><li>Data Formatting<ul><li>将数字、日期、度量和其他值与区域设置感知字符串表示形式相互转换。</li><li>Numbers and Currency</li><li>Names</li><li>Dates and Times</li><li>Data Sizes</li><li>Measurements</li><li>Lists</li><li>Internationalization</li><li>Custom Formatters</li><li>Automatic Grammar Agreement</li><li>Deprecated</li></ul></li><li>Filters and Sorting<ul><li>使用谓词、表达式和排序描述符来检查集合和其他服务中的元素。</li><li>Fittering</li><li>Sorting</li></ul></li></ul><h2 id="App-Support-app支持"><a href="#App-Support-app支持" class="headerlink" title="App Support app支持"></a>App Support app支持</h2><ul><li>Task Management<ul><li>管理您的应用程序的工作以及它如何与 Handoff 和 Shortcuts 等系统服务交互。</li><li>Undo 撤销</li><li>Progress 进度</li><li>Operations 操作</li><li>Scheduling 调度</li><li>Activity Sharing 活动分享</li><li>System Interaction 系统交互</li><li>User Notifications 用户通知</li></ul></li><li>Resources<ul><li>访问与您的应用捆绑在一起的资产和其他数据。</li><li>Bundle Resources<ul><li>NSBundle</li></ul></li><li>On-Demand Resources<ul><li>NSBundleResourceRequest</li></ul></li></ul></li><li>Notifications (广播信息和订阅广播的设计模式。) KVO,KVC<ul><li>Api</li><li>Notifications</li><li>Coress-Process Notification</li></ul></li><li>App Extension Support<ul><li>管理应用程序扩展与其托管应用程序之间的交互。</li><li>Extension Support 扩展支持</li><li>Share Extensions 共享支持</li><li>Attachments 附件</li><li>Host App Interaction 主机应用交互</li></ul></li><li>Errors and Exceptions<ul><li>响应与 API 交互中的问题情况，并微调您的应用程序以更好地调试。</li><li>User-Relevant Errors 与用户相关的错误</li><li>Assertions 断言</li><li>Exceptions 例外</li><li>Diagnostics and Debugging 诊断和调试</li></ul></li><li>Scripting Support *<ul><li>允许用户使用 AppleScript 和其他自动化技术控制您的应用程序，或从您的应用程序中运行脚本。</li><li>Script Execution 脚本执行</li><li>Apple Event Handling 苹果事件处理</li><li>Script Commands 脚本命令</li><li>Object Specifiers 对象说明符</li><li>Script Dictionary Description 脚本字典说明</li><li>Object Matching Tests 对象匹配测试</li><li>NSObject Script Support 脚本支持</li></ul></li></ul><h2 id="Files-and-Data-Persistence-文件和数据持久化"><a href="#Files-and-Data-Persistence-文件和数据持久化" class="headerlink" title="Files and Data Persistence 文件和数据持久化"></a>Files and Data Persistence 文件和数据持久化</h2><ul><li>File System<ul><li>创建、读取、写入和检查文件系统中的文件和文件夹。</li><li>File Systme Operations 文件系统操作</li><li>Managed File Access 托管文件访问</li><li>Shared Files 共享文件</li></ul></li><li>Archives and Serialization （将对象和值与属性列表、JSON 和其他平面二进制表示形式相互转换。）<ul><li>Adopting Codabilitty 采用可编程性</li><li>JSON</li><li>Property Lists 财产清单</li><li>Keyed Archivers 键控存档器</li><li>Deprecated 弃用</li></ul></li><li>Preferencess<ul><li>持久存储域范围内的信息片段以配置您的应用程序。</li><li>App-Specific Data</li><li>Shared Data</li></ul></li><li>Spotlight<ul><li>在本地设备上搜索文件和其他项目，并为您的应用程序内容编制索引以供搜索。</li><li>Queries</li><li>Items</li></ul></li><li>iCloud<ul><li>管理在用户的 iCloud 设备之间自动同步的文件和键值数据。</li><li>iCloud Storage</li><li>App Preferences</li><li>File Search</li><li>Entitlements</li></ul></li><li>Optimizing App Data For iCloud Backup<ul><li>最大限度地减少 iCloud 备份对您的应用程序数据所需的空间和时间。</li></ul></li></ul><h2 id="Networking-网络"><a href="#Networking-网络" class="headerlink" title="Networking 网络"></a>Networking 网络</h2><ul><li>URL Loading System<ul><li>使用标准 Internet 协议与 URL 交互并与服务器通信。</li><li>Essentials 要点</li><li>Requests and Responses 请求和响应</li><li>Uploading 上传</li><li>Downloading 下载</li><li>Cache Behavior 缓存行为</li><li>Authentication and Credentials 身份验证和凭证</li><li>NetworkActivity Attribution 网络活动归因</li><li>Cookies</li><li>Errors 错误</li></ul></li><li>Bonjour<ul><li>发布服务以便在本地网络上轻松发现，或发现其他人发布的服务。</li><li>Local Network services 本地网络服务</li><li>Service Discovery 服务发现</li></ul></li></ul><h2 id="Low-Level-Utilities-底层支持"><a href="#Low-Level-Utilities-底层支持" class="headerlink" title="Low-Level Utilities 底层支持"></a>Low-Level Utilities 底层支持</h2><ul><li>XPC （管理安全的进程间通信。）<ul><li>XPC Client</li><li>XPC Services</li></ul></li><li>Objc Runtime （获得对基本 Objective-C 功能、Cocoa 设计模式和 Swift 集成的底层支持。） <ul><li>Object Basics 对象基础</li><li>Copying 复制</li><li>Value Wrappers and Transformations 价值包装和转换</li><li>Invocations 调用</li><li>Remote Objects 远程对象<ul><li>NSProxy(为充当其他对象或尚不存在的对象的替代对象的对象定义 API 的抽象超类。) 虚类</li></ul></li><li>Memory Management 内存管理<ul><li>NSAutoreleasePool 自动释放池</li><li>Memory Manaement Functions 内存管理功能</li><li>Foundation Framework Version Numbers </li><li>Distributed Objects Support 分布式对象支持</li><li>Java Support</li><li>Objective-C Garbage Collection oc垃圾回收</li></ul></li><li>Legacy 遗产<ul><li>NSZone 一种用于识别和管理内存区域的类型。</li></ul></li></ul></li><li>Prrocesses and Threads(管理您的应用程序与主机操作系统和其他进程的交互，并实现低级并发功能。)<ul><li>Run Loop Scheduling 运行循环调度<ul><li>NSRunLoop<ul><li>Accessing Run Loops and Modes 访问runloop和模式</li><li>Managing Timers 管理定时器</li><li>Managing Ports 管理端口</li><li>Configuring as Server Process 配置为服务器进程</li><li>Running a Loop 运行runloop</li><li>Scheduing and Canceling Tasks 安排和取消任务</li></ul></li><li>NSTimer<ul><li>Creating a Timer 创建定时器</li><li>Firing a Timer 触发定时器</li><li>Stopping a Timer 停止定时器</li><li>Retrieving Timer Information 检索定时器信息</li><li>Configuring Firing Tolerance 配置定时时差</li></ul></li></ul></li><li>Process Info 进程信息<ul><li>NSProcessInfo</li></ul></li><li>Threads and Locking 线程和锁<ul><li>NSTread</li><li>NSLocking</li><li>NSLock</li><li>NSRecursiveLock 递归锁</li><li>NSDistributedLock 分布式锁</li><li>NSConditionLock 条件锁</li><li>NSCondition 条件</li></ul></li><li>Operations 操作<ul><li>NSOperationQueue</li><li>NSOperation</li><li>NSBlockOperation</li><li>NSInvocationOperation</li></ul></li><li>Scripts and External Tasks 脚本和外部任务<ul><li>NSTask</li><li>NSUserScriptTask</li><li>NSUserAppleScriptTask</li><li>NSUserAutomatorTask</li><li>NSUserUnixTask</li></ul></li></ul></li><li>Streams, Sockets, and Ports <ul><li>使用底层 Unix 功能来管理文件、进程和网络之间的输入和输出。</li><li>Streams</li><li>Tasks and Pipes 任务和管道</li><li>Sockets 套接字<ul><li>NSPort 端口</li><li>NSSocketPort socket端口</li><li>Byte Order Utilities 字节顺序使用程序</li></ul></li></ul></li></ul><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://cloud.tencent.com/developer/article/1332228">iOS引用转换：Foundation与Core Foundation对象互相转换（__CFString转NSString，void *转id等等）</a><br><a href="https://github.com/apple-oss-distributions/">Apple OSS Distributions</a><br><a href="https://github.com/apple-oss-distributions/objc4/tags">objc4</a><br><a href="https://github.com/cimain/CoreFoudation">CoreFoundation</a><br><a href="https://github.com/apple-oss-distributions/CF/tags">CF</a><br><a href="https://github.com/cimain/runtime">runtime</a><br><a href="https://developer.apple.com/documentation/foundation">Foundation</a><br><a href="https://blog.csdn.net/sinat_27706697/article/details/45361847">IOS-Foundation-runtime基本介绍</a><br><a href="https://edu.csdn.net/lecturer/1899">https://edu.csdn.net/lecturer/1899</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>框架</category>
+      
+      <category>Core Services</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Swift多线程</title>
+    <link href="/2023/03/17/Swift%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    <url>/2023/03/17/Swift%E5%A4%9A%E7%BA%BF%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[<h1 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h1><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://juejin.cn/post/7076733264798416926">Swift 新并发框架之 async&#x2F;await</a><br><a href="https://juejin.cn/post/7076738494869012494">Swift 新并发框架之 actor</a><br><a href="https://juejin.cn/post/7076741945820872717">Swift 新并发框架之 Sendable</a><br><a href="https://juejin.cn/post/7084640887250092062/">Swift 新并发框架之 Task</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>Swift</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>协程</title>
+    <link href="/2023/03/17/%E5%8D%8F%E7%A8%8B/"/>
+    <url>/2023/03/17/%E5%8D%8F%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[<h2 id="ucontext"><a href="#ucontext" class="headerlink" title="ucontext"></a>ucontext</h2><p><a href="https://blog.csdn.net/qq910894904/article/details/41911175">ucontext-人人都可以实现的简单协程库</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>基础</category>
+      
+      <category>多线程</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>App多线程优化</title>
+    <link href="/2023/03/17/App%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%BC%98%E5%8C%96/"/>
+    <url>/2023/03/17/App%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%BC%98%E5%8C%96/</url>
+    
+    <content type="html"><![CDATA[<h2 id="多线程引发的问题"><a href="#多线程引发的问题" class="headerlink" title="多线程引发的问题"></a>多线程引发的问题</h2><ul><li>野指针问题</li><li>引发容器类崩溃问题</li><li>引发过度释放问题</li></ul><p>隐患</p><h3 id="基于Block回调的异步编程缺点"><a href="#基于Block回调的异步编程缺点" class="headerlink" title="基于Block回调的异步编程缺点"></a>基于Block回调的异步编程缺点</h3><ul><li>容易多层嵌套</li><li>错误处理复杂和冗长</li><li>容易忘记调用completion handler</li><li>条件执行变得困难</li><li>从相互独立的调用中组合返回结果变得及其困难</li><li>在错误的线程中继续执行（如子线程操作UI）</li></ul><h2 id="协程"><a href="#协程" class="headerlink" title="协程"></a>协程</h2><blockquote><p>协程是一种在非抢占式多任务场景下生成可以在特定位置挂起和恢复执行入口的程序组件。</p></blockquote><p>特征：</p><ul><li>非抢占式<ul><li>无需系统调用</li><li>协程调度是线程安全，无需锁</li></ul></li><li>挂起执行<ul><li>保存寄存器和栈</li><li>不影响其他协程执行</li></ul></li><li>恢复执行<ul><li>恢复之前的寄存器和栈</li><li>无缝切换之前的执行逻辑</li></ul></li></ul><p><a href="https://github.com/alibaba/coobjc">阿里巴巴coobjc方案</a></p><p><img src="/assets/16790584990831.jpg"></p><p>Generator</p><p>Actor</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/qq910894904/article/details/41911175">ucontext-人人都可以实现的简单协程库</a><br><a href="https://zhuanlan.zhihu.com/p/67671354">基于协程的编程方式在移动端研发的思考及最佳实践</a><br><a href="http://kyson.cn/index.php/archives/6/">阿里开源 iOS 协程开发框架 coobjc源码分析</a><br><a href="https://mp.weixin.qq.com/s/hXmkd0TqTrCD-4kYlZcqvQ">刚刚，阿里开源 iOS 协程开发框架 coobjc！</a></p><p><a href="https://xie.infoq.cn/article/4f9cd8d17cc80abfa87fb4370">并发编程如何才能不再头疼：iOS 中的协程</a><br><a href="https://www.jianshu.com/p/3be1b2623947">iOS并发之协程</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>优化</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>npm</title>
+    <link href="/2023/03/16/npm-1/"/>
+    <url>/2023/03/16/npm-1/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>webpack</title>
+    <link href="/2023/03/16/webpack/"/>
+    <url>/2023/03/16/webpack/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>跨平台</category>
+      
+      <category>大前端</category>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>ES6</title>
+    <link href="/2023/03/16/ES6/"/>
+    <url>/2023/03/16/ES6/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>跨平台</category>
+      
+      <category>大前端</category>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>DOM</title>
+    <link href="/2023/03/16/DOM/"/>
+    <url>/2023/03/16/DOM/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>跨平台</category>
+      
+      <category>大前端</category>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>node.js</title>
+    <link href="/2023/03/16/node-js/"/>
+    <url>/2023/03/16/node-js/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>服务端</category>
+      
+      <category>Node.js</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Html5</title>
+    <link href="/2023/03/16/Html5/"/>
+    <url>/2023/03/16/Html5/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>跨平台</category>
+      
+      <category>大前端</category>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Css</title>
+    <link href="/2023/03/16/Css/"/>
+    <url>/2023/03/16/Css/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>跨平台</category>
+      
+      <category>大前端</category>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>JavaScript</title>
+    <link href="/2023/03/16/JavaScript/"/>
+    <url>/2023/03/16/JavaScript/</url>
+    
+    <content type="html"><![CDATA[<h2 id="JS基础"><a href="#JS基础" class="headerlink" title="JS基础"></a>JS基础</h2><p>语法</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>跨平台</category>
+      
+      <category>大前端</category>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Redux</title>
+    <link href="/2023/03/16/Redux/"/>
+    <url>/2023/03/16/Redux/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>跨平台</category>
+      
+      <category>大前端</category>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>React 16.x</title>
+    <link href="/2023/03/16/React-16-x/"/>
+    <url>/2023/03/16/React-16-x/</url>
+    
+    <content type="html"><![CDATA[<p>见xmind</p><p><a href="https://www.youtube.com/watch?v=WGVbC5bjqPk&list=PL9nxfq1tlKKnza3MPogWqaYIPtdW_G2lF&index=2"></a></p><p><a href="https://devopen.club/course/docker">Docker</a></p><p><a href="https://devopen.club/course/reactnative">RN</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>跨平台</category>
+      
+      <category>大前端</category>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>前端</title>
+    <link href="/2023/03/16/%E5%89%8D%E7%AB%AF/"/>
+    <url>/2023/03/16/%E5%89%8D%E7%AB%AF/</url>
+    
+    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>跨平台</category>
+      
+      <category>大前端</category>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>React Native 新架构实战课</title>
+    <link href="/2023/03/16/React-Native-%E6%96%B0%E6%9E%B6%E6%9E%84%E5%AE%9E%E6%88%98%E8%AF%BE/"/>
+    <url>/2023/03/16/React-Native-%E6%96%B0%E6%9E%B6%E6%9E%84%E5%AE%9E%E6%88%98%E8%AF%BE/</url>
+    
+    <content type="html"><![CDATA[<h2 id="核心基础"><a href="#核心基础" class="headerlink" title="核心基础"></a>核心基础</h2><h2 id="社区生态"><a href="#社区生态" class="headerlink" title="社区生态"></a>社区生态</h2><h2 id="基础设施建设"><a href="#基础设施建设" class="headerlink" title="基础设施建设"></a>基础设施建设</h2><h2 id="阶段总结"><a href="#阶段总结" class="headerlink" title="阶段总结"></a>阶段总结</h2><h2 id="RN新架构原理"><a href="#RN新架构原理" class="headerlink" title="RN新架构原理"></a>RN新架构原理</h2><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>跨平台</category>
+      
+      <category>大前端</category>
+      
+      <category>RN</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>DLNA</title>
+    <link href="/2023/03/16/DLNA/"/>
+    <url>/2023/03/16/DLNA/</url>
+    
+    <content type="html"><![CDATA[<p>实现网络&#x2F;本地视频图片的投屏，包括一些常见的控制指令，快进退，上下集切换，音量等等</p><p><a href="https://github.com/flyingDandelionYD/DLNA">DLNA</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>投屏协议</category>
+      
+      <category>DLNA</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>iOS开发包二进制化</title>
+    <link href="/2023/03/16/iOS%E5%BC%80%E5%8F%91%E5%8C%85%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8C%96/"/>
+    <url>/2023/03/16/iOS%E5%BC%80%E5%8F%91%E5%8C%85%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8C%96/</url>
+    
+    <content type="html"><![CDATA[<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://juejin.cn/post/7208476031136153655">04-iOS架构设计|iOS开发包二进制化【.a静态库、.framework(静态库、动态库)、.dyld动态库、XCFameworks等】</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>架构</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>sublime</title>
+    <link href="/2023/03/14/sublime/"/>
+    <url>/2023/03/14/sublime/</url>
+    
+    <content type="html"><![CDATA[<p>列模式<br>mac的sublime启用列模式很简单</p><ol><li>光标移动到需要操作的列位置，按住option键不放，鼠标左键上下移动即可。</li><li>选中一段文字，同时按shift+commond+L即可进入列模式</li></ol><p>列模式下插入顺序数字<br>由于插入的内容不同，便需要引入插件来实现了，也很简单</p><ol><li>sublime安装package control（未安装或不了解的自行百度，使用sublime的强大插件功能的必要条件）</li><li>shift+commond+P唤起package control，输入框内输入pci，即可看到“Package control：Install Package”选项，点击确认后即可进入插件选择页面</li><li>输入InsertNums，安装此插件</li><li>列模式下，option+commond+N唤起该插件，编辑器下方出现提示和输入框，默认配置“1:1”（从1开始，步长为1）。可在输入框内，手动输入配置，如：101:1（从101开始，步长为1），若初始时选中了10列，效果便是101&#x2F;102&#x2F;….&#x2F;109&#x2F;110</li></ol><p><a href="https://blog.csdn.net/lpf463061655/article/details/80499625">Mac下sublime text3列模式下插入顺序数字编号</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>Mac</category>
+      
+      <category>软件</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>python</title>
+    <link href="/2023/03/12/python/"/>
+    <url>/2023/03/12/python/</url>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.bilibili.com/video/BV1TM411A7Ny/?spm_id_from=333.1007.tianma.1-2-2.click&vd_source=24330e44ff4a0169c31ca577edffb44a">【2023Python教程1000集】目前B站最完整的python教程，包含所有干货知识点，这还没人看我真的不更了！</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>服务端</category>
+      
+      <category>Python</category>
       
     </categories>
     
@@ -259,7 +1087,7 @@
     <link href="/2023/03/10/AVFoundation/"/>
     <url>/2023/03/10/AVFoundation/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h1 id="AVFoundation"><a href="#AVFoundation" class="headerlink" title="AVFoundation"></a>AVFoundation</h1><p>使用视听资源、控制设备摄像头、处理音频和配置系统音频交互。</p><p>AVFoundation 框架结合了六个主要技术领域，它们共同涵盖了在 Apple 平台上捕获、处理、合成、控制、导入和导出视听媒体的广泛任务。</p><h2 id="Assets"><a href="#Assets" class="headerlink" title="Assets"></a>Assets</h2><ul><li>Media Assets and Metadata (加载、检查和导出媒体资产和元数据，并执行媒体样本数据的低级读写。)</li></ul><h2 id="Playback"><a href="#Playback" class="headerlink" title="Playback"></a>Playback</h2><ul><li>Media Playback and Selection (排队播放媒体和自定义播放行为。)</li></ul><h2 id="Capture"><a href="#Capture" class="headerlink" title="Capture"></a>Capture</h2><ul><li>Cameras  and Media Capture (拍摄照片并录制视频和音频； 配置内置摄像头和麦克风或外部捕获设备。)</li></ul><h2 id="Editing"><a href="#Editing" class="headerlink" title="Editing"></a>Editing</h2><ul><li>Media Composition and Editing (将来自多个源的音频和视频轨道组合、编辑和重新混合到一个合成中。)</li></ul><h2 id="Audio"><a href="#Audio" class="headerlink" title="Audio"></a>Audio</h2><ul><li>Audio Playback, Recording, and Processing (播放、录制和处理音频； 配置您应用的系统音频行为。)</li></ul><h2 id="Speech"><a href="#Speech" class="headerlink" title="Speech"></a>Speech</h2><ul><li>Speech Synthesis (将文本转换为语音。)</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -334,7 +1162,7 @@
     <link href="/2023/03/10/Core-Graphics/"/>
     <url>/2023/03/10/Core-Graphics/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h1 id="Core"><a href="#Core" class="headerlink" title="Core"></a>Core</h1><p>利用 Quartz 技术的强大功能来执行具有高保真输出的轻量级 2D 渲染。 处理基于路径的绘图、抗锯齿渲染、渐变、图像、颜色管理、PDF 文档等。</p><h2 id="Opaque-Types"><a href="#Opaque-Types" class="headerlink" title="Opaque Types"></a>Opaque Types</h2><ul><li>CGBitmapContext (一种可用于将位绘制到内存的 CGContextRef 类型。)</li><li>CGColor (一组定义颜色的组件，颜色空间指定如何解释它们。)</li><li>CGColorConversionInfo (描述如何在颜色空间之间转换以供其他系统服务使用的对象。)</li><li>CGColorSpace (指定如何解释显示颜色值的配置文件。)</li><li>CGContext (Quartz 2D 绘图目的地。)</li><li>CGDataConsumer (数据写入任务的抽象，无需管理原始内存缓冲区。)</li><li>CGDataProvider (数据读取任务的抽象，无需管理原始内存缓冲区。)</li><li>CGFont (一组用于绘制文本的字符字形和布局信息。)</li><li>CGFunction (用于定义和使用回调函数的通用工具。)</li><li>CGGLContext (已弃用。 一种用于绘制 OpenGL 内容的 CGContextRef。)</li><li>CGGradient （用于绘制径向和轴向渐变填充的颜色之间平滑过渡的定义。）</li><li>CGImage （位图图像或图像掩码。）</li><li>CGLayer （用于重用使用 Core Graphics 绘制的内容的屏幕外上下文。）</li><li>CGPath （图形路径的不可变和可变类型：要在图形上下文中绘制的形状或线条的数学描述。）</li><li>CGPattern （用于绘制图形路径的二维图案。）</li><li>CGPDFArray （PDF 文档中的数组结构。）</li><li>CGPDFContentStream （PDF 页面中一个或多个内容数据流的表示。）</li><li>CGPDFContext （一种用于绘制 PDF 内容的 CGContextRef。）</li><li>CGPDFDictionary （PDF 文档中的字典结构。）</li><li>CGPDFDcoument （包含 PDF（便携式文档格式）绘图信息的文档。）</li><li>CGPDFObject （表示 PDF 文档中内容的对象。）</li><li>CGPDFOperatorTable （扫描 PDF 文档中的内容时使用的运算符的一组回调函数。）</li><li>CGPDFPage （PDF 文档中的一页。）</li><li>CGPDFScanner （用于处理 PDF 内容流中的内容和运算符的解析器对象。）</li><li>CGPDFStream （PDF 文档中的数据字节流或序列。）</li><li>CGPDFString （PDF 文档中的文本字符串。）</li><li>CGPDFConverter （将 PostScript 数据转换为 PDF 数据的对象。）</li><li>CGShading （颜色之间平滑过渡的定义，由您提供的自定义函数控制，用于绘制径向和轴向渐变填充。）</li></ul><h2 id="Services"><a href="#Services" class="headerlink" title="Services"></a>Services</h2><ul><li>Quartz Display Services (提供对 macOS 窗口服务器中用于配置和控制显示硬件的功能的直接访问。)</li><li>Quartz Event Services (提供用于管理事件点击的功能——用于观察和更改 macOS 中低级用户输入事件流的过滤器。)</li><li>Quartz Window Services (提供有关由 macOS 窗口服务器管理的窗口的信息。)</li></ul><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -697,8 +1525,16 @@
     <link href="/2023/03/07/Masonry/"/>
     <url>/2023/03/07/Masonry/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<p><a href="https://juejin.cn/post/7168398672344924168">Masonry源码分析</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>三方库</category>
+      
+    </categories>
     
     
   </entry>
@@ -889,7 +1725,7 @@
     <link href="/2023/03/07/RAC/"/>
     <url>/2023/03/07/RAC/</url>
     
-    <content type="html"><![CDATA[<h2 id="RAC"><a href="#RAC" class="headerlink" title="RAC"></a>RAC</h2><p><a href="https://www.jianshu.com/nb/6055323">https://www.jianshu.com/nb/6055323</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h2 id="RAC"><a href="#RAC" class="headerlink" title="RAC"></a>RAC</h2><p><a href="https://www.jianshu.com/nb/6055323">https://www.jianshu.com/nb/6055323</a></p><p><a href="https://juejin.cn/post/6844903814047203336">iOS RAC总结</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -998,35 +1834,6 @@
     <tags>
       
       <tag>viper</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>MVP</title>
-    <link href="/2023/03/07/MVP/"/>
-    <url>/2023/03/07/MVP/</url>
-    
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
-    
-    
-    <categories>
-      
-      <category>iOS</category>
-      
-      <category>进阶</category>
-      
-      <category>软件构件模式</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>mvp</tag>
       
     </tags>
     
@@ -1552,7 +2359,7 @@
     <link href="/2023/03/06/LLDB/"/>
     <url>/2023/03/06/LLDB/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h1 id="LLDB"><a href="#LLDB" class="headerlink" title="LLDB"></a>LLDB</h1><h2 id="help"><a href="#help" class="headerlink" title="help"></a>help</h2><p>查看指令帮助</p><ul><li>help image list</li><li>help br</li><li>help breakpoint set</li></ul><h2 id="打印"><a href="#打印" class="headerlink" title="打印"></a>打印</h2><p>p 和 po 的区别在于使用 po 只会输出对应的值，而 p 则会返回值的类型以及命令结果的引用名。</p><ul><li>po:输出值</li><li>p：值类型+引用名+内存地址+输出值</li></ul><p>另外</p><ul><li>p:默认打印十进制</li><li>p&#x2F;x:转16进制</li><li>p&#x2F;o:转8进制</li><li>p&#x2F;t:转二进制</li><li>p&#x2F;d:字符转十进制数字</li><li>p&#x2F;c:十进制数字转字符</li></ul><h2 id="expression修改参数值"><a href="#expression修改参数值" class="headerlink" title="expression修改参数值"></a>expression修改参数值</h2><p><img src="/assets/16793061184903.jpg"><br>experssion xxx<br>p xxx</p><h2 id="call方法调用"><a href="#call方法调用" class="headerlink" title="call方法调用"></a>call方法调用</h2><p>call方法，输出此方法的返回值</p><h2 id="x打印"><a href="#x打印" class="headerlink" title="x打印"></a>x打印</h2><ul><li>x obj : 表示以16进制打印obj地址，（iOS是小端模式，数据的高字节保存在内存的高地址中）</li><li>x&#x2F;4gx obj:表示输出4个16进制的8字节地址空间</li></ul><p><img src="/assets/16793063020367.jpg"></p><p><img src="/assets/16793063059466.jpg"></p><h2 id="image打印"><a href="#image打印" class="headerlink" title="image打印"></a>image打印</h2><ul><li>image list: 查看项目中使用了哪些库</li><li>image loopup –address+地址：该命令用来查找可执行文件或共享库的原始地址，当程序崩溃时，可以用这条命令查看崩溃的具体位置</li></ul><p><img src="/assets/16793064026740.jpg"></p><h2 id="查看线程和帧状态"><a href="#查看线程和帧状态" class="headerlink" title="查看线程和帧状态"></a>查看线程和帧状态</h2><ul><li>thread list: 列出当前所有线程</li><li>thread backtrace: 打印堆栈信息，简称 bt<br><img src="/assets/16793064610109.jpg"><ul><li>bt 5:添加输出条数限制</li></ul></li><li>bt all：打印所有线程的堆栈信息</li><li>thread return</li><li>frame variable</li></ul><h2 id="内存操作"><a href="#内存操作" class="headerlink" title="内存操作"></a>内存操作</h2><ul><li>memory read oxxxxxxx &#x2F;&#x2F; 读取内存值</li><li>memory write oxxxxxxx &#x2F;&#x2F; 修改内存值</li></ul><h2 id="断点"><a href="#断点" class="headerlink" title="断点"></a>断点</h2><h2 id="查看寄存器地址"><a href="#查看寄存器地址" class="headerlink" title="查看寄存器地址"></a>查看寄存器地址</h2><ul><li>register read：查看寄存器地址信息</li><li>register read&#x2F;x:查看具体寄存器地址</li></ul><h2 id="methods命令可以打印当前对象的属性和方法"><a href="#methods命令可以打印当前对象的属性和方法" class="headerlink" title="methods命令可以打印当前对象的属性和方法"></a>methods命令可以打印当前对象的属性和方法</h2><p><img src="/assets/16793065838440.jpg"></p><p><a href="https://juejin.cn/post/6869621360415637518#heading-8">iOS之LLDB常用命令</a><br><a href="https://lldb.llvm.org/use/map.html">LLDB</a></p><p><a href="https://juejin.cn/post/7026524455598260261">debugserver+lldb 动态调试 iOS App</a></p><p><a href="https://juejin.cn/post/7150299501289275399#heading-5">Objective-C调试技巧——iOS开发者的Debug指南</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -1610,7 +2417,7 @@
     <link href="/2023/03/06/CoreData/"/>
     <url>/2023/03/06/CoreData/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h1 id="Core-Data"><a href="#Core-Data" class="headerlink" title="Core Data"></a>Core Data</h1><p>在单个设备上保存或缓存数据，或使用 CloudKit 将数据同步到多个设备。</p><h2 id="Esstials"><a href="#Esstials" class="headerlink" title="Esstials"></a>Esstials</h2><h2 id="Data-Modeling"><a href="#Data-Modeling" class="headerlink" title="Data Modeling"></a>Data Modeling</h2><h2 id="Fetch-Requests"><a href="#Fetch-Requests" class="headerlink" title="Fetch Requests"></a>Fetch Requests</h2><h2 id="CloudKit-Mirroring"><a href="#CloudKit-Mirroring" class="headerlink" title="CloudKit Mirroring"></a>CloudKit Mirroring</h2><h2 id="Change-Processing"><a href="#Change-Processing" class="headerlink" title="Change Processing"></a>Change Processing</h2><h2 id="Background-Tasks"><a href="#Background-Tasks" class="headerlink" title="Background Tasks"></a>Background Tasks</h2><h2 id="DataMigration"><a href="#DataMigration" class="headerlink" title="DataMigration"></a>DataMigration</h2><p><a href="https://developer.apple.com/documentation/coredata#">Core Data</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -1621,7 +2428,7 @@
       
       <category>框架</category>
       
-      <category>Core Serverices</category>
+      <category>Core Services</category>
       
     </categories>
     
@@ -1641,7 +2448,7 @@
     <link href="/2023/03/06/Core-Animation/"/>
     <url>/2023/03/06/Core-Animation/</url>
     
-    <content type="html"><![CDATA[<h2 id="QuartzCore"><a href="#QuartzCore" class="headerlink" title="QuartzCore"></a>QuartzCore</h2><p>前缀为<code>CA</code></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<p>前缀为<code>CA</code></p><h1 id="Core-Animation"><a href="#Core-Animation" class="headerlink" title="Core Animation"></a>Core Animation</h1><p>渲染、组合和动画视觉元素。</p><h2 id="ProMotion-升级"><a href="#ProMotion-升级" class="headerlink" title="ProMotion 升级"></a>ProMotion 升级</h2><p>优化 iPhone 13 Pro 和 iPad Pro 的 ProMotion 刷新率<br>为 ProMotion 显示提供自定义动画内容。</p><h2 id="Layer-Basics"><a href="#Layer-Basics" class="headerlink" title="Layer Basics"></a>Layer Basics</h2><ul><li>CALayer （管理基于图像的内容并允许您对该内容执行动画的对象。）<ul><li>Creating a Layer 创建图层</li><li>Accessing Related Layer Objects 访问相关图层对象</li><li>Accessing the Delegate 访问委托</li><li>Providing the Layer’s Content 提供层内容</li><li>Modifying the Layer’s Appearance 修改图层的外观</li><li>Layer Filiters 层过滤器</li><li>Configuring the Layer’s Rendering Behavior 配置层的渲染行为</li><li>Modifying the Layer Geometry 修改层几何</li><li>Managing the Layer’s Transform 管理层转换</li><li>Managing the Layer Hierarchy 管理层层次结构</li><li>Updating Layer Display 更新图层显示</li><li>Layer Animations 图层动画</li><li>Managing Layer Resizing and Layout 管理图层调整大小布局</li><li>Managing Layer Constraints 管理层约束</li><li>Getting the Layer’s Actions 获取图层的动作</li><li>Mapping Between Coordinate and Time Spaces 坐标与时空的映射</li><li>Hit Testing 命中测试</li><li>Scrolling 滚动</li><li>Identifying the Layer 识别图层</li><li>Key-Value Coding Extensions 键值编码扩展</li><li>Constants 常量</li><li>Instance Properties 实例属性</li><li>Type Methods 类型方法</li></ul></li><li>CALyaerDelegate （您的应用可以实现的方法来响应与层相关的事件。）</li><li>CAConstraint （两层之间单个布局约束的表示。）</li><li>CALayoutManager （允许对象管理图层及其子图层布局的方法。）</li><li>CAConstrainLayoutManager （提供基于约束的布局管理器的对象。）</li><li>CAAction （允许对象响应由 CALayer 更改触发的操作的接口。）</li></ul><h2 id="Text-Shapes-and-Gradients"><a href="#Text-Shapes-and-Gradients" class="headerlink" title="Text,Shapes,and Gradients"></a>Text,Shapes,and Gradients</h2><ul><li>CATextLayer</li><li>CAShapeLayer</li><li>CAGradientLayer</li></ul><h2 id="Animation"><a href="#Animation" class="headerlink" title="Animation"></a>Animation</h2><ul><li>CAAnimation</li><li>CAAnimationDelegate</li><li>CAPropertyAnimation</li><li>CABasicAnimation</li><li>CAKeyframeAnimation</li><li>CASpringAnimation</li><li>CATransition</li><li>CAValueFunction</li></ul><h2 id="Animation-Groups"><a href="#Animation-Groups" class="headerlink" title="Animation Groups"></a>Animation Groups</h2><ul><li>CAAnimationGroup</li><li>CATransaction</li></ul><h2 id="Animation-Timing"><a href="#Animation-Timing" class="headerlink" title="Animation Timing"></a>Animation Timing</h2><ul><li>CACurrentMediaTime</li><li>CAMediaTimingFunction</li><li>CAMediaTiming</li><li>CADisplayLink</li></ul><h2 id="Particle-Systems"><a href="#Particle-Systems" class="headerlink" title="Particle Systems"></a>Particle Systems</h2><ul><li>CAEmitterLayer</li><li>CAEmitterCell</li></ul><h2 id="Advanced-Layer-Options"><a href="#Advanced-Layer-Options" class="headerlink" title="Advanced Layer Options"></a>Advanced Layer Options</h2><ul><li>CAScrollLayer</li><li>CATiledLayer</li><li>CATransformLayer</li><li>CAReplicatorLayer</li></ul><h2 id="Metal-and-OpenGL"><a href="#Metal-and-OpenGL" class="headerlink" title="Metal and OpenGL"></a>Metal and OpenGL</h2><ul><li>CAMetalLayer</li><li>CAMetalDrawable</li><li>CAEDRMetadata</li><li>CARenderer</li></ul><h2 id="Remote-Display-of-Layer-Content"><a href="#Remote-Display-of-Layer-Content" class="headerlink" title="Remote Display of Layer Content"></a>Remote Display of Layer Content</h2><ul><li>CARemoteLayerClient</li><li>CARemoteLayerServer</li></ul><h2 id="Transforms"><a href="#Transforms" class="headerlink" title="Transforms"></a>Transforms</h2><ul><li>Transforms</li></ul><h2 id="Quartz-Composer"><a href="#Quartz-Composer" class="headerlink" title="Quartz Composer"></a>Quartz Composer</h2><p><a href="https://juejin.cn/post/6844903839779274765">https://juejin.cn/post/6844903839779274765</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -1701,8 +2508,18 @@
     <link href="/2023/03/06/APM/"/>
     <url>/2023/03/06/APM/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/liuyiyun060606/article/details/107015246/">iOS APM监控总览</a>  </p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>监控</category>
+      
+    </categories>
     
     
   </entry>
@@ -1928,7 +2745,9 @@
     
     <categories>
       
-      <category>跨端</category>
+      <category>跨平台</category>
+      
+      <category>大前端</category>
       
       <category>flutter</category>
       
@@ -2074,7 +2893,7 @@
       
       <category>iOS</category>
       
-      <category>视图管理</category>
+      <category>Swift</category>
       
     </categories>
     
@@ -2102,6 +2921,10 @@
       <category>iOS</category>
       
       <category>OC</category>
+      
+      <category>底层原理</category>
+      
+      <category>对象</category>
       
     </categories>
     
@@ -2152,16 +2975,16 @@
     <link href="/2023/03/06/GCD/"/>
     <url>/2023/03/06/GCD/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<p><a href="https://juejin.cn/post/6889028196704976910">多线程相关</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
       
       <category>iOS</category>
       
-      <category>基础</category>
+      <category>OC</category>
       
-      <category>多线程</category>
+      <category>多线程相关</category>
       
     </categories>
     
@@ -2210,7 +3033,7 @@
     <link href="/2023/03/06/Core-Image/"/>
     <url>/2023/03/06/Core-Image/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<p><a href="https://developer.apple.com/documentation/coreimage#">Core Image</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -2289,6 +3112,8 @@
       <category>iOS</category>
       
       <category>OC</category>
+      
+      <category>objc</category>
       
     </categories>
     
@@ -2672,7 +3497,7 @@
     <link href="/2023/03/06/%E5%B4%A9%E6%BA%83%E7%9B%91%E6%8E%A7/"/>
     <url>/2023/03/06/%E5%B4%A9%E6%BA%83%E7%9B%91%E6%8E%A7/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="分析崩溃日志"><a href="#分析崩溃日志" class="headerlink" title="分析崩溃日志"></a>分析崩溃日志</h2><ul><li>符号化</li><li>看懂，清楚日志表达的是什么</li><li>解析，从文档中定位问题，获取解决问题的有价值的信息</li></ul><h3 id="dYSM文件"><a href="#dYSM文件" class="headerlink" title="dYSM文件"></a>dYSM文件</h3><p>分析崩溃日志的前提是我们需要有dYSM文件，这个文件是我们用archive打包时生成的.xcarchive后缀的文件包。</p><p>通过dYSM文件可以分析日志crash log</p><h4 id="提取有用信息"><a href="#提取有用信息" class="headerlink" title="提取有用信息"></a>提取有用信息</h4><ul><li>崩溃原因</li><li>应用名，崩溃时调用的方法，文件的地址以及方法所在的行的位置</li><li>dSYM UUID</li><li>cpu type</li></ul><h4 id="分析方法："><a href="#分析方法：" class="headerlink" title="分析方法："></a>分析方法：</h4><ul><li>cd到dYSM目录</li><li>验证日志中uuid与本地dYSM是否匹配</li><li>查找错误信息</li></ul><h3 id="提取崩溃日志中有用的信息"><a href="#提取崩溃日志中有用的信息" class="headerlink" title="提取崩溃日志中有用的信息"></a>提取崩溃日志中有用的信息</h3><h2 id="崩溃符号化"><a href="#崩溃符号化" class="headerlink" title="崩溃符号化"></a>崩溃符号化</h2><h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><ul><li>iOS 15 CrashSymbolicator</li></ul><h2 id="崩溃日志，崩溃类型、原因及解决方案"><a href="#崩溃日志，崩溃类型、原因及解决方案" class="headerlink" title="崩溃日志，崩溃类型、原因及解决方案"></a>崩溃日志，崩溃类型、原因及解决方案</h2><blockquote><p>设置-&gt;隐私-&gt;分析-&gt;分析与数据</p></blockquote><h3 id="信号可捕获的崩溃"><a href="#信号可捕获的崩溃" class="headerlink" title="信号可捕获的崩溃"></a>信号可捕获的崩溃</h3><ul><li>unrecognized selector造成的崩溃（没有找到对应的方法选择器）</li><li>KVO问题</li><li>NSNotification线程问题</li><li>数组越界</li><li>野指针</li></ul><p>崩溃发生的原因</p><ul><li>unrecognized selector造成的崩溃（没有找到对应的方法选择器）</li><li>KVO造成的崩溃：KVO的被观察者在dealloc时仍然注册着KVO导致的崩溃，重复添加观察者或重复移除观察者*</li><li>NSNotification造成的崩溃：当一个对象添加了Notification之后，在dealloc的时候，仍然持有Notification</li><li>NSTime造成的崩溃：需要在合适的时机invalidate定时器，否则就会犹豫定时器的timer强引用target导致target不被释放，造成内存泄露？</li><li>容器类型越界造成的崩溃：数组越界、Dictionary插入nil</li><li>多线程问题<ul><li>在子线程刷新UI</li></ul></li><li>野指针造成的崩溃：访问了野指针，对象已经被释放</li><li>野指针</li><li>应用内存占用过高崩溃</li><li>跟第三方合作时产生的崩溃：三方只提供了基于.a静态库的SDK文件，三方更新后发生了崩溃</li></ul><h3 id="崩溃无日志的情况"><a href="#崩溃无日志的情况" class="headerlink" title="崩溃无日志的情况"></a>崩溃无日志的情况</h3><ul><li>没有打开共享</li><li>当同一个APP崩溃了25次以上，这个时候你可以把你的iPhone设备脸上电脑，打开控制台应用，崩溃的时候会有崩回次数超限的提示</li><li>APP发布证书过期之后，会发生启动崩溃并且无日志的情况。</li><li>后台包活超过30秒；通常iOS程序会执行后台任务，30s内后台任务仍然不结束，APP可能就会被杀死。</li></ul><h3 id="有点蛛丝马迹的"><a href="#有点蛛丝马迹的" class="headerlink" title="有点蛛丝马迹的"></a>有点蛛丝马迹的</h3><ul><li>OOM崩溃，当程序使用的内存超过阈值的时候，此时Apple的Jestems机制就会发生作用(前台和后台的阈值有所不同，但是都会触发)；通常情况下你可以在系统设置-&gt;隐私-&gt;分析-&gt;分析与数据里面找到JetsamEvent格式的日志</li><li>各种系统资源限制引发的崩溃<ul><li>线程在短时间内切换过多引发的崩溃</li><li>cpu长时间超负荷运转引发的崩溃</li><li>IO一定时间内写过多引发的崩溃</li><li>Fence-hang:一种iOS14系统之后苹果增加的崩溃</li></ul></li></ul><h3 id="市面上部分SDK无法捕获的崩溃"><a href="#市面上部分SDK无法捕获的崩溃" class="headerlink" title="市面上部分SDK无法捕获的崩溃"></a>市面上部分SDK无法捕获的崩溃</h3><ul><li>SIGKILL崩溃<ul><li>0x8badf00d：看门狗（watch dog）崩溃</li><li>0xc00010ff：设备过热</li><li>0xdead10cc：死锁</li><li>0xbaadca11：The operating system terminated the app for failing to report a CallKit call in response to a PushKit notification.</li><li>0xbad22222：Voip功能调用太频繁</li><li>0xc51bad01：watchOS CPU资源占用过多</li><li>0xc51bad02：watchOS terminated the app because it failed to complete a background task within the allocated time. Decrease the amount of work that the app performs while running in the background to resolve this crash.</li><li>0xc51bad03：watchOS terminated the app because it failed to complete a background task within the allocated time, but the system was sufficiently busy overall that the app may not have received much CPU time to perform the background task. Although you may be able to avoid the issue by reducing the amount of work your app performs in background tasks, 0xc51bad03 doesn’t indicate that the app did anything wrong. More likely, the app wasn’t able to complete its work because of overall system load.</li></ul></li><li>SIGQUIT：一般是因为其他进程的优先级高于当前进程引起的。通常不认为是崩溃</li><li>EXC_GUARD:对一些保护性文件的不合法操作引发的崩溃<ul><li>CLOSE.</li><li>DUP.</li><li>NOCLOEXEC.</li><li>SOCKET_IPC.</li><li>FILEPORT.</li><li>WRITE.</li></ul></li><li>栈溢出：stack overflow<ul><li>在栈上申请太大内存:当我们定义的数据所需要占用的内存超过了栈的大小时，就会发生栈溢出。</li><li>递归调用函数多次:一个函数调用自身就叫做递归。当递归层次过高时，程序就会发生栈溢出。</li></ul></li></ul><h2 id="Crash监控"><a href="#Crash监控" class="headerlink" title="Crash监控"></a>Crash监控</h2><h3 id="监控的方案"><a href="#监控的方案" class="headerlink" title="监控的方案"></a>监控的方案</h3><ul><li>用户提供崩溃日志</li><li>第三方库<ul><li>PLCrashReporter</li><li>kscrash</li><li>Bugly</li><li>友盟</li><li>Metrickit</li><li>talkingdata</li><li>killBug</li></ul></li></ul><h3 id="监控crash原理"><a href="#监控crash原理" class="headerlink" title="监控crash原理"></a>监控crash原理</h3><ol><li>OC类异常。<ol><li>NSException异常是OC代码导致的crash。</li></ol></li><li>Signal信号捕获。<ul><li>Singal信号是由iOS底层mach信号异常转换后以signal信号抛出的异常。</li><li>既然是兼容posix标准的异常，我们同样可以通过sigaction函数注册对应的信号</li></ul></li></ol><h2 id="预防崩溃处理"><a href="#预防崩溃处理" class="headerlink" title="预防崩溃处理"></a>预防崩溃处理</h2><h3 id="hook方案"><a href="#hook方案" class="headerlink" title="hook方案"></a>hook方案</h3><h3 id="安全接口"><a href="#安全接口" class="headerlink" title="安全接口"></a>安全接口</h3><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://juejin.cn/post/6900051608118231048">iOS崩溃无日志情形总结</a><br><a href="https://juejin.cn/post/6844903457581694989">IOS 分析崩溃日志</a></p><p><a href="https://mp.weixin.qq.com/s/1Vq0T4v7UJN8c1ZCWQ5b5g">了解和分析iOS Crash</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -2703,6 +3528,8 @@
       <category>iOS</category>
       
       <category>OC</category>
+      
+      <category>objc</category>
       
     </categories>
     
@@ -2751,7 +3578,7 @@
     <link href="/2023/03/06/ReactNative/"/>
     <url>/2023/03/06/ReactNative/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.reactnative.cn/">React Native</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -3102,7 +3929,9 @@
     
     <categories>
       
-      <category>跨端</category>
+      <category>跨平台</category>
+      
+      <category>大前端</category>
       
       <category>flutter</category>
       
@@ -3129,7 +3958,9 @@
     
     <categories>
       
-      <category>跨端</category>
+      <category>跨平台</category>
+      
+      <category>大前端</category>
       
       <category>flutter</category>
       
@@ -3189,6 +4020,8 @@
       
       <category>OC</category>
       
+      <category>objc</category>
+      
     </categories>
     
     
@@ -3216,6 +4049,8 @@
       
       <category>OC</category>
       
+      <category>objc</category>
+      
     </categories>
     
     
@@ -3242,6 +4077,8 @@
       <category>iOS</category>
       
       <category>OC</category>
+      
+      <category>objc</category>
       
     </categories>
     
@@ -3272,6 +4109,10 @@
       
       <category>OC</category>
       
+      <category>底层原理</category>
+      
+      <category>加载</category>
+      
     </categories>
     
     
@@ -3298,6 +4139,8 @@
       <category>iOS</category>
       
       <category>OC</category>
+      
+      <category>objc</category>
       
     </categories>
     
@@ -3327,6 +4170,8 @@
       <category>iOS</category>
       
       <category>OC</category>
+      
+      <category>objc</category>
       
     </categories>
     
@@ -3398,7 +4243,7 @@
     <link href="/2023/03/06/iOS%E4%B9%8Bobjc/"/>
     <url>/2023/03/06/iOS%E4%B9%8Bobjc/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h1 id="OBJC"><a href="#OBJC" class="headerlink" title="OBJC"></a>OBJC</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul><li>[Classname class]返回的指针，地址都一样，都是Classname对象的地址，怎么做到的？</li></ul><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -3406,6 +4251,8 @@
       <category>iOS</category>
       
       <category>OC</category>
+      
+      <category>objc</category>
       
     </categories>
     
@@ -3434,6 +4281,8 @@
       
       <category>OC</category>
       
+      <category>objc</category>
+      
     </categories>
     
     
@@ -3460,6 +4309,8 @@
       <category>iOS</category>
       
       <category>OC</category>
+      
+      <category>objc</category>
       
     </categories>
     
@@ -3554,7 +4405,7 @@
     <link href="/2023/03/06/Swift%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
     <url>/2023/03/06/Swift%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<p><a href="https://developer.apple.com/documentation/swift#">Swift</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -3662,16 +4513,16 @@
     <link href="/2023/03/06/%E7%BB%84%E4%BB%B6%E5%8C%96/"/>
     <url>/2023/03/06/%E7%BB%84%E4%BB%B6%E5%8C%96/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<p><a href="https://juejin.cn/post/6913562322292178951">OC底层知识点之-组件化（上）组件化的创建</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
       
       <category>iOS</category>
       
-      <category>进阶</category>
+      <category>OC</category>
       
-      <category>架构</category>
+      <category>组件化相关</category>
       
     </categories>
     
@@ -3747,7 +4598,7 @@
     <link href="/2023/03/06/%E8%AF%B4%E8%AF%B4Xcode/"/>
     <url>/2023/03/06/%E8%AF%B4%E8%AF%B4Xcode/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<p><a href="https://juejin.cn/post/7189822437482037285">开启Xcode隐藏配置，彻底解决Xcode打开慢的问题</a></p><p><a href="https://developer.apple.com/documentation/xcode">Xcode</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -3859,7 +4710,7 @@
     <link href="/2023/03/06/App%E7%BC%96%E8%AF%91%E4%BC%98%E5%8C%96/"/>
     <url>/2023/03/06/App%E7%BC%96%E8%AF%91%E4%BC%98%E5%8C%96/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://juejin.cn/post/7185101900303728695">编译优化</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -4720,7 +5571,7 @@
     <link href="/2023/03/06/TCP-IP%E6%A8%A1%E5%9E%8B%E5%8F%8A%E5%85%B6%E5%8D%8F%E8%AE%AE%E7%BE%A4/"/>
     <url>/2023/03/06/TCP-IP%E6%A8%A1%E5%9E%8B%E5%8F%8A%E5%85%B6%E5%8D%8F%E8%AE%AE%E7%BE%A4/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.cnblogs.com/crazymakercircle/p/14499211.html#autoid-h3-6-4-0">TCP&#x2F;IP协议 （图解+秒懂+史上最全） </a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -4741,11 +5592,11 @@
   
   
   <entry>
-    <title>App内存优化</title>
+    <title>App内存管理及优化</title>
     <link href="/2023/03/06/App%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96/"/>
     <url>/2023/03/06/App%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.jianshu.com/p/f9fe46633b47">MLeaksFinder 原理</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -4761,9 +5612,9 @@
     
     <tags>
       
-      <tag>优化</tag>
-      
       <tag>内存</tag>
+      
+      <tag>优化</tag>
       
     </tags>
     
@@ -4776,7 +5627,7 @@
     <link href="/2023/03/06/App%E4%BD%93%E7%A7%AF%E4%BC%98%E5%8C%96/"/>
     <url>/2023/03/06/App%E4%BD%93%E7%A7%AF%E4%BC%98%E5%8C%96/</url>
     
-    <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://juejin.cn/post/7176472815343042615">包体积优化（理论篇）</a><br><a href="https://juejin.cn/post/7185079396678991928/">iOS 包体积优化1 - 总览</a><br><a href="https://juejin.cn/post/7185101900303728695">iOS 包体积优化5 - 编译优化</a></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>
@@ -4792,11 +5643,34 @@
     
     <tags>
       
-      <tag>体积</tag>
-      
       <tag>优化</tag>
       
+      <tag>体积</tag>
+      
     </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>MVC</title>
+    <link href="/2021/03/11/MVC/"/>
+    <url>/2021/03/11/MVC/</url>
+    
+    <content type="html"><![CDATA[<h2 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h2><ul><li>Model层：负责数据访问，又可以分为以下两类<ul><li>业务处理</li><li>数据承载</li></ul></li><li>view层：负责视图的展示</li><li>Controller: Model和view之间的中介，一般负责在用户操作view时更新model，以及当model变化时更新view</li></ul><p>存在问题：</p><ul><li>很难单元测试</li><li>view和model耦合严重</li><li>实体之间相互耦合</li></ul><h2 id="苹果的MVC"><a href="#苹果的MVC" class="headerlink" title="苹果的MVC"></a>苹果的MVC</h2><p>胖VC：controller代码臃肿</p><p>苹果MVC缺点:</p><ul><li>View和Model实现了分离，但是View与Controller仍是紧耦合。</li><li>你只能测试你的Model。</li><li>Contoller处理的事情过多，职责划分不够细</li><li>不适合小型、中等规模的应用程序</li></ul><p>苹果MVC优点:</p><ul><li>耦合性低</li><li>重用性高</li><li>生命周期成本低</li><li>MVC使开发和维护用户接口的技术含量降低</li><li>可维护性高</li><li>部署快</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>软件构件模式</category>
+      
+    </categories>
+    
     
   </entry>
   
@@ -5062,11 +5936,40 @@
   
   
   <entry>
+    <title>MVP</title>
+    <link href="/2021/03/07/MVP/"/>
+    <url>/2021/03/07/MVP/</url>
+    
+    <content type="html"><![CDATA[<h2 id="MVP"><a href="#MVP" class="headerlink" title="MVP"></a>MVP</h2><p>MVP是从MVC模式演变而来的。controller换成了Presenter，目的是为了完全切断view跟model之间的联系，由presenter充当桥梁</p><ul><li>view负责界面展示和布局管理，向presenter暴露视图更新和数据获取的接口</li><li>presenter负责接受来自view的事件，通过view提供的接口更新视图，并管理model</li></ul><p>特点：</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+      <category>进阶</category>
+      
+      <category>软件构件模式</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>mvp</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>单元测试</title>
     <link href="/2021/03/06/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/"/>
     <url>/2021/03/06/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</url>
     
-    <content type="html"><![CDATA[<h2 id="单元测试-Unit-Testing"><a href="#单元测试-Unit-Testing" class="headerlink" title="单元测试 Unit Testing"></a>单元测试 Unit Testing</h2><p>单元测试一般关注的是单一的代码单元，一般可能是一个对象或者类的一个具体函数，这类关注单个函数的测试通常是简单的、容易书写并且可以快速运行的。</p><p>可通过一些mock工具来模拟一些外部依赖的条件。</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+    <content type="html"><![CDATA[<h2 id="单元测试-Unit-Testing"><a href="#单元测试-Unit-Testing" class="headerlink" title="单元测试 Unit Testing"></a>单元测试 Unit Testing</h2><p>单元测试一般关注的是单一的代码单元，一般可能是一个对象或者类的一个具体函数，这类关注单个函数的测试通常是简单的、容易书写并且可以快速运行的。</p><p>可通过一些mock工具来模拟一些外部依赖的条件。</p><h2 id="库"><a href="#库" class="headerlink" title="库"></a>库</h2><ul><li>Specta</li><li>Expecta</li><li>OCMock</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
     
     
     <categories>

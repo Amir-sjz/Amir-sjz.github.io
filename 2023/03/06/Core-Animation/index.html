@@ -16,15 +16,15 @@
   <meta name="author" content="Amir">
   <meta name="keywords" content="">
   
-    <meta name="description" content="QuartzCore前缀为CA">
+    <meta name="description" content="前缀为CA Core Animation渲染、组合和动画视觉元素。 ProMotion 升级优化 iPhone 13 Pro 和 iPad Pro 的 ProMotion 刷新率为 ProMotion 显示提供自定义动画内容。 Layer Basics CALayer （管理基于图像的内容并允许您对该内容执行动画的对象。） Creating a Layer 创建图层 Accessing Relat">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Core Animation">
 <meta property="og:url" content="http://example.com/2023/03/06/Core-Animation/index.html">
 <meta property="og:site_name" content="I&#39;m Amir">
-<meta property="og:description" content="QuartzCore前缀为CA">
+<meta property="og:description" content="前缀为CA Core Animation渲染、组合和动画视觉元素。 ProMotion 升级优化 iPhone 13 Pro 和 iPad Pro 的 ProMotion 刷新率为 ProMotion 显示提供自定义动画内容。 Layer Basics CALayer （管理基于图像的内容并允许您对该内容执行动画的对象。） Creating a Layer 创建图层 Accessing Relat">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-06T13:40:39.000Z">
-<meta property="article:modified_time" content="2023-03-10T14:43:04.462Z">
+<meta property="article:modified_time" content="2023-03-20T06:52:10.535Z">
 <meta property="article:author" content="Amir">
 <meta property="article:tag" content="core animation">
 <meta property="article:tag" content="QuartzCore">
@@ -238,7 +238,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          15 字
+          1.6k 字
         
       </span>
     
@@ -249,7 +249,7 @@
         
         
         
-          1 分钟
+          14 分钟
         
       </span>
     
@@ -300,7 +300,91 @@
             
               <div class="markdown-body">
                 
-                <h2 id="QuartzCore"><a href="#QuartzCore" class="headerlink" title="QuartzCore"></a>QuartzCore</h2><p>前缀为<code>CA</code></p>
+                <p>前缀为<code>CA</code></p>
+<h1 id="Core-Animation"><a href="#Core-Animation" class="headerlink" title="Core Animation"></a>Core Animation</h1><p>渲染、组合和动画视觉元素。</p>
+<h2 id="ProMotion-升级"><a href="#ProMotion-升级" class="headerlink" title="ProMotion 升级"></a>ProMotion 升级</h2><p>优化 iPhone 13 Pro 和 iPad Pro 的 ProMotion 刷新率<br>为 ProMotion 显示提供自定义动画内容。</p>
+<h2 id="Layer-Basics"><a href="#Layer-Basics" class="headerlink" title="Layer Basics"></a>Layer Basics</h2><ul>
+<li>CALayer （管理基于图像的内容并允许您对该内容执行动画的对象。）<ul>
+<li>Creating a Layer 创建图层</li>
+<li>Accessing Related Layer Objects 访问相关图层对象</li>
+<li>Accessing the Delegate 访问委托</li>
+<li>Providing the Layer’s Content 提供层内容</li>
+<li>Modifying the Layer’s Appearance 修改图层的外观</li>
+<li>Layer Filiters 层过滤器</li>
+<li>Configuring the Layer’s Rendering Behavior 配置层的渲染行为</li>
+<li>Modifying the Layer Geometry 修改层几何</li>
+<li>Managing the Layer’s Transform 管理层转换</li>
+<li>Managing the Layer Hierarchy 管理层层次结构</li>
+<li>Updating Layer Display 更新图层显示</li>
+<li>Layer Animations 图层动画</li>
+<li>Managing Layer Resizing and Layout 管理图层调整大小布局</li>
+<li>Managing Layer Constraints 管理层约束</li>
+<li>Getting the Layer’s Actions 获取图层的动作</li>
+<li>Mapping Between Coordinate and Time Spaces 坐标与时空的映射</li>
+<li>Hit Testing 命中测试</li>
+<li>Scrolling 滚动</li>
+<li>Identifying the Layer 识别图层</li>
+<li>Key-Value Coding Extensions 键值编码扩展</li>
+<li>Constants 常量</li>
+<li>Instance Properties 实例属性</li>
+<li>Type Methods 类型方法</li>
+</ul>
+</li>
+<li>CALyaerDelegate （您的应用可以实现的方法来响应与层相关的事件。）</li>
+<li>CAConstraint （两层之间单个布局约束的表示。）</li>
+<li>CALayoutManager （允许对象管理图层及其子图层布局的方法。）</li>
+<li>CAConstrainLayoutManager （提供基于约束的布局管理器的对象。）</li>
+<li>CAAction （允许对象响应由 CALayer 更改触发的操作的接口。）</li>
+</ul>
+<h2 id="Text-Shapes-and-Gradients"><a href="#Text-Shapes-and-Gradients" class="headerlink" title="Text,Shapes,and Gradients"></a>Text,Shapes,and Gradients</h2><ul>
+<li>CATextLayer</li>
+<li>CAShapeLayer</li>
+<li>CAGradientLayer</li>
+</ul>
+<h2 id="Animation"><a href="#Animation" class="headerlink" title="Animation"></a>Animation</h2><ul>
+<li>CAAnimation</li>
+<li>CAAnimationDelegate</li>
+<li>CAPropertyAnimation</li>
+<li>CABasicAnimation</li>
+<li>CAKeyframeAnimation</li>
+<li>CASpringAnimation</li>
+<li>CATransition</li>
+<li>CAValueFunction</li>
+</ul>
+<h2 id="Animation-Groups"><a href="#Animation-Groups" class="headerlink" title="Animation Groups"></a>Animation Groups</h2><ul>
+<li>CAAnimationGroup</li>
+<li>CATransaction</li>
+</ul>
+<h2 id="Animation-Timing"><a href="#Animation-Timing" class="headerlink" title="Animation Timing"></a>Animation Timing</h2><ul>
+<li>CACurrentMediaTime</li>
+<li>CAMediaTimingFunction</li>
+<li>CAMediaTiming</li>
+<li>CADisplayLink</li>
+</ul>
+<h2 id="Particle-Systems"><a href="#Particle-Systems" class="headerlink" title="Particle Systems"></a>Particle Systems</h2><ul>
+<li>CAEmitterLayer</li>
+<li>CAEmitterCell</li>
+</ul>
+<h2 id="Advanced-Layer-Options"><a href="#Advanced-Layer-Options" class="headerlink" title="Advanced Layer Options"></a>Advanced Layer Options</h2><ul>
+<li>CAScrollLayer</li>
+<li>CATiledLayer</li>
+<li>CATransformLayer</li>
+<li>CAReplicatorLayer</li>
+</ul>
+<h2 id="Metal-and-OpenGL"><a href="#Metal-and-OpenGL" class="headerlink" title="Metal and OpenGL"></a>Metal and OpenGL</h2><ul>
+<li>CAMetalLayer</li>
+<li>CAMetalDrawable</li>
+<li>CAEDRMetadata</li>
+<li>CARenderer</li>
+</ul>
+<h2 id="Remote-Display-of-Layer-Content"><a href="#Remote-Display-of-Layer-Content" class="headerlink" title="Remote Display of Layer Content"></a>Remote Display of Layer Content</h2><ul>
+<li>CARemoteLayerClient</li>
+<li>CARemoteLayerServer</li>
+</ul>
+<h2 id="Transforms"><a href="#Transforms" class="headerlink" title="Transforms"></a>Transforms</h2><ul>
+<li>Transforms</li>
+</ul>
+<h2 id="Quartz-Composer"><a href="#Quartz-Composer" class="headerlink" title="Quartz Composer"></a>Quartz Composer</h2><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903839779274765">https://juejin.cn/post/6844903839779274765</a></p>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
               </div>

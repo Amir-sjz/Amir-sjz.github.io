@@ -1,0 +1,1066 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Amir">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="FoundationFundamentals 基础知识 Numbers, Data, and Basic Values(使用 Cocoa 中使用的原始值和其他基本类型。) Numbers NSInteger NSUInteger NSDecimal NSDecimalNumber NSNumberFormatter   Binary Data NSData NSMutableData   URLs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Foundation">
+<meta property="og:url" content="http://example.com/2023/03/18/Foundation/index.html">
+<meta property="og:site_name" content="I&#39;m Amir">
+<meta property="og:description" content="FoundationFundamentals 基础知识 Numbers, Data, and Basic Values(使用 Cocoa 中使用的原始值和其他基本类型。) Numbers NSInteger NSUInteger NSDecimal NSDecimalNumber NSNumberFormatter   Binary Data NSData NSMutableData   URLs">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-18T07:45:52.000Z">
+<meta property="article:modified_time" content="2023-03-18T12:03:36.129Z">
+<meta property="article:author" content="Amir">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Foundation - I&#39;m Amir</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"1tn2Ffi2H8f90YdYNBTTkULu-gzGzoHsz","app_key":"XR7k6OCIp2KxtB7EIlOIkNoT","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Amir</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Foundation"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-03-18 15:45" pubdate>
+          2023年3月18日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.4k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          37 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Foundation</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Foundation"><a href="#Foundation" class="headerlink" title="Foundation"></a>Foundation</h1><h2 id="Fundamentals-基础知识"><a href="#Fundamentals-基础知识" class="headerlink" title="Fundamentals 基础知识"></a>Fundamentals 基础知识</h2><ul>
+<li>Numbers, Data, and Basic Values(使用 Cocoa 中使用的原始值和其他基本类型。)<ul>
+<li>Numbers<ul>
+<li>NSInteger</li>
+<li>NSUInteger</li>
+<li>NSDecimal</li>
+<li>NSDecimalNumber</li>
+<li>NSNumberFormatter</li>
+</ul>
+</li>
+<li>Binary Data<ul>
+<li>NSData</li>
+<li>NSMutableData</li>
+</ul>
+</li>
+<li>URLs<ul>
+<li>NSURL</li>
+<li>NSURLComponents</li>
+<li>NSURLQueryItem</li>
+</ul>
+</li>
+<li>Unique Identifiers<ul>
+<li>NSUUID</li>
+</ul>
+</li>
+<li>Geometry<ul>
+<li>CGFloat</li>
+<li>NSPoint</li>
+<li>NSSize</li>
+<li>NSRect</li>
+<li>NSAffineTransform</li>
+<li>NSEdeInsets</li>
+</ul>
+</li>
+<li>Ranges<ul>
+<li>NSRange</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>String and Text<ul>
+<li>创建和处理 Unicode 字符串，使用正则表达式查找模式，并对文本执行自然语言分析。</li>
+<li>Strings</li>
+<li>Strings with Metadata</li>
+<li>Characters</li>
+<li>Pattern Matching</li>
+<li>Spelling and Grammer</li>
+<li>Localization</li>
+<li>Deprecated</li>
+</ul>
+</li>
+<li>Collections<ul>
+<li>使用数组、字典、集合和专门的集合来存储和迭代对象或值组。</li>
+<li>Basic Collections</li>
+<li>Indexes</li>
+<li>Specialized Sets</li>
+<li>Purgeable Collections</li>
+<li>Pointer Collections</li>
+<li>Iteration</li>
+<li>Special Semantic Values</li>
+</ul>
+</li>
+<li>Dates and Times<ul>
+<li>比较日期和时间，并执行日历和时区计算。</li>
+<li>Date Representations 日期表示</li>
+<li>Calendrical Calculations 日历计算</li>
+<li>NSCalendar 日历</li>
+<li>NSTimeZone 时区</li>
+<li>Date Formatting 日期格式</li>
+<li>Internationalization 国际化</li>
+<li>Deprecated</li>
+</ul>
+</li>
+<li>Units and Measurement 单位和测量<ul>
+<li>使用物理尺寸标记数字数量，以允许相关单位之间的区域设置感知格式和转换。</li>
+<li>Essentials 必需品</li>
+<li>Conversion 转换</li>
+<li>Phyysical Dimension 物理尺寸</li>
+<li>Mass,Weight,and Force 质量、重量和力</li>
+<li>Time and Motion 时间和运动</li>
+<li>Energy,Heat,and Light 能量、热能和光能</li>
+<li>Electricity 电</li>
+<li>Concetration and Dispersion 集中与分散</li>
+<li>Fuel Efficiency 燃油效率</li>
+<li>Data Storage 数据存储</li>
+</ul>
+</li>
+<li>Data Formatting<ul>
+<li>将数字、日期、度量和其他值与区域设置感知字符串表示形式相互转换。</li>
+<li>Numbers and Currency</li>
+<li>Names</li>
+<li>Dates and Times</li>
+<li>Data Sizes</li>
+<li>Measurements</li>
+<li>Lists</li>
+<li>Internationalization</li>
+<li>Custom Formatters</li>
+<li>Automatic Grammar Agreement</li>
+<li>Deprecated</li>
+</ul>
+</li>
+<li>Filters and Sorting<ul>
+<li>使用谓词、表达式和排序描述符来检查集合和其他服务中的元素。</li>
+<li>Fittering</li>
+<li>Sorting</li>
+</ul>
+</li>
+</ul>
+<h2 id="App-Support-app支持"><a href="#App-Support-app支持" class="headerlink" title="App Support app支持"></a>App Support app支持</h2><ul>
+<li>Task Management<ul>
+<li>管理您的应用程序的工作以及它如何与 Handoff 和 Shortcuts 等系统服务交互。</li>
+<li>Undo 撤销</li>
+<li>Progress 进度</li>
+<li>Operations 操作</li>
+<li>Scheduling 调度</li>
+<li>Activity Sharing 活动分享</li>
+<li>System Interaction 系统交互</li>
+<li>User Notifications 用户通知</li>
+</ul>
+</li>
+<li>Resources<ul>
+<li>访问与您的应用捆绑在一起的资产和其他数据。</li>
+<li>Bundle Resources<ul>
+<li>NSBundle</li>
+</ul>
+</li>
+<li>On-Demand Resources<ul>
+<li>NSBundleResourceRequest</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Notifications (广播信息和订阅广播的设计模式。) KVO,KVC<ul>
+<li>Api</li>
+<li>Notifications</li>
+<li>Coress-Process Notification</li>
+</ul>
+</li>
+<li>App Extension Support<ul>
+<li>管理应用程序扩展与其托管应用程序之间的交互。</li>
+<li>Extension Support 扩展支持</li>
+<li>Share Extensions 共享支持</li>
+<li>Attachments 附件</li>
+<li>Host App Interaction 主机应用交互</li>
+</ul>
+</li>
+<li>Errors and Exceptions<ul>
+<li>响应与 API 交互中的问题情况，并微调您的应用程序以更好地调试。</li>
+<li>User-Relevant Errors 与用户相关的错误</li>
+<li>Assertions 断言</li>
+<li>Exceptions 例外</li>
+<li>Diagnostics and Debugging 诊断和调试</li>
+</ul>
+</li>
+<li>Scripting Support *<ul>
+<li>允许用户使用 AppleScript 和其他自动化技术控制您的应用程序，或从您的应用程序中运行脚本。</li>
+<li>Script Execution 脚本执行</li>
+<li>Apple Event Handling 苹果事件处理</li>
+<li>Script Commands 脚本命令</li>
+<li>Object Specifiers 对象说明符</li>
+<li>Script Dictionary Description 脚本字典说明</li>
+<li>Object Matching Tests 对象匹配测试</li>
+<li>NSObject Script Support 脚本支持</li>
+</ul>
+</li>
+</ul>
+<h2 id="Files-and-Data-Persistence-文件和数据持久化"><a href="#Files-and-Data-Persistence-文件和数据持久化" class="headerlink" title="Files and Data Persistence 文件和数据持久化"></a>Files and Data Persistence 文件和数据持久化</h2><ul>
+<li>File System<ul>
+<li>创建、读取、写入和检查文件系统中的文件和文件夹。</li>
+<li>File Systme Operations 文件系统操作</li>
+<li>Managed File Access 托管文件访问</li>
+<li>Shared Files 共享文件</li>
+</ul>
+</li>
+<li>Archives and Serialization （将对象和值与属性列表、JSON 和其他平面二进制表示形式相互转换。）<ul>
+<li>Adopting Codabilitty 采用可编程性</li>
+<li>JSON</li>
+<li>Property Lists 财产清单</li>
+<li>Keyed Archivers 键控存档器</li>
+<li>Deprecated 弃用</li>
+</ul>
+</li>
+<li>Preferencess<ul>
+<li>持久存储域范围内的信息片段以配置您的应用程序。</li>
+<li>App-Specific Data</li>
+<li>Shared Data</li>
+</ul>
+</li>
+<li>Spotlight<ul>
+<li>在本地设备上搜索文件和其他项目，并为您的应用程序内容编制索引以供搜索。</li>
+<li>Queries</li>
+<li>Items</li>
+</ul>
+</li>
+<li>iCloud<ul>
+<li>管理在用户的 iCloud 设备之间自动同步的文件和键值数据。</li>
+<li>iCloud Storage</li>
+<li>App Preferences</li>
+<li>File Search</li>
+<li>Entitlements</li>
+</ul>
+</li>
+<li>Optimizing App Data For iCloud Backup<ul>
+<li>最大限度地减少 iCloud 备份对您的应用程序数据所需的空间和时间。</li>
+</ul>
+</li>
+</ul>
+<h2 id="Networking-网络"><a href="#Networking-网络" class="headerlink" title="Networking 网络"></a>Networking 网络</h2><ul>
+<li>URL Loading System<ul>
+<li>使用标准 Internet 协议与 URL 交互并与服务器通信。</li>
+<li>Essentials 要点</li>
+<li>Requests and Responses 请求和响应</li>
+<li>Uploading 上传</li>
+<li>Downloading 下载</li>
+<li>Cache Behavior 缓存行为</li>
+<li>Authentication and Credentials 身份验证和凭证</li>
+<li>NetworkActivity Attribution 网络活动归因</li>
+<li>Cookies</li>
+<li>Errors 错误</li>
+</ul>
+</li>
+<li>Bonjour<ul>
+<li>发布服务以便在本地网络上轻松发现，或发现其他人发布的服务。</li>
+<li>Local Network services 本地网络服务</li>
+<li>Service Discovery 服务发现</li>
+</ul>
+</li>
+</ul>
+<h2 id="Low-Level-Utilities-底层支持"><a href="#Low-Level-Utilities-底层支持" class="headerlink" title="Low-Level Utilities 底层支持"></a>Low-Level Utilities 底层支持</h2><ul>
+<li>XPC （管理安全的进程间通信。）<ul>
+<li>XPC Client</li>
+<li>XPC Services</li>
+</ul>
+</li>
+<li>Objc Runtime （获得对基本 Objective-C 功能、Cocoa 设计模式和 Swift 集成的底层支持。） <ul>
+<li>Object Basics 对象基础</li>
+<li>Copying 复制</li>
+<li>Value Wrappers and Transformations 价值包装和转换</li>
+<li>Invocations 调用</li>
+<li>Remote Objects 远程对象<ul>
+<li>NSProxy(为充当其他对象或尚不存在的对象的替代对象的对象定义 API 的抽象超类。) 虚类</li>
+</ul>
+</li>
+<li>Memory Management 内存管理<ul>
+<li>NSAutoreleasePool 自动释放池</li>
+<li>Memory Manaement Functions 内存管理功能</li>
+<li>Foundation Framework Version Numbers </li>
+<li>Distributed Objects Support 分布式对象支持</li>
+<li>Java Support</li>
+<li>Objective-C Garbage Collection oc垃圾回收</li>
+</ul>
+</li>
+<li>Legacy 遗产<ul>
+<li>NSZone 一种用于识别和管理内存区域的类型。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Prrocesses and Threads(管理您的应用程序与主机操作系统和其他进程的交互，并实现低级并发功能。)<ul>
+<li>Run Loop Scheduling 运行循环调度<ul>
+<li>NSRunLoop<ul>
+<li>Accessing Run Loops and Modes 访问runloop和模式</li>
+<li>Managing Timers 管理定时器</li>
+<li>Managing Ports 管理端口</li>
+<li>Configuring as Server Process 配置为服务器进程</li>
+<li>Running a Loop 运行runloop</li>
+<li>Scheduing and Canceling Tasks 安排和取消任务</li>
+</ul>
+</li>
+<li>NSTimer<ul>
+<li>Creating a Timer 创建定时器</li>
+<li>Firing a Timer 触发定时器</li>
+<li>Stopping a Timer 停止定时器</li>
+<li>Retrieving Timer Information 检索定时器信息</li>
+<li>Configuring Firing Tolerance 配置定时时差</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Process Info 进程信息<ul>
+<li>NSProcessInfo</li>
+</ul>
+</li>
+<li>Threads and Locking 线程和锁<ul>
+<li>NSTread</li>
+<li>NSLocking</li>
+<li>NSLock</li>
+<li>NSRecursiveLock 递归锁</li>
+<li>NSDistributedLock 分布式锁</li>
+<li>NSConditionLock 条件锁</li>
+<li>NSCondition 条件</li>
+</ul>
+</li>
+<li>Operations 操作<ul>
+<li>NSOperationQueue</li>
+<li>NSOperation</li>
+<li>NSBlockOperation</li>
+<li>NSInvocationOperation</li>
+</ul>
+</li>
+<li>Scripts and External Tasks 脚本和外部任务<ul>
+<li>NSTask</li>
+<li>NSUserScriptTask</li>
+<li>NSUserAppleScriptTask</li>
+<li>NSUserAutomatorTask</li>
+<li>NSUserUnixTask</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Streams, Sockets, and Ports <ul>
+<li>使用底层 Unix 功能来管理文件、进程和网络之间的输入和输出。</li>
+<li>Streams</li>
+<li>Tasks and Pipes 任务和管道</li>
+<li>Sockets 套接字<ul>
+<li>NSPort 端口</li>
+<li>NSSocketPort socket端口</li>
+<li>Byte Order Utilities 字节顺序使用程序</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1332228">iOS引用转换：Foundation与Core Foundation对象互相转换（__CFString转NSString，void *转id等等）</a><br><a target="_blank" rel="noopener" href="https://github.com/apple-oss-distributions/">Apple OSS Distributions</a><br><a target="_blank" rel="noopener" href="https://github.com/apple-oss-distributions/objc4/tags">objc4</a><br><a target="_blank" rel="noopener" href="https://github.com/cimain/CoreFoudation">CoreFoundation</a><br><a target="_blank" rel="noopener" href="https://github.com/apple-oss-distributions/CF/tags">CF</a><br><a target="_blank" rel="noopener" href="https://github.com/cimain/runtime">runtime</a><br><a target="_blank" rel="noopener" href="https://developer.apple.com/documentation/foundation">Foundation</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_27706697/article/details/45361847">IOS-Foundation-runtime基本介绍</a><br><a target="_blank" rel="noopener" href="https://edu.csdn.net/lecturer/1899">https://edu.csdn.net/lecturer/1899</a></p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/iOS/" class="category-chain-item">iOS</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/iOS/%E8%BF%9B%E9%98%B6/" class="category-chain-item">进阶</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/iOS/%E8%BF%9B%E9%98%B6/%E6%A1%86%E6%9E%B6/" class="category-chain-item">框架</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/iOS/%E8%BF%9B%E9%98%B6/%E6%A1%86%E6%9E%B6/Core-Services/" class="category-chain-item">Core Services</a>
+  
+  
+
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Foundation</div>
+      <div>http://example.com/2023/03/18/Foundation/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Amir</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年3月18日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/03/18/CoreFoundation/" title="CoreFoundation">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">CoreFoundation</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/03/17/Swift%E5%A4%9A%E7%BA%BF%E7%A8%8B/" title="Swift多线程">
+                        <span class="hidden-mobile">Swift多线程</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"1tn2Ffi2H8f90YdYNBTTkULu-gzGzoHsz","appKey":"XR7k6OCIp2KxtB7EIlOIkNoT","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
