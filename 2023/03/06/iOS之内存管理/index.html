@@ -16,13 +16,15 @@
   <meta name="author" content="Amir">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
+    <meta name="description" content="内存管理内存布局Tagged Pointer类簇OC对象的内存管理copy&#x2F;mutableCopy引用计数dealloc是如何工作的AutoreleasePool底层原理探索">
+<meta property="og:type" content="article">
 <meta property="og:title" content="iOS之内存管理">
 <meta property="og:url" content="http://example.com/2023/03/06/iOS%E4%B9%8B%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/index.html">
 <meta property="og:site_name" content="I&#39;m Amir">
+<meta property="og:description" content="内存管理内存布局Tagged Pointer类簇OC对象的内存管理copy&#x2F;mutableCopy引用计数dealloc是如何工作的AutoreleasePool底层原理探索">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-06T12:40:49.000Z">
-<meta property="article:modified_time" content="2023-03-07T06:12:45.352Z">
+<meta property="article:modified_time" content="2023-03-24T06:54:45.314Z">
 <meta property="article:author" content="Amir">
 <meta property="article:tag" content="内存管理">
 <meta name="twitter:card" content="summary_large_image">
@@ -235,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          91 字
         
       </span>
     
@@ -297,7 +299,7 @@
             
               <div class="markdown-body">
                 
-                <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+                <h1 id="内存管理"><a href="#内存管理" class="headerlink" title="内存管理"></a>内存管理</h1><h2 id="内存布局"><a href="#内存布局" class="headerlink" title="内存布局"></a>内存布局</h2><h2 id="Tagged-Pointer"><a href="#Tagged-Pointer" class="headerlink" title="Tagged Pointer"></a>Tagged Pointer</h2><h2 id="类簇"><a href="#类簇" class="headerlink" title="类簇"></a>类簇</h2><h2 id="OC对象的内存管理"><a href="#OC对象的内存管理" class="headerlink" title="OC对象的内存管理"></a>OC对象的内存管理</h2><h2 id="copy-x2F-mutableCopy"><a href="#copy-x2F-mutableCopy" class="headerlink" title="copy&#x2F;mutableCopy"></a>copy&#x2F;mutableCopy</h2><h2 id="引用计数"><a href="#引用计数" class="headerlink" title="引用计数"></a>引用计数</h2><h2 id="dealloc是如何工作的"><a href="#dealloc是如何工作的" class="headerlink" title="dealloc是如何工作的"></a>dealloc是如何工作的</h2><h2 id="AutoreleasePool底层原理探索"><a href="#AutoreleasePool底层原理探索" class="headerlink" title="AutoreleasePool底层原理探索"></a>AutoreleasePool底层原理探索</h2><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
               </div>
             
@@ -320,12 +322,12 @@
   
     <span>></span>
     
-  <a href="/categories/iOS/%E5%9F%BA%E7%A1%80/" class="category-chain-item">基础</a>
+  <a href="/categories/iOS/OC/" class="category-chain-item">OC</a>
   
   
     <span>></span>
     
-  <a href="/categories/iOS/%E5%9F%BA%E7%A1%80/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/" class="category-chain-item">内存管理</a>
+  <a href="/categories/iOS/OC/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E7%9B%B8%E5%85%B3/" class="category-chain-item">内存管理相关</a>
   
   
 

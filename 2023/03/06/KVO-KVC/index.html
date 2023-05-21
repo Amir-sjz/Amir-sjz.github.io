@@ -16,13 +16,15 @@
   <meta name="author" content="Amir">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
-<meta property="og:title" content="KVO&#x2F;KVC">
+    <meta name="description" content="KVO定义简介 键值观察  允许对象在其他的指定属性 发生更改时收到通知   是对NSObject的扩展来实现的  NSObject(NSKeyValueObserving)    api 监听注册   (void)addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPathoptions:(NSKeyValueObservingO">
+<meta property="og:type" content="article">
+<meta property="og:title" content="KVO">
 <meta property="og:url" content="http://example.com/2023/03/06/KVO-KVC/index.html">
 <meta property="og:site_name" content="I&#39;m Amir">
+<meta property="og:description" content="KVO定义简介 键值观察  允许对象在其他的指定属性 发生更改时收到通知   是对NSObject的扩展来实现的  NSObject(NSKeyValueObserving)    api 监听注册   (void)addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPathoptions:(NSKeyValueObservingO">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-06T12:56:39.000Z">
-<meta property="article:modified_time" content="2023-03-20T07:24:48.821Z">
+<meta property="article:modified_time" content="2023-03-22T15:17:15.111Z">
 <meta property="article:author" content="Amir">
 <meta property="article:tag" content="kvo">
 <meta property="article:tag" content="kvc">
@@ -30,7 +32,7 @@
   
   
   
-  <title>KVO/KVC - I&#39;m Amir</title>
+  <title>KVO - I&#39;m Amir</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -213,7 +215,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="KVO/KVC"></span>
+            <span id="subtitle" data-typed-text="KVO"></span>
           
         </div>
 
@@ -236,7 +238,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          2.2k 字
         
       </span>
     
@@ -247,7 +249,7 @@
         
         
         
-          1 分钟
+          19 分钟
         
       </span>
     
@@ -293,12 +295,151 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">KVO/KVC</h1>
+            <h1 style="display: none">KVO</h1>
             
             
               <div class="markdown-body">
                 
-                <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+                <h1 id="KVO"><a href="#KVO" class="headerlink" title="KVO"></a>KVO</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><ul>
+<li><p>键值观察</p>
+<ul>
+<li>允许对象在其他的指定属性 发生更改时收到通知</li>
+</ul>
+</li>
+<li><p>是对NSObject的扩展来实现的</p>
+<ul>
+<li>NSObject(NSKeyValueObserving)</li>
+</ul>
+</li>
+</ul>
+<h3 id="api"><a href="#api" class="headerlink" title="api"></a>api</h3><ul>
+<li><p>监听注册</p>
+<ul>
+<li><ul>
+<li>(void)addObserver:(NSObject *)observer<br> forKeyPath:(NSString *)keyPath<br>options:(NSKeyValueObservingOptions)options<br>context:(nullable void *)context;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>接收通知</p>
+<ul>
+<li><ul>
+<li>(void)observeValueForKeyPath:(nullable NSString *)keyPath<br>          ofObject:(nullable id)object<br>            change:(nullable NSDictionary&lt;NSKeyValueChangeKey, id&gt; *)change<br>           context:(nullable void *)context;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>移除监听</p>
+<ul>
+<li><ul>
+<li>(void)removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="context参数"><a href="#context参数" class="headerlink" title="context参数"></a>context参数</h3><ul>
+<li><p>作用</p>
+<ul>
+<li>标签区分，可以更精确的确定被观察对象属性，用于继承、多监听；也可以用在传值</li>
+</ul>
+</li>
+<li><p>苹果推荐用法</p>
+<ul>
+<li>用context来精确的确定被观察对象属性，使用唯一明明的静态变量的地址作为context的值。可以为整个类设置一个context，然后在监听方法中通过object和keyPath来确定被观察属性，这样存在继承的情况可以通过context来判断；也可以为每个被观察属性设置不同的context，这样使用context就可以精确的确定被观察对象属性</li>
+</ul>
+</li>
+<li><p>优点</p>
+<ul>
+<li>嵌套少、性能高 、更安全、扩展性强</li>
+</ul>
+</li>
+<li><p>注意点</p>
+<ul>
+<li>如果传的是一个对象，必须在移除观察之前持有它的强引用，否则在监听方法中访问context就可能导致crash</li>
+<li>空传NULL而不应该传nil</li>
+</ul>
+</li>
+</ul>
+<h3 id="移除观察者"><a href="#移除观察者" class="headerlink" title="移除观察者"></a>移除观察者</h3><ul>
+<li>成对</li>
+</ul>
+<h3 id="KVO的自动触发"><a href="#KVO的自动触发" class="headerlink" title="KVO的自动触发"></a>KVO的自动触发</h3><ul>
+<li><ul>
+<li><p>(BOOL)automaticallyNotifiesObserversForKey:(NSString *)key</p>
+<ul>
+<li>return YES</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="KVO的手动触发"><a href="#KVO的手动触发" class="headerlink" title="KVO的手动触发"></a>KVO的手动触发</h3><ul>
+<li><ul>
+<li><p>(BOOL)automaticallyNotifiesObserversForKey:(NSString *)key</p>
+<ul>
+<li>return NO</li>
+<li>手动调用willChangeValueForKey、didChangeValueForKey</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="一对多关系"><a href="#一对多关系" class="headerlink" title="一对多关系"></a>一对多关系</h3><ul>
+<li><p>重写keyPathsForValuesAffectingValueForKey方法</p>
+<ul>
+<li>指明字段A，依赖于字段B、C</li>
+<li><ul>
+<li>(NSSet&lt;NSString *&gt;)keyPathsForValuesAffectingValueForKey:(NSString *)key</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>{<br>    NSSet *keyPaths &#x3D; [super keyPathsForValuesAffectingValueForKey:key];<br>    if ([key isEqualToString:@”fullName”]) {<br>        NSArray *affectingKeys &#x3D; @[@”name”, @”nick”];<br>        keyPaths &#x3D; [keyPaths setByAddingObjectsFromArray:affectingKeys];<br>    }<br>    return keyPaths;<br>}</p>
+<h3 id="对集合的观察"><a href="#对集合的观察" class="headerlink" title="对集合的观察"></a>对集合的观察</h3><ul>
+<li><p>对于数组的增、删、替换观察都必须通过KVC-mutableArrayValueForKey方法才能触发回调</p>
+</li>
+<li><p>kind</p>
+<ul>
+<li>&#x3D;1，直接赋值</li>
+<li>&#x3D;2，添加元素</li>
+<li>&#x3D;3，移除元素</li>
+<li>&#x3D;4，替换元素</li>
+</ul>
+</li>
+<li><p>typedef NS_ENUM(NSUInteger, NSKeyValueChange) {<br>  NSKeyValueChangeSetting &#x3D; 1,<br>  NSKeyValueChangeInsertion &#x3D; 2,<br>  NSKeyValueChangeRemoval &#x3D; 3,<br>  NSKeyValueChangeReplacement &#x3D; 4,<br>};</p>
+</li>
+</ul>
+<h2 id="原理分析"><a href="#原理分析" class="headerlink" title="原理分析"></a>原理分析</h2><h3 id="KVO的实现用到了isa-swizzing技术，isa会指向一个中间类。因此，isa指针的值不一定反应实例的实际类。永远不要依赖isa指针来确定类成员关系。应该使用类方法来确定对象实例的类"><a href="#KVO的实现用到了isa-swizzing技术，isa会指向一个中间类。因此，isa指针的值不一定反应实例的实际类。永远不要依赖isa指针来确定类成员关系。应该使用类方法来确定对象实例的类" class="headerlink" title="KVO的实现用到了isa-swizzing技术，isa会指向一个中间类。因此，isa指针的值不一定反应实例的实际类。永远不要依赖isa指针来确定类成员关系。应该使用类方法来确定对象实例的类"></a>KVO的实现用到了isa-swizzing技术，isa会指向一个中间类。因此，isa指针的值不一定反应实例的实际类。永远不要依赖isa指针来确定类成员关系。应该使用类方法来确定对象实例的类</h3><h3 id="KVO动态生成子类"><a href="#KVO动态生成子类" class="headerlink" title="KVO动态生成子类"></a>KVO动态生成子类</h3><ul>
+<li>自动生成<NSKVONotifying_ClassName></li>
+<li>继承于原始类<ClassName></li>
+</ul>
+<h3 id="动态子类中有哪些方法"><a href="#动态子类中有哪些方法" class="headerlink" title="动态子类中有哪些方法"></a>动态子类中有哪些方法</h3><ul>
+<li><p>class</p>
+<ul>
+<li>重写class方法</li>
+</ul>
+</li>
+<li><p>setXXX</p>
+<ul>
+<li>方便kvo方法 的添加</li>
+</ul>
+</li>
+<li><p>_isKVOA</p>
+<ul>
+<li>判断当前的类是不是KVO创建的</li>
+</ul>
+</li>
+<li><p>dealloc</p>
+<ul>
+<li>将 实例变量 isa重新指回到原来的YJPerson类</li>
+</ul>
+</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h3 id="OC依托于强大的runtime机制来实现KVO"><a href="#OC依托于强大的runtime机制来实现KVO" class="headerlink" title="OC依托于强大的runtime机制来实现KVO"></a>OC依托于强大的runtime机制来实现KVO</h3><h3 id="当我们第一次观察某个对象的属性时，runtime会创建一个中间类继承自观察对象所属类"><a href="#当我们第一次观察某个对象的属性时，runtime会创建一个中间类继承自观察对象所属类" class="headerlink" title="当我们第一次观察某个对象的属性时，runtime会创建一个中间类继承自观察对象所属类"></a>当我们第一次观察某个对象的属性时，runtime会创建一个中间类继承自观察对象所属类</h3><h3 id="在这个中间类中，它会重写所有被观察的key的setter，然后将观察的key的setter，然后将观察对象的isa指针指向中间类。所以观察对象通过object-getClassName-查看，变成了中间类的实例"><a href="#在这个中间类中，它会重写所有被观察的key的setter，然后将观察的key的setter，然后将观察对象的isa指针指向中间类。所以观察对象通过object-getClassName-查看，变成了中间类的实例" class="headerlink" title="在这个中间类中，它会重写所有被观察的key的setter，然后将观察的key的setter，然后将观察对象的isa指针指向中间类。所以观察对象通过object_getClassName()查看，变成了中间类的实例"></a>在这个中间类中，它会重写所有被观察的key的setter，然后将观察的key的setter，然后将观察对象的isa指针指向中间类。所以观察对象通过object_getClassName()查看，变成了中间类的实例</h3><h3 id="在中间类的setKey方法中-，调用父类的setKey方法进行复制-，同时发出改变回调-即kvo的监听回调"><a href="#在中间类的setKey方法中-，调用父类的setKey方法进行复制-，同时发出改变回调-即kvo的监听回调" class="headerlink" title="在中间类的setKey方法中 ，调用父类的setKey方法进行复制 ，同时发出改变回调(即kvo的监听回调)"></a>在中间类的setKey方法中 ，调用父类的setKey方法进行复制 ，同时发出改变回调(即kvo的监听回调)</h3><h3 id="在进行监听移除后，观察对象的isa恢复到原来的类上"><a href="#在进行监听移除后，观察对象的isa恢复到原来的类上" class="headerlink" title="在进行监听移除后，观察对象的isa恢复到原来的类上"></a>在进行监听移除后，观察对象的isa恢复到原来的类上</h3><p><em>XMind: ZEN - Trial Version</em></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i">Introduction to Key-Value Observing Programming Guide</a></p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
               </div>
             
@@ -359,7 +500,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>KVO/KVC</div>
+      <div>KVO</div>
       <div>http://example.com/2023/03/06/KVO-KVC/</div>
     </div>
     <div class="license-meta">

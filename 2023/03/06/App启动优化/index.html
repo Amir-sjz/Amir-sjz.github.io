@@ -16,17 +16,24 @@
   <meta name="author" content="Amir">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
+    <meta name="description" content="[TOC] App启动优化App启动流程App的启动我们一般分为两个部分  pre-main,即main函数之前 main  pre-main阶段的流程 dylib loading 加载动态库 rebase&#x2F;binding 重定向&#x2F;绑定 ObjC setup OC类的注册 initializer 注册方法（initializer 和 +load）  dylib动态的加载dybl">
+<meta property="og:type" content="article">
 <meta property="og:title" content="App启动优化">
 <meta property="og:url" content="http://example.com/2023/03/06/App%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96/index.html">
 <meta property="og:site_name" content="I&#39;m Amir">
+<meta property="og:description" content="[TOC] App启动优化App启动流程App的启动我们一般分为两个部分  pre-main,即main函数之前 main  pre-main阶段的流程 dylib loading 加载动态库 rebase&#x2F;binding 重定向&#x2F;绑定 ObjC setup OC类的注册 initializer 注册方法（initializer 和 +load）  dylib动态的加载dybl">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/assets/16800622606751.jpg">
+<meta property="og:image" content="http://example.com/assets/16806118804150.jpg">
+<meta property="og:image" content="http://example.com/assets/16806121702390.jpg">
+<meta property="og:image" content="http://example.com/assets/16806122554293.jpg">
 <meta property="article:published_time" content="2023-03-06T12:41:43.000Z">
-<meta property="article:modified_time" content="2023-03-07T11:25:57.330Z">
+<meta property="article:modified_time" content="2023-04-04T12:53:36.270Z">
 <meta property="article:author" content="Amir">
 <meta property="article:tag" content="优化">
 <meta property="article:tag" content="启动">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/assets/16800622606751.jpg">
   
   
   
@@ -236,7 +243,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          6.8k 字
         
       </span>
     
@@ -247,7 +254,7 @@
         
         
         
-          1 分钟
+          57 分钟
         
       </span>
     
@@ -298,7 +305,131 @@
             
               <div class="markdown-body">
                 
-                <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+                <p>[TOC]</p>
+<h1 id="App启动优化"><a href="#App启动优化" class="headerlink" title="App启动优化"></a>App启动优化</h1><h2 id="App启动流程"><a href="#App启动流程" class="headerlink" title="App启动流程"></a>App启动流程</h2><p>App的启动我们一般分为两个部分</p>
+<ul>
+<li>pre-main,即main函数之前</li>
+<li>main</li>
+</ul>
+<h3 id="pre-main阶段的流程"><a href="#pre-main阶段的流程" class="headerlink" title="pre-main阶段的流程"></a>pre-main阶段的流程</h3><ul>
+<li>dylib loading 加载动态库</li>
+<li>rebase&#x2F;binding 重定向&#x2F;绑定</li>
+<li>ObjC setup OC类的注册</li>
+<li>initializer 注册方法（initializer 和 +load）</li>
+</ul>
+<h4 id="dylib动态的加载"><a href="#dylib动态的加载" class="headerlink" title="dylib动态的加载"></a>dylib动态的加载</h4><p>dyblib的加载的耗时是必然的，系统的动态库是已经载入共享缓存空间，系统动态库已经做了告诉的优化，但是我们自定义的动态库不一样，所以苹果不建议自定义动态库。</p>
+<h4 id="Objc-setup"><a href="#Objc-setup" class="headerlink" title="Objc setup"></a>Objc setup</h4><p>因为OC是动态语言，OC类的注册</p>
+<ul>
+<li>读取Mach-O的data字段，找到OC类的相关信息</li>
+<li>注册OC类，<ul>
+<li>OC的runtime需要维护映射表即SEL&#x2F;IMP的映射以及类名与类的全局表，</li>
+<li>当加载Mach-O的时候，这些所有的类都要注册到全局表中，</li>
+<li>除这些之外，还有类别，协议信息要插入到方法列表中，这是必然的损耗，</li>
+<li>所以这里的优化删除无用的OC的类文件（只要这个类存在即使没有用到，也会造成时间损耗）</li>
+</ul>
+</li>
+</ul>
+<h3 id="rebase-x2F-binding"><a href="#rebase-x2F-binding" class="headerlink" title="rebase&#x2F;binding"></a>rebase&#x2F;binding</h3><p>下文重点讲</p>
+<h4 id="initializer"><a href="#initializer" class="headerlink" title="initializer"></a>initializer</h4><ul>
+<li>load方法以及构造函数中，尽量不要做延迟加载的事情，把消耗的任务放在子线程去，以减少主线程开销，数据可以缓存</li>
+</ul>
+<h2 id="物理-x2F-虚拟内存介绍"><a href="#物理-x2F-虚拟内存介绍" class="headerlink" title="物理&#x2F;虚拟内存介绍"></a>物理&#x2F;虚拟内存介绍</h2><h3 id="物理内存"><a href="#物理内存" class="headerlink" title="物理内存"></a>物理内存</h3><ul>
+<li>早期的操作系统，CPU直接从内存条读取数据，导致内存不够用</li>
+<li>应用需要加载时，就会直接加载到内存条中，然后CPU去内存条读取。当加载的应用多了，再加载应用时，内存就不够用了，这时候就需要干掉一些应用然后再去打开这个新的应用</li>
+<li>加载到内存条中的应用都是根据内存地址去读</li>
+<li>易于被黑客篡改</li>
+</ul>
+<p>解决方案</p>
+<ul>
+<li>部分加载到内存</li>
+<li>懒加载</li>
+<li>先加载启动相关的</li>
+<li>后面用到就再加载到内存</li>
+<li>导致代码不连续，需要运行过程不断计算地址，效率低</li>
+<li>于是改用 虚拟内存</li>
+</ul>
+<h3 id="虚拟内存"><a href="#虚拟内存" class="headerlink" title="虚拟内存"></a>虚拟内存</h3><ul>
+<li>应用程序只读代码，代码计算地址的事情交给CPU和硬件MMU，MMU是内存管理单元，用来翻译地址</li>
+</ul>
+<p><img src="/assets/16800622606751.jpg" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li>应用程序在运行时访问的内存就是连续的，而访问的内存就是虚拟内存，虚拟内存对应的就是计算好的物理地址</li>
+<li>虚拟地址和物理地址不是一个字节一个字节对应的。犹豫现在的应用内存是一块一块的，干脆就以块为单位去对应，单位就是page，遇事就产生了内存分页管理的概念</li>
+</ul>
+<h4 id="映射表（内存分页）"><a href="#映射表（内存分页）" class="headerlink" title="映射表（内存分页）"></a>映射表（内存分页）</h4><ul>
+<li>页的大小不同系统大小是不一样的，iOS，一页是16k，Mac中是4k。在Mac中可以通过<code>PAGESIZE</code>查看</li>
+<li>现在内存连续的问题得以解决，安全问题也解决了。由于一个应用只访问自己的虚拟表，而翻译过来的物理地址也是固定的，所以那些外挂就无法访问其他应用。内存溢出的问题也解决了，因为现在的内存都是一页一页的访问，所以就不会产生溢出</li>
+<li>当应用加载时，首先启动需要的代码会直接加到内存，当要执行新的代码时，cpu发现这段代码没有在内存中，就会被代码卡住，然后操作系统会将这页加载到屋里内存中，这个现象叫做<code>缺页终端（pagefault）</code></li>
+<li>操作系统需要执行的一页代码载入到物理内存中，会往孔雀处插入。但手机启动后，物理内存就没有空位了，里面都放了其他的一些数据，操作系统通过<code>页面置换算法</code>,它会覆盖掉不那么活跃的部分。将长时间不用的应用退出，释放内存给运行的应用使用。</li>
+<li>有时候在访问内存时，会访问比APP当前大的内存，因为虚拟表有8G大小，放访问4G，那么她会访问到其他应用吗？不会，这块虚拟内存是没有数据的，它指向NULL</li>
+</ul>
+<h3 id="rebae-x2F-binding"><a href="#rebae-x2F-binding" class="headerlink" title="rebae&#x2F;binding"></a>rebae&#x2F;binding</h3><ul>
+<li>binding是绑定，当内部文件访问外部函数，就要通过内部符号绑定访问外部，现在绑定方式就是懒加载</li>
+<li>rebase是重定位。由于虚拟内存产生后，每次内存都是从0开始，这个时候响应的安全就不存在了，所以操作系统出现了一个新技术ASLR：让每次生成的虚拟页面，不要从0开始，从随机的值开始，应用的每次启动的起始位置都是随机的。此时行数的位置就成了ASLR+OFFSET，也就是rebase重定向</li>
+<li>少数缺页中断机会是感知不到的，时间是毫秒级别。但是同时大量的缺页中断，比如成百上千甚至更多的时候，用户就能感知到了，冷启动就会产生大量的缺页异常</li>
+</ul>
+<h4 id="Systeme-Trace产看缺页数"><a href="#Systeme-Trace产看缺页数" class="headerlink" title="Systeme Trace产看缺页数"></a>Systeme Trace产看缺页数</h4><p>Instruments的System Trace可以查看缺页中断</p>
+<ul>
+<li>冷启动：应用在屋里内存中没有占用时的启动是冷启动。例如第一次打开App，或者App被杀死后，一段时间过后再打开，都是冷启动</li>
+<li>热启动：应用编译在物理内存中的内存还存在的启动就是热启动，例如，短时间App从后台返回，App杀死后立即打开，此时它的物理内存还存在，此时就是热启动</li>
+</ul>
+<h2 id="文件和方法的编译顺序"><a href="#文件和方法的编译顺序" class="headerlink" title="文件和方法的编译顺序"></a>文件和方法的编译顺序</h2><ul>
+<li>Build Setting 中搜索Link Map，然后将Write Link Map File设置为yes</li>
+<li>这里代码文件的顺序是按编译顺序确定的，文件内部的代码是按照书写顺序从上到下的</li>
+</ul>
+<h2 id="二进制重排"><a href="#二进制重排" class="headerlink" title="二进制重排"></a>二进制重排</h2><ul>
+<li>在objc4源码根目录中能看到一个libobjc.order文件</li>
+<li>还用上面LaunchOptimization工程，在根目录下创建LaunchOpt.order文件</li>
+</ul>
+<h2 id="Clang插桩"><a href="#Clang插桩" class="headerlink" title="Clang插桩"></a>Clang插桩</h2><p>SantizerCovnerage处可以看到Tracing PC,PC是CPU读取代码的指针，Tracing PC是跟踪CPU执行到的代码。SanitizerCoverage是LLVM内置的一个简单的代码覆盖率工具，它会在函数，方法和block处插入回调，并提供这些回调的默认实现，并实现简单的覆盖和可视化。</p>
+<h3 id="hook函数调用"><a href="#hook函数调用" class="headerlink" title="hook函数调用"></a>hook函数调用</h3><p>Build Setting中Other C Flags中添加 -fsanitize-converage&#x3D;trace-pc-guard</p>
+<p>需要添加</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs reasonml"><span class="hljs-constructor">__sanitizer_cov_trace_pc_guard(&amp;<span class="hljs-params">guard_variable</span>)</span><br><span class="hljs-constructor">__sanitizer_cov_trace_pc_guard_init(<span class="hljs-params">uint32_t</span> <span class="hljs-operator">*</span><span class="hljs-params">start</span>, <span class="hljs-params">uint32_t</span> <span class="hljs-operator">*</span><span class="hljs-params">stop</span>)</span><br></code></pre></td></tr></table></figure>
+
+<h4 id="sanitizer-cov-trace-pc-guard-init"><a href="#sanitizer-cov-trace-pc-guard-init" class="headerlink" title="__sanitizer_cov_trace_pc_guard_init"></a>__sanitizer_cov_trace_pc_guard_init</h4><p>此函数反映了 项目中符号的个数。<br>start,stop</p>
+<p>__sanitizer_cov_trace_pc_guard_init能够监控项目中所有OC方法、c函数和block，也就是反应了项目中符号的个数</p>
+<h4 id="sanitizer-cov-trace-pc-guard"><a href="#sanitizer-cov-trace-pc-guard" class="headerlink" title="__sanitizer_cov_trace_pc_guard"></a>__sanitizer_cov_trace_pc_guard</h4><p>__sanitizer_cov_trace_pc_guard方法是拦截项目中的方法，相当于hook</p>
+<p>__sanitizer_cov_trace_pc_guard是由项目内部方法，函数，block函数调用，也就是hook了项目中一切的函数调用</p>
+<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><ul>
+<li>汇编实现中先调用了__sanitizer_cov_trace_pc_guard函数</li>
+<li>所以，项目中只要添加了Clang插桩标记，编译器就会 在所有方法、函数、block代码实现的边缘添加一句__sanitizer_cov_trace_pc_guard代码</li>
+<li>编译器所有代码（自己写的代码）中添加这个函数，也就是修改了二进制文件，只有编译器能干这个事情</li>
+<li>那么可以在上线前代码审查时使用，上线时，将Other C Flag中的标记清除即可</li>
+</ul>
+<h3 id="获取启动符号"><a href="#获取启动符号" class="headerlink" title="获取启动符号"></a>获取启动符号</h3><p>用__builtin_return_address(0)函数可以获取__sanitizer_cov_trace_pc_guard的函数调用者函数地址。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs swift">void __sanitizer_cov_trace_pc_guard(uint32_t <span class="hljs-operator">*</span><span class="hljs-keyword">guard</span>) &#123;<br>    <span class="hljs-comment">// 获取调用者函数的地址</span><br>    void <span class="hljs-operator">*</span><span class="hljs-type">PC</span> <span class="hljs-operator">=</span> __builtin_return_address(<span class="hljs-number">0</span>); <br>    <span class="hljs-type">Dl_info</span> info; <span class="hljs-comment">// 符号信息结构体</span><br>    dladdr(<span class="hljs-type">PC</span>, <span class="hljs-operator">&amp;</span>info); <span class="hljs-comment">// 将从PC中获取的函数信息存入结构体中</span><br>    <br>    printf(<span class="hljs-string">&quot;Dl_info : <span class="hljs-subst">\n</span>fname: %s<span class="hljs-subst">\n</span>fbase: %p<span class="hljs-subst">\n</span>sname: %s<span class="hljs-subst">\n</span>saddr: %p<span class="hljs-subst">\n</span><span class="hljs-subst">\n</span>&quot;</span>, info.dli_fname, info.dli_fbase, info.dli_sname, info.dli_saddr);<br>&#125;<br></code></pre></td></tr></table></figure>
+<ul>
+<li>Dl_info是一个结构体，用来存储函数相关信息：<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> <span class="hljs-title class_">dl_info</span> &#123;<br>    <span class="hljs-type">const</span> <span class="hljs-type">char</span>      *dli_fname;  <span class="hljs-comment">// 当前项目路径</span><br>    <span class="hljs-type">void</span>            *dli_fbase;  <span class="hljs-comment">// 是`MachO`文件的起始位置</span><br>    <span class="hljs-type">const</span> <span class="hljs-type">char</span>      *dli_sname;  <span class="hljs-comment">// 符号名字(方法名)</span><br>    <span class="hljs-type">void</span>            *dli_saddr;  <span class="hljs-comment">// 函数地址</span><br>&#125; Dl_info;<br></code></pre></td></tr></table></figure></li>
+<li>dladdr作用是将获取函数的信息存入Dl_info结构体中</li>
+<li>验证结果：</li>
+<li>便可以用dli_sname直接输出符号名字，就得到了所有方法的调用顺序</li>
+</ul>
+<p><img src="/assets/16806118804150.jpg" srcset="/img/loading.gif" lazyload></p>
+<h3 id="坑点分析及解决方案"><a href="#坑点分析及解决方案" class="headerlink" title="坑点分析及解决方案"></a>坑点分析及解决方案</h3><p>坑点：多线程问题<br>子线程调用，产生多线程访问，可能会出现获取方法信息顺序错乱的问题。<br>可以使用OSAtomicEnqueue()和OSAtomicDequeue()来线程安全，使获取方法信息顺序不出错</p>
+<p>OSAtomicEnqueue()和OSAtomicDequeue() 使用:</p>
+<ul>
+<li>先导入头文件#import &lt;libkern&#x2F;OSAtomic.h&gt;</li>
+<li>再将Other C Flag标识符改成：-fsanitize-coverage&#x3D;func,trace-pc-guard，里面添加了func是仅限函数使用!!!</li>
+<li>因为-fsanitize-coverage&#x3D;trace-pc-guard 标识，默认循环也会调用 __sanitizer_cov_trace_pc_guard，核心代码如下：</li>
+</ul>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">// 定义一个原子队列<br>static OSQueueHead symbolList = OS_ATOMIC_QUEUE_INIT;<br><br>// 链表结构体<br>typedef struct &#123;<br>    void *pc;   // 存获取到的PC（方法地址）<br>    void *next; // 指向下一个节点 （下一个方法地址）<br>&#125; <span class="hljs-keyword">Node</span><span class="hljs-title">;</span><br><span class="hljs-title"></span><br><span class="hljs-title">void</span> __sanitizer_cov_trace_pc_guard(uint32_t *guard) &#123;<br>    void *PC = __builtin_return_address(<span class="hljs-number">0</span>); <br>    // 给<span class="hljs-keyword">node</span><span class="hljs-title">节点分配内存</span><br><span class="hljs-title">    Node</span> *<span class="hljs-keyword">node</span> <span class="hljs-title">= malloc</span>(sizeof(<span class="hljs-keyword">Node</span><span class="hljs-title">)); </span><br><span class="hljs-title">    // 将PC</span>赋值给<span class="hljs-keyword">node</span><span class="hljs-title">的pc</span><br>    *<span class="hljs-keyword">node</span> <span class="hljs-title">= (Node</span>)&#123;PC, NULL&#125;;  <br>    // 在队列中将新的<span class="hljs-keyword">node</span><span class="hljs-title">节点存入上个节点的next</span>位置<br>    OSAtomicEnqueue(&amp;symbolList, <span class="hljs-keyword">node</span><span class="hljs-title">, offsetof</span>(<span class="hljs-keyword">Node</span><span class="hljs-title">, next</span>)); <br>&#125;<br><br>- (void)touchesBegan:(NSSet<span class="hljs-tag">&lt;UITouch *&gt;</span> *)touches withEvent:(UIEvent *)event &#123;<br>    // 上面 `Other C Flag`标识符改成：`-<span class="hljs-attr">fsanitize-coverage=</span>func,trace-pc-guard` <br>    // 就是为了避免这里循环，一直调用 __sanitizer_cov_trace_pc_guard<br>    while (YES) &#123;<br>        <span class="hljs-keyword">Node</span> <span class="hljs-title">*node</span> = OSAtomicDequeue(&amp;symbolList, offsetof(<span class="hljs-keyword">Node</span><span class="hljs-title">, next</span>)); // 在队列上个节点的next位置获取<span class="hljs-keyword">node</span><br>        <span class="hljs-title">if</span> (<span class="hljs-keyword">node</span> <span class="hljs-title">== NULL</span>) &#123;<br>            break;<br>        &#125;<br>        Dl_<span class="hljs-literal">inf</span>o <span class="hljs-literal">inf</span>o;<br>        dladdr(<span class="hljs-keyword">node</span><span class="hljs-title">-&gt;pc</span>, &amp;<span class="hljs-literal">inf</span>o); //将pc信息存入<span class="hljs-literal">inf</span>o<br>        printf(<span class="hljs-string">&quot;sname: %s\n&quot;</span>, <span class="hljs-literal">inf</span>o.dli_sname);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>此时就可以保证线程安全，按真实的顺序取到启动符号了<br><img src="/assets/16806121702390.jpg" srcset="/img/loading.gif" lazyload></p>
+<h3 id="生成Order文件并配置"><a href="#生成Order文件并配置" class="headerlink" title="生成Order文件并配置"></a>生成Order文件并配置</h3><p>将打印出来的启动方法放到lauchopt.order文件，然后取出来进行二进制重排</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs swift"><span class="hljs-operator">-</span> (void)touchesBegan:(<span class="hljs-type">NSSet</span>&lt;<span class="hljs-type">UITouch</span> *&gt; <span class="hljs-operator">*</span>)touches withEvent:(<span class="hljs-type">UIEvent</span> <span class="hljs-operator">*</span>)event &#123;<br>    <span class="hljs-comment">// 上面 `Other C Flag`标识符改成：`-fsanitize-coverage=func,trace-pc-guard` </span><br>    <span class="hljs-comment">// 就是为了避免这里循环，一直调用 __sanitizer_cov_trace_pc_guard </span><br>    <br>    <span class="hljs-type">NSMutableArray</span>&lt;<span class="hljs-type">NSString</span> *&gt; <span class="hljs-operator">*</span>symbolNameArray <span class="hljs-operator">=</span> [<span class="hljs-type">NSMutableArray</span> array];<br>    <span class="hljs-keyword">while</span> (<span class="hljs-type">YES</span>) &#123;<br>        <span class="hljs-type">Node</span> <span class="hljs-operator">*</span>node <span class="hljs-operator">=</span> <span class="hljs-type">OSAtomicDequeue</span>(<span class="hljs-operator">&amp;</span>symbolList, offsetof(<span class="hljs-type">Node</span>, next));<br>        <span class="hljs-keyword">if</span> (node <span class="hljs-operator">==</span> <span class="hljs-type">NULL</span>) &#123; <span class="hljs-keyword">break</span>; &#125;<br>        <span class="hljs-type">Dl_info</span> info;<br>        dladdr(node-&gt;pc, <span class="hljs-operator">&amp;</span>info);<br><br>        printf(<span class="hljs-string">&quot;sname: %s<span class="hljs-subst">\n</span>&quot;</span>, info.dli_sname);<br>        <span class="hljs-type">NSString</span> <span class="hljs-operator">*</span>funcName <span class="hljs-operator">=</span> @(info.dli_sname); <span class="hljs-comment">// 转成OC字符串</span><br>        <span class="hljs-comment">// 是否是 OC 方法</span><br>        <span class="hljs-type">BOOL</span> isOcFunc <span class="hljs-operator">=</span> [funcName hasPrefix:@<span class="hljs-string">&quot;-[&quot;</span>] <span class="hljs-operator">||</span> [funcName hasPrefix:@<span class="hljs-string">&quot;+[&quot;</span>];<br>        <span class="hljs-comment">// 生成方法名字</span><br>        funcName <span class="hljs-operator">=</span> isOcFunc <span class="hljs-operator">?</span> funcName : [@<span class="hljs-string">&quot;_&quot;</span> stringByAppendingString:funcName];<br>        <span class="hljs-comment">// 去重</span><br>        <span class="hljs-keyword">if</span> (<span class="hljs-operator">!</span>[symbolNameArray containsObject:funcName]) &#123;<br>            [symbolNameArray insertObject:funcName atIndex:<span class="hljs-number">0</span>];<br>        &#125;<br>    &#125;<br><br>    <span class="hljs-comment">// 去掉自己</span><br>    [symbolNameArray removeObject:[<span class="hljs-type">NSString</span> stringWithFormat:@<span class="hljs-string">&quot;%s&quot;</span>, __func__]];<br><br>    <span class="hljs-comment">// 写入文件</span><br>    <span class="hljs-type">NSString</span> <span class="hljs-operator">*</span>funcString <span class="hljs-operator">=</span> [symbolNameArray componentsJoinedByString:@<span class="hljs-string">&quot;<span class="hljs-subst">\n</span>&quot;</span>];<br>    <span class="hljs-type">NSLog</span>(@<span class="hljs-string">&quot;<span class="hljs-subst">\n</span>funcString: <span class="hljs-subst">\n</span>%@&quot;</span>, funcString);<br>    <span class="hljs-type">NSString</span> <span class="hljs-operator">*</span>filePath <span class="hljs-operator">=</span> [<span class="hljs-type">NSTemporaryDirectory</span>() stringByAppendingPathComponent:@<span class="hljs-string">&quot;launchopt.order&quot;</span>];<br>    <span class="hljs-type">NSData</span> <span class="hljs-operator">*</span>fileData <span class="hljs-operator">=</span> [funcString dataUsingEncoding:<span class="hljs-type">NSUTF8StringEncoding</span>];<br>    <span class="hljs-type">BOOL</span> isSuccess <span class="hljs-operator">=</span> [[<span class="hljs-type">NSFileManager</span> defaultManager] createFileAtPath:filePath contents:fileData attributes:<span class="hljs-literal">nil</span>];<br>    <span class="hljs-keyword">if</span> (isSuccess) &#123;<br>        <span class="hljs-type">NSLog</span>(@<span class="hljs-string">&quot;写入成功  ✅&quot;</span>);<br>    &#125; <span class="hljs-keyword">else</span> &#123;<br>        <span class="hljs-type">NSLog</span>(@<span class="hljs-string">&quot;写入失败 ❌&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>运行后得到的方法顺序是：<br><img src="/assets/16806122554293.jpg" srcset="/img/loading.gif" lazyload></p>
+<p>在Window-&gt;Devices and Simulators选中自己的手机，然后选择当前的LaunchOptimization，再Download Container下载到桌面</p>
+<ul>
+<li>在右键显示包内容，再AppData&#x2F;tmp里找到launchopt.order文件，将文件放到工程根目录</li>
+<li>然后在build Setting的Oder file配置好路径</li>
+<li>然后将write Link Map Files设置为YES，最后删除other C flag内容，运行后找到txt文件并打开</li>
+</ul>
+<p>此时得到的顺序和打印一致</p>
+<h3 id="Swift符号获取"><a href="#Swift符号获取" class="headerlink" title="Swift符号获取"></a>Swift符号获取</h3><p>获取Swift的符号需要在Build Setting-&gt;Other Swift Flag处配置-sanitize-coverage&#x3D;func，与-sanitize&#x3D;undefined，</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/8s3aGUpUoyVl-Rn2SA6MJw"></a></p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7127262682800979981#heading-2">https://juejin.cn/post/7127262682800979981#heading-2</a></p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
               </div>
             

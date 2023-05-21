@@ -1,0 +1,1058 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Amir">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="KVC概要关于KVC 定义  是由NSKeyValueCoding非正式协议启用的一种机制 间接访问对象 通过简洁、统一的消息传递接口，可以通过字符串参数寻址其属性 补充了实例变量及其相关访问器方法提供的直接访问 提供了一个简单的消息传递接口   用途  是一个基本概念，是许多Cocoa技术基础  kvo Cocoa绑定 Core Data AppleSript-ablitiy      使用KV">
+<meta property="og:type" content="article">
+<meta property="og:title" content="KVC">
+<meta property="og:url" content="http://example.com/2023/03/21/KVC/index.html">
+<meta property="og:site_name" content="I&#39;m Amir">
+<meta property="og:description" content="KVC概要关于KVC 定义  是由NSKeyValueCoding非正式协议启用的一种机制 间接访问对象 通过简洁、统一的消息传递接口，可以通过字符串参数寻址其属性 补充了实例变量及其相关访问器方法提供的直接访问 提供了一个简单的消息传递接口   用途  是一个基本概念，是许多Cocoa技术基础  kvo Cocoa绑定 Core Data AppleSript-ablitiy      使用KV">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-21T08:29:16.000Z">
+<meta property="article:modified_time" content="2023-03-21T15:45:41.993Z">
+<meta property="article:author" content="Amir">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>KVC - I&#39;m Amir</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"1tn2Ffi2H8f90YdYNBTTkULu-gzGzoHsz","app_key":"XR7k6OCIp2KxtB7EIlOIkNoT","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Amir</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="KVC"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-03-21 16:29" pubdate>
+          2023年3月21日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          6.2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          52 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">KVC</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="KVC"><a href="#KVC" class="headerlink" title="KVC"></a>KVC</h1><h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><h3 id="关于KVC"><a href="#关于KVC" class="headerlink" title="关于KVC"></a>关于KVC</h3><ul>
+<li><p>定义</p>
+<ul>
+<li>是由NSKeyValueCoding非正式协议启用的一种机制</li>
+<li>间接访问对象</li>
+<li>通过简洁、统一的消息传递接口，可以通过字符串参数寻址其属性</li>
+<li>补充了实例变量及其相关访问器方法提供的直接访问</li>
+<li>提供了一个简单的消息传递接口</li>
+</ul>
+</li>
+<li><p>用途</p>
+<ul>
+<li><p>是一个基本概念，是许多Cocoa技术基础</p>
+<ul>
+<li>kvo</li>
+<li>Cocoa绑定</li>
+<li>Core Data</li>
+<li>AppleSript-ablitiy</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="使用KVC"><a href="#使用KVC" class="headerlink" title="使用KVC"></a>使用KVC</h3><h3 id="对象的键值编码方法"><a href="#对象的键值编码方法" class="headerlink" title="对象的键值编码方法"></a>对象的键值编码方法</h3><h3 id="基于Swift的键值编码"><a href="#基于Swift的键值编码" class="headerlink" title="基于Swift的键值编码"></a>基于Swift的键值编码</h3><h3 id="其他基于键值编码的Cocoa技术"><a href="#其他基于键值编码的Cocoa技术" class="headerlink" title="其他基于键值编码的Cocoa技术"></a>其他基于键值编码的Cocoa技术</h3><ul>
+<li>KVC</li>
+<li>Coco bingings</li>
+<li>Core Data</li>
+<li>AppleScript</li>
+</ul>
+<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="访问对象属性"><a href="#访问对象属性" class="headerlink" title="访问对象属性"></a>访问对象属性</h3><ul>
+<li><p>常用api</p>
+<ul>
+<li><ul>
+<li>(nullable id)valueForKey:(NSString *)key;         &#x2F;&#x2F; 通过 key 来取值</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>(nullable id)valueForKeyPath:(NSString *)keyPath; &#x2F;&#x2F; 通过 keyPath 来取值</p>
+</li>
+<li><p>(void)setValue:(nullable id)value forKey:(NSString *)key;         &#x2F;&#x2F; 通过 key 来赋值</p>
+</li>
+<li><p>(void)setValue:(nullable id)value forKeyPath:(NSString *)keyPath; &#x2F;&#x2F; 通过 keyPath 来赋值</p>
+</li>
+<li><p>基础操作</p>
+<ul>
+<li>[myAccount setValue:@(100.0) forKey:@”currentBalance”];</li>
+<li>普通的key value模式</li>
+</ul>
+</li>
+<li><p>keypath</p>
+<ul>
+<li>[myAccount setValue:@”地址” forKeyPath:@”owner.address.street”];</li>
+<li>多级访问，通过”.”进行下级访问</li>
+</ul>
+</li>
+<li><p>多值操作</p>
+<ul>
+<li><p>给定一组key，获得一组value，以字典的形式返回。</p>
+<ul>
+<li><ul>
+<li>(NSDictionary&lt;NSString *,id&gt; *)dictionaryWithValuesForKeys:(NSArray&lt;NSString *&gt; *)keys;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>将字典中的值批量设置到属性中</p>
+<ul>
+<li><ul>
+<li>(void)setValuesForKeysWithDictionary:(NSDictionary&lt;NSString *,id&gt; *)keyedValues;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="访问集合属性"><a href="#访问集合属性" class="headerlink" title="访问集合属性"></a>访问集合属性</h3><ul>
+<li><p>获取或设置集合对象</p>
+</li>
+<li><p>操作集合对象的内容</p>
+<ul>
+<li><p>通过KVC的可变代理方法获取集合代理对象</p>
+<ul>
+<li>NSMutableArray</li>
+<li>NSMutableSet</li>
+<li>NSMutableOrderedSet</li>
+</ul>
+</li>
+<li><p>然后对代理对象进行操作</p>
+<ul>
+<li><p>如果使用kvo</p>
+<ul>
+<li>当代理对象的内部对象发生改变时，会触发kvo的监听方法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="使用集合运算符"><a href="#使用集合运算符" class="headerlink" title="使用集合运算符"></a>使用集合运算符</h3><ul>
+<li><p>还可以在KeyPath中嵌套集合运算符 ，来对集合对象进行操作</p>
+</li>
+<li><p>运算符格式</p>
+<ul>
+<li><p>Left key path</p>
+<ul>
+<li>左键路径，要操作的集合对象，如果消息接收者就是集合对象，则可以省略Left部分</li>
+</ul>
+</li>
+<li><p>Collection operator</p>
+<ul>
+<li>集合运算符</li>
+</ul>
+</li>
+<li><p>Right key path</p>
+<ul>
+<li>右键路径，要进行运算的集合中的属性</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>三类集合运算符</p>
+<ul>
+<li><p>聚合运算符</p>
+<ul>
+<li><p>以某种方式合并集合中的对象，并返回右键路径中指定的属性的数据类型，匹配一个对象，一般返回NSNumber实例</p>
+</li>
+<li><p>@avg</p>
+<ul>
+<li><p>读取集合中每个元素的右键路径指定的属性，将其转换为double类型（nil用0替代），并计算这些值的算术平均值。然后以NSNumber实例返回</p>
+<ul>
+<li>&#x2F;&#x2F; 计算上表中 amount 的平均值。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>NSNumber *transactionAverage &#x3D; [self.transactions valueForKeyPath:@”@avg.amount”];<br>&#x2F;&#x2F; transactionAverage 格式化的结果为 $ 456.54。</p>
+<pre><code class="hljs">    - @count
+
+        - 计算集合中的元素个数，以NSNumber实例返回
+
+            - // 计算 transactions 集合中的元素个数。
+</code></pre>
+<p>NSNumber *numberOfTransactions &#x3D; [self.transactions valueForKeyPath:@”@count”];<br>&#x2F;&#x2F; numberOfTransactions 的值为 13。</p>
+<pre><code class="hljs">        - @count运算符比较特别，它不需要写右键路径，即使写了也会被忽略
+
+    - @sum
+
+        - 读取集合中每个元素的右键路径指定的属性，将其转换为double类型(nil用0替代)，并计算这些值的总和。然后将结果以NSNumber实例返回
+
+            - // 计算上表中 amount 的总和。
+</code></pre>
+<p>NSNumber *amountSum &#x3D; [self.transactions valueForKeyPath:@”@sum.amount”];<br>&#x2F;&#x2F; amountSum 的结果为 $ 5935.00。</p>
+<pre><code class="hljs">    - @max
+
+        - 返回集合中右键路径指定的属性的最大值
+
+            - // 获取日期的最大值。
+</code></pre>
+<p>NSDate *latestDate &#x3D; [self.transactions valueForKeyPath:@”@max.date”];<br>&#x2F;&#x2F; latestDate 的值为 Jul 15, 2016.</p>
+<pre><code class="hljs">    - @min
+
+        - 返回集合中右键路径指定的属性的最小值
+
+            - // 获取日期的最小值。
+</code></pre>
+<p>NSDate *earliestDate &#x3D; [self.transactions valueForKeyPath:@”@min.date”];<br>&#x2F;&#x2F; earliestDate 的值为 Dec 1, 2015.</p>
+<pre><code class="hljs">- 数组运算符
+
+    - 根据运算符的条件，将符合条件的对象以一个NSArray实例返回
+    - @unionOfObjects
+
+        - 读取数组中每个元素的右键路径指定的属性，放在一个NSArray实例中并返回
+
+            - // 获取集合中的所有 payee 对象。
+</code></pre>
+<p>NSArray *payees &#x3D; [self.transactions valueForKeyPath:@”@unionOfObjects.payee”];<br>&#x2F;&#x2F; payees 数组包含以下字符串：Green Power, Green Power, Green Power, Car Loan, Car Loan, Car Loan, General Cable, General Cable, General Cable, Mortgage, Mortgage, Mortgage, Animal Hospital。</p>
+<pre><code class="hljs">    - @distinctUnionOfObjects
+
+        - 读取数组中每个元素的右键路径指定的属性，放在一个NSArray实例中，将数组进行去重后返回
+
+            - // 获取集合中的所有不同的 payee 对象。
+</code></pre>
+<p>NSArray *distinctPayees &#x3D; [self.transactions valueForKeyPath:@”@distinctUnionOfObjects.payee”];<br>&#x2F;&#x2F; distinctPayees 数组包含以下字符串：Car Loan, General Cable, Animal Hospital, Green Power, Mortgage。</p>
+<pre><code class="hljs">        - 如果有对象为nil，valueForKeyPath:方法将发生异常
+
+- 嵌套运算符
+
+    - 处理集合对象中嵌套其他集合对象的情况，并根据运算符返回一个NSArray或NSSet实例
+    - @unionOfArrays
+
+        - 读取集合中的每个集合中每个元素的右键路径指定的属性，放在一个NSArray实例中并返回
+
+            - // 获取 arrayOfArrays 集合中的每个集合中的所有 payee 对象。
+</code></pre>
+<p>NSArray *collectedPayees &#x3D; [arrayOfArrays valueForKeyPath:@”@unionOfArrays.payee”];<br>&#x2F;&#x2F; collectedPayees 数组包含以下字符串：Green Power, Green Power, Green Power, Car Loan, Car Loan, Car Loan, General Cable, General Cable, General Cable, Mortgage, Mortgage, Mortgage, Animal Hospital, General Cable - Cottage, General Cable - Cottage, General Cable - Cottage, Second Mortgage, Second Mortgage, Second Mortgage, Hobby Shop.</p>
+<pre><code class="hljs">    - @distincUnionOfArrays
+
+        - 读取集合中的每个集合中的每个元素的右键路径指定的属性，放在一个NSArray实例中，将数组进行去重后返回
+
+            - // 获取 arrayOfArrays 集合中的每个集合中的所有不同的 payee 对象。
+</code></pre>
+<p>NSArray *collectedDistinctPayees &#x3D; [arrayOfArrays valueForKeyPath:@”@distinctUnionOfArrays.payee”];<br>&#x2F;&#x2F; collectedDistinctPayees 数组包含以下字符串：Hobby Shop, Mortgage, Animal Hospital, Second Mortgage, Car Loan, General Cable - Cottage, General Cable, Green Power.</p>
+<pre><code class="hljs">    - @distincUnionOfSets
+
+        - 读取集合中的每个集合中的每个元素的右键路径指定的属性，放在一个NSSet实例中，去重后返回
+
+            - NSSet *collectedDistinctPayees = [setOfSets valueForKeyPath:@&quot;@distinctUnionOfSets.payee&quot;];
+
+        - 注意
+
+            - 在使用嵌套运算符时，valueForKeyPath：内部会根据运算符创建一个NSMutableArray或NSMutableSet对象，将集合中的array和set添加进去再进行操作。如果集合中有非集合元素，会导致Crash
+            - 使用unionOfArrays或distinctUnionOfArrays运算符，消息接受者应该是arrayOfArrays类型，即NSArray&lt;NSArray*&gt;* arrayOfArrays;使用distinctUnionOfSets运算符，消息接受者应该是setOfSets或者arrayOfSets类型。否则会发生异常
+            - 使用嵌套运算符时，如果有任何操作的对象是nil，则valueForKeyPath:方法将引发异常
+</code></pre>
+<ul>
+<li><p>拓展</p>
+<ul>
+<li>如果集合中的对象都是NSNumber,右键路径可以用self</li>
+</ul>
+</li>
+</ul>
+<h3 id="自定义集合运算符"><a href="#自定义集合运算符" class="headerlink" title="自定义集合运算符"></a>自定义集合运算符</h3><ul>
+<li>通过runtime打印NSArray类的方法列表可以发现很多方法</li>
+<li>很多运算符关键词对应的方法：_<operatorKey>ForKeyPath:</li>
+<li>根据以上规则，可以自己写个NSArray分类，然后实现关键词方法</li>
+</ul>
+<h3 id="非对象值处理"><a href="#非对象值处理" class="headerlink" title="非对象值处理"></a>非对象值处理</h3><ul>
+<li>会自动在非对象值和对象值之间进行转换</li>
+</ul>
+<h3 id="验证属性"><a href="#验证属性" class="headerlink" title="验证属性"></a>验证属性</h3><ul>
+<li><p>提供了验证方法</p>
+<ul>
+<li><ul>
+<li>(BOOL)validateValue:(id  _Nullable *)value<br>   forKey:(NSString *)key<br>    error:(NSError * _Nullable *)error;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>(BOOL)validateValue:(inout id  _Nullable *)ioValue<br>     forKeyPath:(NSString *)inKeyPath<br>          error:(out NSError * _Nullable *)outError;</p>
+</li>
+<li><p>默认情况下，kvc是不会自动验证属性的</p>
+</li>
+</ul>
+<h3 id="搜索规则"><a href="#搜索规则" class="headerlink" title="搜索规则"></a>搜索规则</h3><ul>
+<li><p>基本的getter搜索模式</p>
+<ul>
+<li><p>以valueForKey:方法的默认实现，给定一个key作为入参，在消息接受者类中操作，执行以下过程</p>
+</li>
+<li><p>1.按照 get<Key>、<Key>、is<Key>、_<key>顺序查找</p>
+<ul>
+<li>如果找到就调用取值并执行5，否则执行2</li>
+</ul>
+</li>
+<li><p>2.查找countOf<Key>、objectIn<Key>AtIndex:、<key>AtIndexes:命名的方法</p>
+<ul>
+<li>如果找到，创建一个能够响应所有NSArray的方法的集合代理对象（NSKeyValueArray，继承自NSArray），并返回对象，否则执行3</li>
+<li>代理对象随后将其接收的任何NSArray消息转换为countOf<Key>、objectIn<Key>AtIndex:、<Key>AtIndexes:消息的组合，并将其发送给KVC调用方。如果原始对象还实现了一个名为get<Key>:range:的可选方法，则代理对象也会在适当时使用该方法</li>
+<li>当KVC调用方与代理对象一起工作时，允许底层属性的行为如同NSArray一样，即使它不是NSArray</li>
+</ul>
+</li>
+<li><p>3.查找countOf<Key>、enumeratorOf<Key>、numberOf<Key>:命名的方法</p>
+<ul>
+<li>如果三个方法都找到了，则创建一个能够响应所有NSSet的方法的集合代理对象（类型为NSKeyValueSet，继承自NSSet），并返回该对象。否则执行4</li>
+<li>代理对象随后将其接收的任何NSSet消息转换为countOf<Key>、enumeratorOf<Key>、numberOf<key>消息的组合，并将其 发送给KVC调用方</li>
+<li>当KVC调用方与代理对象一起工作时，允许底层属性的行为如同NSSet一样，即使它不是NSSet</li>
+</ul>
+</li>
+<li><p>4.查看消息接受者类的+accessInstanceVariablesDirectly方法的返回值（默认返回YES）</p>
+<ul>
+<li>如果返回YES，就按照_<key>、_is<Key>、<key>、is<Key>顺序查找成员变量。如果找到就直接取值并执行5</li>
+<li>否则执行6</li>
+<li>如果+accessInstanceVariablesDirectly方法返回NO也执行6</li>
+</ul>
+</li>
+<li><p>5.如果渠道的值是一个对象指针，即获取的是对象，则直接将对象返回。</p>
+<ul>
+<li>如果渠道的值是一个NSNumber支持的数据类型，则将其存储在NSNumber实例并返回</li>
+<li>如果取到的值不是一个NSNumber支持的数据类型，则转换为NSValue对象，然后返回</li>
+</ul>
+</li>
+<li><p>6.调用valueForUndefineKey:方法，该方法抛出异常NSUnknownKeyException,并导致程序Crash。这是默认实现，我们可以重写该方法根据特定key做一些特殊处理。</p>
+</li>
+</ul>
+</li>
+<li><p>基本的setter搜索模式</p>
+<ul>
+<li><p>1.按照set<Key>:、_set<Key>:顺序查找方法</p>
+</li>
+<li><p>2.查看消息接收者类的+accessInstaceVariablesDirectly方法的返回值（默认返回YES）</p>
+<ul>
+<li>如果返回YES，就按照_<key>、_is<Key>、<key>、is<Key>顺序查找成员变量（同 基本的 Getter 搜索模式）。如果找到就将value赋值给它（根据需要进行数据类型转换），否则执行③。如果+accessInstanceVariablesDirectly方法返回NO也执行③。</li>
+</ul>
+</li>
+<li><p>3.调用setValue:forUndefineKey:方法，该方法抛出异常NSUnknownKeyException,并导致程序Crash。这是默认实现，我们可以重写该方法根据特定key做一些特殊处理</p>
+</li>
+</ul>
+</li>
+<li><p>NSMutableArray搜索模式</p>
+</li>
+<li><p>其他搜索模式</p>
+</li>
+</ul>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><h3 id="相关面试题"><a href="#相关面试题" class="headerlink" title="相关面试题"></a>相关面试题</h3><ul>
+<li><p>通过KVC修改属性会出发KVO吗？</p>
+<ul>
+<li>会</li>
+</ul>
+</li>
+<li><p>通过KVC是否会破坏面向对象的编程方法，或者违背面向对象的编程思想？</p>
+<ul>
+<li>key没有任何限制 ，当我们知道一个雷或实例内部的私有变量名称的情况下，我们在外界通过已知key来对它的私有变量进行访问或者赋值的操作，会违背面向对象的编程思想</li>
+</ul>
+</li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/">Key-Value Coding Programming Guide</a></p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/iOS/" class="category-chain-item">iOS</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/iOS/OC/" class="category-chain-item">OC</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/iOS/OC/objc/" class="category-chain-item">objc</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>KVC</div>
+      <div>http://example.com/2023/03/21/KVC/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Amir</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年3月21日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/03/24/Tagged-Pointer/" title="Tagged Pointer">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Tagged Pointer</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/03/21/OOM/" title="OOM">
+                        <span class="hidden-mobile">OOM</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"1tn2Ffi2H8f90YdYNBTTkULu-gzGzoHsz","appKey":"XR7k6OCIp2KxtB7EIlOIkNoT","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
